@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: syuilo and misskey-project & noridev and cherrypick-project
+SPDX-FileCopyrightText: syuilo and misskey-project & noridev and acuaskey-project
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 
@@ -370,7 +370,7 @@ body {
 	overscroll-behavior: none;
 }
 
-#cherrypick_app {
+#acuaskey_app {
 	width: 100%;
 	height: 100%;
 	overflow: clip;

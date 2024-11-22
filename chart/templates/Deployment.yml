@@ -1,28 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "cherrypick.fullname" . }}
+  name: {{ include "acuaskey.fullname" . }}
   labels:
-    {{- include "cherrypick.labels" . | nindent 4 }}
+    {{- include "acuaskey.labels" . | nindent 4 }}
 spec:
   selector:
     matchLabels:
-      {{- include "cherrypick.selectorLabels" . | nindent 6 }}
+      {{- include "acuaskey.selectorLabels" . | nindent 6 }}
   replicas: 1
   template:
     metadata:
       labels:
-        {{- include "cherrypick.selectorLabels" . | nindent 8 }}
+        {{- include "acuaskey.selectorLabels" . | nindent 8 }}
     spec:
       containers:
-        - name: cherrypick
+        - name: acuaskey
           image: {{ .Values.image }}
           env:
             - name: NODE_ENV
               value: {{ .Values.environment }}
           volumeMounts:
-            - name: {{ include "cherrypick.fullname" . }}-configuration
-              mountPath: /cherrypick/.config
+            - name: {{ include "acuaskey.fullname" . }}-configuration
+              mountPath: /acuaskey/.config
               readOnly: true
           ports:
             - containerPort: 3000
@@ -30,11 +30,11 @@ spec:
           image: postgres:15-alpine
           env:
             - name: POSTGRES_USER
-              value: "example-cherrypick-user"
+              value: "example-acuaskey-user"
             - name: POSTGRES_PASSWORD
-              value: "example-cherrypick-pass"
+              value: "example-acuaskey-pass"
             - name: POSTGRES_DB
-              value: "cherrypick"
+              value: "acuaskey"
           ports:
             - containerPort: 5432
         - name: redis
@@ -42,6 +42,6 @@ spec:
           ports:
             - containerPort: 6379
       volumes:
-        - name: {{ include "cherrypick.fullname" . }}-configuration
+        - name: {{ include "acuaskey.fullname" . }}-configuration
           configMap:
-            name: {{ include "cherrypick.fullname" . }}-configuration
+            name: {{ include "acuaskey.fullname" . }}-configuration

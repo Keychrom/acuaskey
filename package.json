@@ -1,11 +1,11 @@
 {
-	"name": "cherrypick",
+	"name": "acuaskey",
 	"version": "4.14.0-alpha.3",
 	"basedMisskeyVersion": "2024.11.0-alpha.2",
 	"codename": "nasubi",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/kokonect-link/cherrypick.git"
+		"url": "https://github.com/Keychrom/acuaskey.git"
 	},
 	"packageManager": "pnpm@9.6.0",
 	"workspaces": [
@@ -14,7 +14,7 @@
 		"packages/frontend-embed",
 		"packages/backend",
 		"packages/sw",
-		"packages/cherrypick-js",
+		"packages/acuaskey-js",
 		"packages/misskey-reversi",
 		"packages/misskey-bubble-game"
 	],
@@ -24,7 +24,7 @@
 		"build-assets": "node ./scripts/build-assets.mjs",
 		"build": "pnpm build-pre && pnpm -r build && pnpm build-assets",
 		"build-storybook": "pnpm --filter frontend build-storybook",
-		"build-cherrypick-js-with-types": "pnpm build-pre && pnpm --filter backend... --filter=!cherrypick-js build && pnpm --filter backend generate-api-json --no-build && ncp packages/backend/built/api.json packages/cherrypick-js/generator/api.json && pnpm --filter cherrypick-js update-autogen-code && pnpm --filter cherrypick-js build && pnpm --filter cherrypick-js api",
+		"build-acuaskey-js-with-types": "pnpm build-pre && pnpm --filter backend... --filter=!acuaskey-js build && pnpm --filter backend generate-api-json --no-build && ncp packages/backend/built/api.json packages/acuaskey-js/generator/api.json && pnpm --filter acuaskey-js update-autogen-code && pnpm --filter acuaskey-js build && pnpm --filter acuaskey-js api",
 		"start": "pnpm check:connect && cd packages/backend && node ./built/boot/entry.js",
 		"start:docker": "pnpm check:connect && cd packages/backend && exec node ./built/boot/entry.js",
 		"start:test": "cd packages/backend && cross-env NODE_ENV=test node ./built/boot/entry.js",

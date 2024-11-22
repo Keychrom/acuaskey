@@ -1,14 +1,14 @@
-name: API report (cherrypick.js)
+name: API report (acuaskey.js)
 
 on:
   push:
     paths:
-      - packages/cherrypick-js/**
-      - .github/workflows/api-cherrypick-js.yml
+      - packages/acuaskey-js/**
+      - .github/workflows/api-acuaskey-js.yml
   pull_request:
     paths:
-      - packages/cherrypick-js/**
-      - .github/workflows/api-cherrypick-js.yml
+      - packages/acuaskey-js/**
+      - .github/workflows/api-acuaskey-js.yml
 jobs:
   report:
 
@@ -30,14 +30,14 @@ jobs:
         run: pnpm i --frozen-lockfile
 
       - name: Build
-        run: pnpm --filter cherrypick-js build
+        run: pnpm --filter acuaskey-js build
 
       - name: Check files
-        run: ls packages/cherrypick-js/built
+        run: ls packages/acuaskey-js/built
 
       - name: API report
-        run: pnpm --filter cherrypick-js api-prod
+        run: pnpm --filter acuaskey-js api-prod
 
       - name: Show report
         if: always()
-        run: cat packages/cherrypick-js/temp/cherrypick-js.api.md
+        run: cat packages/acuaskey-js/temp/acuaskey-js.api.md

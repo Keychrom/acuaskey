@@ -1,38 +1,38 @@
 <!--
-SPDX-FileCopyrightText: syuilo and misskey-project & noridev and cherrypick-project
+SPDX-FileCopyrightText: syuilo and misskey-project & noridev and acuaskey-project
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 <template>
 <div class="_gaps_m">
 	<FormSection first>
-		<template #label>{{ i18n.ts._cherrypick.function }}</template>
-		<template #description>{{ i18n.ts._cherrypick.functionDescription }}</template>
+		<template #label>{{ i18n.ts._acuaskey.function }}</template>
+		<template #description>{{ i18n.ts._acuaskey.functionDescription }}</template>
 		<div class="_gaps_m">
 			<MkSwitch v-model="nicknameEnabled">
-				{{ i18n.ts._cherrypick.nickname }}
-				<template #caption>{{ i18n.ts._cherrypick.nicknameDescription }}</template>
+				{{ i18n.ts._acuaskey.nickname }}
+				<template #caption>{{ i18n.ts._acuaskey.nicknameDescription }}</template>
 			</MkSwitch>
 
 			<div class="_gaps_s">
 				<MkSwitch v-model="useEnterToSend">
-					<template #label>{{ i18n.ts._cherrypick.useEnterToSend }}</template>
-					<template #caption>{{ i18n.ts._cherrypick.useEnterToSendDescription }}</template>
+					<template #label>{{ i18n.ts._acuaskey.useEnterToSend }}</template>
+					<template #caption>{{ i18n.ts._acuaskey.useEnterToSendDescription }}</template>
 				</MkSwitch>
 				<MkSwitch v-model="postFormVisibilityHotkey">
-					<template #label>{{ i18n.ts._cherrypick.postFormVisibilityHotkey }}</template>
-					<template #caption>{{ i18n.ts._cherrypick.postFormVisibilityHotkeyDescription }}</template>
+					<template #label>{{ i18n.ts._acuaskey.postFormVisibilityHotkey }}</template>
+					<template #caption>{{ i18n.ts._acuaskey.postFormVisibilityHotkeyDescription }}</template>
 				</MkSwitch>
 				<MkSwitch v-model="showRenoteConfirmPopup">
-					<template #label>{{ i18n.ts._cherrypick.showRenoteConfirmPopup }}</template>
-					<template #caption>{{ i18n.ts._cherrypick.showRenoteConfirmPopupDescription }}</template>
+					<template #label>{{ i18n.ts._acuaskey.showRenoteConfirmPopup }}</template>
+					<template #caption>{{ i18n.ts._acuaskey.showRenoteConfirmPopupDescription }}</template>
 				</MkSwitch>
 				<MkSwitch v-model="expandOnNoteClick">
-					<template #label>{{ i18n.ts._cherrypick.expandOnNoteClick }}</template>
-					<template #caption>{{ i18n.ts._cherrypick.expandOnNoteClickDescription }}</template>
+					<template #label>{{ i18n.ts._acuaskey.expandOnNoteClick }}</template>
+					<template #caption>{{ i18n.ts._acuaskey.expandOnNoteClickDescription }}</template>
 				</MkSwitch>
 				<MkSelect v-if="expandOnNoteClick" v-model="expandOnNoteClickBehavior" style="margin-left: 44px;">
-					<template #label>{{ i18n.ts._cherrypick.expandOnNoteClickBehavior }}</template>
+					<template #label>{{ i18n.ts._acuaskey.expandOnNoteClickBehavior }}</template>
 					<option value="click">{{ i18n.ts._nsfwOpenBehavior.click }}</option>
 					<option value="doubleClick">{{ i18n.ts._nsfwOpenBehavior.doubleClick }}</option>
 				</MkSelect>
@@ -40,28 +40,28 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 			<div>
 				<MkRadios v-model="displayHeaderNavBarWhenScroll">
-					<template #label>{{ i18n.ts._cherrypick.displayHeaderNavBarWhenScroll }}</template>
-					<option value="all">{{ i18n.ts._cherrypick._displayHeaderNavBarWhenScroll.all }}</option>
-					<option value="hideHeaderOnly">{{ i18n.ts._cherrypick._displayHeaderNavBarWhenScroll.hideHeaderOnly }}</option>
-					<option value="hideHeaderFloatBtn">{{ i18n.ts._cherrypick._displayHeaderNavBarWhenScroll.hideHeaderFloatBtn }}</option>
-					<option value="hideFloatBtnOnly">{{ i18n.ts._cherrypick._displayHeaderNavBarWhenScroll.hideFloatBtnOnly }}</option>
-					<option value="hideFloatBtnNavBar">{{ i18n.ts._cherrypick._displayHeaderNavBarWhenScroll.hideFloatBtnNavBar }}</option>
-					<option value="hide">{{ i18n.ts._cherrypick._displayHeaderNavBarWhenScroll.hide }}</option>
+					<template #label>{{ i18n.ts._acuaskey.displayHeaderNavBarWhenScroll }}</template>
+					<option value="all">{{ i18n.ts._acuaskey._displayHeaderNavBarWhenScroll.all }}</option>
+					<option value="hideHeaderOnly">{{ i18n.ts._acuaskey._displayHeaderNavBarWhenScroll.hideHeaderOnly }}</option>
+					<option value="hideHeaderFloatBtn">{{ i18n.ts._acuaskey._displayHeaderNavBarWhenScroll.hideHeaderFloatBtn }}</option>
+					<option value="hideFloatBtnOnly">{{ i18n.ts._acuaskey._displayHeaderNavBarWhenScroll.hideFloatBtnOnly }}</option>
+					<option value="hideFloatBtnNavBar">{{ i18n.ts._acuaskey._displayHeaderNavBarWhenScroll.hideFloatBtnNavBar }}</option>
+					<option value="hide">{{ i18n.ts._acuaskey._displayHeaderNavBarWhenScroll.hide }}</option>
 				</MkRadios>
 			</div>
 		</div>
 	</FormSection>
 
 	<FormSection>
-		<template #label>{{ i18n.ts._cherrypick.patch }}</template>
-		<template #description>{{ i18n.ts._cherrypick.patchDescription }}</template>
+		<template #label>{{ i18n.ts._acuaskey.patch }}</template>
+		<template #description>{{ i18n.ts._acuaskey.patchDescription }}</template>
 		<div class="_gaps_m">
-			<MkSwitch v-model="reactableRemoteReactionEnabled">{{ i18n.ts._cherrypick.reactableRemoteReaction }}</MkSwitch>
-			<MkSwitch v-model="showFollowingMessageInsteadOfButtonEnabled">{{ i18n.ts._cherrypick.showFollowingMessageInsteadOfButton }}</MkSwitch>
-			<MkSwitch v-model="mobileHeaderChange">{{ i18n.ts._cherrypick.mobileHeaderChange }}</MkSwitch>
+			<MkSwitch v-model="reactableRemoteReactionEnabled">{{ i18n.ts._acuaskey.reactableRemoteReaction }}</MkSwitch>
+			<MkSwitch v-model="showFollowingMessageInsteadOfButtonEnabled">{{ i18n.ts._acuaskey.showFollowingMessageInsteadOfButton }}</MkSwitch>
+			<MkSwitch v-model="mobileHeaderChange">{{ i18n.ts._acuaskey.mobileHeaderChange }}</MkSwitch>
 			<MkSwitch v-model="renameTheButtonInPostFormToNya">
-				{{ i18n.ts._cherrypick.renameTheButtonInPostFormToNya }}
-				<template #caption>{{ i18n.ts._cherrypick.renameTheButtonInPostFormToNyaDescription }}</template>
+				{{ i18n.ts._acuaskey.renameTheButtonInPostFormToNya }}
+				<template #caption>{{ i18n.ts._acuaskey.renameTheButtonInPostFormToNyaDescription }}</template>
 			</MkSwitch>
 		</div>
 	</FormSection>
@@ -69,26 +69,26 @@ SPDX-License-Identifier: AGPL-3.0-only
 	<FormSection>
 		<template #label>UI</template>
 		<div class="_gaps_m">
-			<MkSwitch v-model="enableWidgetsArea">{{ i18n.ts._cherrypick.enableWidgetsArea }}</MkSwitch>
+			<MkSwitch v-model="enableWidgetsArea">{{ i18n.ts._acuaskey.enableWidgetsArea }}</MkSwitch>
 
 			<div class="_gaps_s" style="margin: 0 10px;">
 				<div style="font-weight: bold; padding: 0.5em 0 0 0; margin: 0 0 8px 0;">Friendly UI</div>
 
 				<MkSwitch v-model="friendlyUiEnableNotificationsArea">
-					{{ i18n.ts._cherrypick.friendlyUiEnableNotificationsArea }}
+					{{ i18n.ts._acuaskey.friendlyUiEnableNotificationsArea }}
 				</MkSwitch>
 				<MkSwitch v-model="enableLongPressOpenAccountMenu">
-					<template #label>{{ i18n.ts._cherrypick.enableLongPressOpenAccountMenu }}</template>
-					<template #caption>{{ i18n.ts._cherrypick.enableLongPressOpenAccountMenuDescription }}</template>
+					<template #label>{{ i18n.ts._acuaskey.enableLongPressOpenAccountMenu }}</template>
+					<template #caption>{{ i18n.ts._acuaskey.enableLongPressOpenAccountMenuDescription }}</template>
 				</MkSwitch>
-				<MkSwitch v-model="friendlyUiShowAvatarDecorationsInNavBtn">{{ i18n.ts._cherrypick.friendlyUiShowAvatarDecorationsInNavBtn }}</MkSwitch>
+				<MkSwitch v-model="friendlyUiShowAvatarDecorationsInNavBtn">{{ i18n.ts._acuaskey.friendlyUiShowAvatarDecorationsInNavBtn }}</MkSwitch>
 			</div>
 		</div>
 	</FormSection>
 
 	<FormSection>
-		<template #label><i class="ti ti-flask"/> {{ i18n.ts.cherrypickLabs }}</template>
-		<template #description>{{ i18n.ts.cherrypickLabsDescription }}</template>
+		<template #label><i class="ti ti-flask"/> {{ i18n.ts.acuaskeyLabs }}</template>
+		<template #description>{{ i18n.ts.acuaskeyLabsDescription }}</template>
 		<div class="_gaps_m">
 		</div>
 	</FormSection>
@@ -144,7 +144,7 @@ const headerActions = computed(() => []);
 const headerTabs = computed(() => []);
 
 definePageMetadata(() => ({
-	title: 'CherryPick',
+	title: 'acuaskey',
 	icon: 'ti ti-bulb-filled',
 }));
 </script>

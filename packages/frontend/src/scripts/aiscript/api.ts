@@ -4,9 +4,9 @@
  */
 
 import { defineAsyncComponent } from 'vue';
-import { permissions as MkPermissions } from 'cherrypick-js';
+import { permissions as MkPermissions } from 'acuaskey-js';
 import { utils, values } from '@syuilo/aiscript';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'acuaskey-js';
 import { url, lang } from '@@/js/config.js';
 import * as os from '@/os.js';
 import { misskeyApi } from '@/scripts/misskey-api.js';

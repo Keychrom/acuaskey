@@ -4,7 +4,7 @@
  */
 
 import { onUnmounted, Ref, ShallowRef } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'acuaskey-js';
 import { useStream } from '@/stream.js';
 import { $i } from '@/account.js';
 

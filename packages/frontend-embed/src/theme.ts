@@ -4,8 +4,8 @@
  */
 
 import tinycolor from 'tinycolor2';
-import lightTheme from '@@/themes/_light-cherrypick.json5';
-import darkTheme from '@@/themes/_dark-cherrypick.json5';
+import lightTheme from '@@/themes/_light-acuaskey.json5';
+import darkTheme from '@@/themes/_dark-acuaskey.json5';
 import type { BundledTheme } from 'shiki/themes';
 
 export type Theme = {

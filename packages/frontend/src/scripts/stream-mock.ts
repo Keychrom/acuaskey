@@ -4,8 +4,8 @@
  */
 
 import { EventEmitter } from 'eventemitter3';
-import * as Misskey from 'cherrypick-js';
-import type { Channels, StreamEvents, IStream, IChannelConnection } from 'cherrypick-js';
+import * as Misskey from 'acuaskey-js';
+import type { Channels, StreamEvents, IStream, IChannelConnection } from 'acuaskey-js';
 
 type AnyOf<T extends Record<any, any>> = T[keyof T];
 type OmitFirst<T extends any[]> = T extends [any, ...infer R] ? R : never;

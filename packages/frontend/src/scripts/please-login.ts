@@ -10,7 +10,7 @@ import { popup } from '@/os.js';
 
 export type OpenOnRemoteOptions = {
 	/**
-	 * 外部のCherryPick Webで特定のパスを開く
+	 * 外部のacuaskey Webで特定のパスを開く
 	 */
 	type: 'web';
 
@@ -20,19 +20,19 @@ export type OpenOnRemoteOptions = {
 	path: string;
 } | {
 	/**
-	 * 外部のCherryPick Webで照会する
+	 * 外部のacuaskey Webで照会する
 	 */
 	type: 'lookup';
 
 	/**
 	 * 照会したいエンティティのURL
 	 *
-	 * （例: `https://cherrypick.example.com/notes/abcdexxxxyz`）
+	 * （例: `https://acuaskey.example.com/notes/abcdexxxxyz`）
 	 */
 	url: string;
 } | {
 	/**
-	 * 外部のCherryPickでノートする
+	 * 外部のacuaskeyでノートする
 	 */
 	type: 'share';
 

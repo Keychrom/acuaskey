@@ -28,7 +28,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { defineAsyncComponent, inject } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'acuaskey-js';
 import type { MenuItem } from '@/types/menu.js';
 import MkDriveFileThumbnail from '@/components/MkDriveFileThumbnail.vue';
 import * as os from '@/os.js';

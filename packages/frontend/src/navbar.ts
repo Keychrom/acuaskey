@@ -131,7 +131,7 @@ export const navbarItemDef = reactive({
 		to: '/my/achievements',
 	},
 	games: {
-		title: 'CherryPick Games',
+		title: 'acuaskey Games',
 		icon: 'ti ti-device-gamepad',
 		to: '/games',
 	},

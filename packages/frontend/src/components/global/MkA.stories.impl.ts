@@ -25,7 +25,7 @@ export const Default = {
 					};
 				},
 			},
-			template: '<MkA v-bind="props">CherryPick</MkA>',
+			template: '<MkA v-bind="props">acuaskey</MkA>',
 		};
 	},
 	async play({ canvasElement }) {

@@ -27,7 +27,7 @@ import { createMainRouter } from '@/router/definition.js';
 import { popup } from '@/os.js';
 
 export async function common(createVue: () => App<Element>) {
-	console.info(`CherryPick v${version}`);
+	console.info(`acuaskey v${version}`);
 
 	if (_DEV_) {
 		console.warn('Development mode!!!');
@@ -152,7 +152,7 @@ export async function common(createVue: () => App<Element>) {
 			}
 		}
 
-		history.replaceState({ cherrypick: 'loginId' }, '', target);
+		history.replaceState({ acuaskey: 'loginId' }, '', target);
 	}
 	//#endregion
 
@@ -263,9 +263,9 @@ export async function common(createVue: () => App<Element>) {
 	// https://github.com/misskey-dev/misskey/pull/8575#issuecomment-1114239210
 	// なぜか2回実行されることがあるため、mountするdivを1つに制限する
 	const rootEl = ((): HTMLElement => {
-		const CHERRYPICK_MOUNT_DIV_ID = 'cherrypick_app';
+		const acuaskey_MOUNT_DIV_ID = 'acuaskey_app';
 
-		const currentRoot = document.getElementById(CHERRYPICK_MOUNT_DIV_ID);
+		const currentRoot = document.getElementById(acuaskey_MOUNT_DIV_ID);
 
 		if (currentRoot) {
 			console.warn('multiple import detected');
@@ -273,7 +273,7 @@ export async function common(createVue: () => App<Element>) {
 		}
 
 		const root = document.createElement('div');
-		root.id = CHERRYPICK_MOUNT_DIV_ID;
+		root.id = acuaskey_MOUNT_DIV_ID;
 		document.body.appendChild(root);
 		return root;
 	})();

@@ -211,7 +211,7 @@ export const paramDef = {
 		emailToReceiveAbuseReport: { type: 'string', nullable: true },
 		enableReceivePrerelease: { type: 'boolean' },
 		skipVersion: { type: 'boolean' },
-		skipCherryPickVersion: { type: 'string', nullable: true },
+		skipacuaskeyVersion: { type: 'string', nullable: true },
 		trustedLinkUrlPatterns: {
 			type: 'array', nullable: true, items: {
 				type: 'string',
@@ -814,8 +814,8 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 				set.skipVersion = ps.skipVersion;
 			}
 
-			if (ps.skipCherryPickVersion !== undefined) {
-				set.skipCherryPickVersion = ps.skipCherryPickVersion;
+			if (ps.skipacuaskeyVersion !== undefined) {
+				set.skipacuaskeyVersion = ps.skipacuaskeyVersion;
 			}
 
 			if (Array.isArray(ps.trustedLinkUrlPatterns)) {

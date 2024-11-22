@@ -6,7 +6,7 @@
 import { utils, values } from '@syuilo/aiscript';
 import { v4 as uuid } from 'uuid';
 import { ref, Ref } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'acuaskey-js';
 
 export type AsUiComponentBase = {
 	id: string;

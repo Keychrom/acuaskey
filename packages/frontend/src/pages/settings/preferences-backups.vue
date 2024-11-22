@@ -116,7 +116,7 @@ const defaultStoreSaveKeys: (keyof typeof defaultStore['state'])[] = [
 	'sound_chat',
 	'sound_chatBg',
 	'sound_reaction',
-	// #region CherryPick
+	// #region acuaskey
 	'vibrate',
 	'vibrateNote',
 	'vibrateNotification',
@@ -188,7 +188,7 @@ const defaultStoreSaveKeys: (keyof typeof defaultStore['state'])[] = [
 	'showQuoteButtonInNoteFooter',
 	'showMoreButtonInNoteFooter',
 	'selectReaction',
-	// #endregion CherryPick
+	// #endregion acuaskey
 ];
 const coldDeviceStorageSaveKeys: (keyof typeof ColdDeviceStorage.default)[] = [
 	'lightTheme',
@@ -199,13 +199,13 @@ const coldDeviceStorageSaveKeys: (keyof typeof ColdDeviceStorage.default)[] = [
 
 const scope = ['clientPreferencesProfiles'];
 
-const profileProps = ['name', 'createdAt', 'updatedAt', 'cherrypickVersion', 'basedMisskeyVersion', 'settings', 'host'];
+const profileProps = ['name', 'createdAt', 'updatedAt', 'acuaskeyVersion', 'basedMisskeyVersion', 'settings', 'host'];
 
 type Profile = {
 	name: string;
 	createdAt: string;
 	updatedAt: string | null;
-	cherrypickVersion: string;
+	acuaskeyVersion: string;
 	basedMisskeyVersion: string;
 	host: string;
 	settings: {
@@ -237,7 +237,7 @@ function validate(profile: any): void {
 	if (Object.keys(profile).some(key => !profileProps.includes(key))) throw new Error('Unnecessary properties exist');
 
 	if (!profile.name) throw new Error('Missing required prop: name');
-	if (!profile.cherrypickVersion) throw new Error('Missing required prop: cherrypickVersion');
+	if (!profile.acuaskeyVersion) throw new Error('Missing required prop: acuaskeyVersion');
 	if (!profile.basedMisskeyVersion) throw new Error('Missing required prop: basedMisskeyVersion');
 
 	// Check if createdAt and updatedAt is Date
@@ -296,7 +296,7 @@ async function saveNew(): Promise<void> {
 		name,
 		createdAt: (new Date()).toISOString(),
 		updatedAt: null,
-		cherrypickVersion: version,
+		acuaskeyVersion: version,
 		basedMisskeyVersion: basedMisskeyVersion,
 		host,
 		settings: getSettings(),
@@ -438,7 +438,7 @@ async function save(id: string): Promise<void> {
 		name,
 		createdAt,
 		updatedAt: (new Date()).toISOString(),
-		cherrypickVersion: version,
+		acuaskeyVersion: version,
 		basedMisskeyVersion: basedMisskeyVersion,
 		host,
 		settings: getSettings(),

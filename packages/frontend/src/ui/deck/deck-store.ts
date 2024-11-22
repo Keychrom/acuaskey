@@ -5,7 +5,7 @@
 
 import { throttle } from 'throttle-debounce';
 import { markRaw } from 'vue';
-import { notificationTypes } from 'cherrypick-js';
+import { notificationTypes } from 'acuaskey-js';
 import type { BasicTimelineType } from '@/timelines.js';
 import { Storage } from '@/pizzax.js';
 import { misskeyApi } from '@/scripts/misskey-api.js';

@@ -1,9 +1,9 @@
 <div align="center">
 <a href="https://misskey-hub.net">
-	<img src="./assets/title_float_cherrypick.svg" alt="CherryPick logo" style="border-radius:50%" width="300"/>
+	<img src="./assets/title_float_acuaskey.svg" alt="acuaskey logo" style="border-radius:50%" width="300"/>
 </a>
 
-**🌎 **CherryPick** is an open source, federated social media platform that's free forever! 🚀**
+**🌎 **acuaskey** is an open source, federated social media platform that's free forever! 🚀**
 
 [Learn more](https://misskey-hub.net/)
 
@@ -28,7 +28,7 @@
 
 ## Thanks
 
-<a href="https://sentry.io/"><img src="https://github.com/kokonect-link/cherrypick/assets/4439005/98576556-222f-467a-94be-e98dbda1d852" height="30" alt="Sentry" /></a>
+<a href="https://sentry.io/"><img src="https://github.com/kokonect-link/acuaskey/assets/4439005/98576556-222f-467a-94be-e98dbda1d852" height="30" alt="Sentry" /></a>
 
 Thanks to [Sentry](https://sentry.io/) for providing the error tracking platform that helps us catch unexpected errors.
 
@@ -42,8 +42,8 @@ Thanks to [Codecov](https://about.codecov.io/for/open-source/) for providing the
 
 <a href="https://crowdin.com/"><img src="https://user-images.githubusercontent.com/20679825/230709597-1299a011-171a-4294-a91e-355a9b37c672.svg" height="30" alt="Crowdin" /></a>
 
-Thanks to [Crowdin](https://crowdin.com/) for providing the localization platform that helps us translate CherryPick into many languages.
+Thanks to [Crowdin](https://crowdin.com/) for providing the localization platform that helps us translate acuaskey into many languages.
 
 <a href="https://hub.docker.com/"><img src="https://user-images.githubusercontent.com/20679825/230148221-f8e73a32-a49b-47c3-9029-9a15c3824f92.png" height="30" alt="Docker" /></a>
 
-Thanks to [Docker](https://hub.docker.com/) for providing the container platform that helps us run CherryPick in production.
+Thanks to [Docker](https://hub.docker.com/) for providing the container platform that helps us run acuaskey in production.

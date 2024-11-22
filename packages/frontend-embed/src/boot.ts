@@ -24,7 +24,7 @@ import { postMessageToParentWindow, setIframeId } from '@/post-message.js';
 import { serverContext } from '@/server-context.js';
 import { i18n } from '@/i18n.js';
 
-console.log('CherryPick Embed');
+console.log('acuaskey Embed');
 
 //#region Embedパラメータの取得・パース
 const params = new URLSearchParams(location.search);
@@ -102,9 +102,9 @@ app.provide(DI.embedParams, embedParams);
 // https://github.com/misskey-dev/misskey/pull/8575#issuecomment-1114239210
 // なぜか2回実行されることがあるため、mountするdivを1つに制限する
 const rootEl = ((): HTMLElement => {
-	const CHERRYPICK_MOUNT_DIV_ID = 'cherrypick_app';
+	const acuaskey_MOUNT_DIV_ID = 'acuaskey_app';
 
-	const currentRoot = document.getElementById(CHERRYPICK_MOUNT_DIV_ID);
+	const currentRoot = document.getElementById(acuaskey_MOUNT_DIV_ID);
 
 	if (currentRoot) {
 		console.warn('multiple import detected');
@@ -112,7 +112,7 @@ const rootEl = ((): HTMLElement => {
 	}
 
 	const root = document.createElement('div');
-	root.id = CHERRYPICK_MOUNT_DIV_ID;
+	root.id = acuaskey_MOUNT_DIV_ID;
 	document.body.appendChild(root);
 	return root;
 })();

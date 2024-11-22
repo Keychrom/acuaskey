@@ -175,9 +175,9 @@ const menuDef = computed(() => [{
 		active: currentPage.value?.route.name === 'migration',
 	}, {
 		icon: 'ti ti-bulb-filled',
-		text: 'CherryPick',
-		to: '/settings/cherrypick',
-		active: currentPage.value?.route.name === 'cherrypick',
+		text: 'acuaskey',
+		to: '/settings/acuaskey',
+		active: currentPage.value?.route.name === 'acuaskey',
 	}, {
 		icon: 'ti ti-dots',
 		text: i18n.ts.other,

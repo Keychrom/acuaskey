@@ -18,7 +18,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { computed, watch, onMounted, onUnmounted, provide, ref, shallowRef } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'acuaskey-js';
 import type { BasicTimelineType } from '@/timelines.js';
 import MkNotes from '@/components/MkNotes.vue';
 import MkPullToRefresh from '@/components/MkPullToRefresh.vue';

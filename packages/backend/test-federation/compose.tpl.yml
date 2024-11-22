@@ -11,7 +11,7 @@ services:
       interval: 5s
       retries: 20
 
-  cherrypick:
+  acuaskey:
     image: node:20
     env_file:
       - ./.config/docker.env
@@ -20,65 +20,65 @@ services:
     volumes:
       - type: bind
         source: ../../../built
-        target: /cherrypick/built
+        target: /acuaskey/built
         read_only: true
       - type: bind
         source: ../assets
-        target: /cherrypick/packages/backend/assets
+        target: /acuaskey/packages/backend/assets
         read_only: true
       - type: bind
         source: ../built
-        target: /cherrypick/packages/backend/built
+        target: /acuaskey/packages/backend/built
         read_only: true
       - type: bind
         source: ../migration
-        target: /cherrypick/packages/backend/migration
+        target: /acuaskey/packages/backend/migration
         read_only: true
       - type: bind
         source: ../ormconfig.js
-        target: /cherrypick/packages/backend/ormconfig.js
+        target: /acuaskey/packages/backend/ormconfig.js
         read_only: true
       - type: bind
         source: ../package.json
-        target: /cherrypick/packages/backend/package.json
+        target: /acuaskey/packages/backend/package.json
         read_only: true
       - type: bind
-        source: ../../cherrypick-js/built
-        target: /cherrypick/packages/cherrypick-js/built
+        source: ../../acuaskey-js/built
+        target: /acuaskey/packages/acuaskey-js/built
         read_only: true
       - type: bind
-        source: ../../cherrypick-js/package.json
-        target: /cherrypick/packages/cherrypick-js/package.json
+        source: ../../acuaskey-js/package.json
+        target: /acuaskey/packages/acuaskey-js/package.json
         read_only: true
       - type: bind
         source: ../../misskey-reversi/built
-        target: /cherrypick/packages/misskey-reversi/built
+        target: /acuaskey/packages/misskey-reversi/built
         read_only: true
       - type: bind
         source: ../../misskey-reversi/package.json
-        target: /cherrypick/packages/misskey-reversi/package.json
+        target: /acuaskey/packages/misskey-reversi/package.json
         read_only: true
       - type: bind
         source: ../../../healthcheck.sh
-        target: /cherrypick/healthcheck.sh
+        target: /acuaskey/healthcheck.sh
         read_only: true
       - type: bind
         source: ../../../package.json
-        target: /cherrypick/package.json
+        target: /acuaskey/package.json
         read_only: true
       - type: bind
         source: ../../../pnpm-lock.yaml
-        target: /cherrypick/pnpm-lock.yaml
+        target: /acuaskey/pnpm-lock.yaml
         read_only: true
       - type: bind
         source: ../../../pnpm-workspace.yaml
-        target: /cherrypick/pnpm-workspace.yaml
+        target: /acuaskey/pnpm-workspace.yaml
         read_only: true
       - type: bind
         source: ./certificates/rootCA.crt
         target: /usr/local/share/ca-certificates/rootCA.crt
         read_only: true
-    working_dir: /cherrypick
+    working_dir: /acuaskey
     command: >
       bash -c "
         corepack enable && corepack prepare
@@ -86,7 +86,7 @@ services:
         pnpm -F backend start
       "
     healthcheck:
-      test: bash /cherrypick/healthcheck.sh
+      test: bash /acuaskey/healthcheck.sh
       interval: 5s
       retries: 20
 

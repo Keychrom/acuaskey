@@ -6,7 +6,7 @@
 import { createApp, defineAsyncComponent, markRaw } from 'vue';
 import { ui } from '@@/js/config.js';
 import { common } from './common.js';
-import type * as Misskey from 'cherrypick-js';
+import type * as Misskey from 'acuaskey-js';
 import { i18n } from '@/i18n.js';
 import { alert, confirm, popup, post, welcomeToast } from '@/os.js';
 import { useStream } from '@/stream.js';
@@ -312,7 +312,7 @@ export async function mainBoot() {
 		}
 
 		const modifiedVersionMustProminentlyOfferInAgplV3Section13Read = miLocalStorage.getItem('modifiedVersionMustProminentlyOfferInAgplV3Section13Read');
-		if (modifiedVersionMustProminentlyOfferInAgplV3Section13Read !== 'true' && instance.repositoryUrl !== 'https://github.com/kokonect-link/cherrypick') {
+		if (modifiedVersionMustProminentlyOfferInAgplV3Section13Read !== 'true' && instance.repositoryUrl !== 'https://github.com/kokonect-link/acuaskey') {
 			const { dispose } = popup(defineAsyncComponent(() => import('@/components/MkSourceCodeAvailablePopup.vue')), {}, {
 				closed: () => dispose(),
 			});
@@ -390,7 +390,7 @@ export async function mainBoot() {
 		main.on('announcementCreated', onAnnouncementCreated);
 
 		// トークンが再生成されたとき
-		// このままではCherryPickが利用できないので強制的にサインアウトさせる
+		// このままではacuaskeyが利用できないので強制的にサインアウトさせる
 		main.on('myTokenRegenerated', () => {
 			signout();
 		});

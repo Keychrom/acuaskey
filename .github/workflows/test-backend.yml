@@ -8,13 +8,13 @@ on:
     paths:
       - packages/backend/**
       # for permissions
-      - packages/cherrypick-js/**
+      - packages/acuaskey-js/**
       - .github/workflows/test-backend.yml
   pull_request:
     paths:
       - packages/backend/**
       # for permissions
-      - packages/cherrypick-js/**
+      - packages/acuaskey-js/**
       - .github/workflows/test-backend.yml
 jobs:
   unit:
@@ -30,7 +30,7 @@ jobs:
         ports:
           - 54312:5432
         env:
-          POSTGRES_DB: test-cherrypick
+          POSTGRES_DB: test-acuaskey
           POSTGRES_HOST_AUTH_METHOD: trust
       redis:
         image: redis:7
@@ -55,7 +55,7 @@ jobs:
     - name: Check pnpm-lock.yaml
       run: git diff --exit-code pnpm-lock.yaml
     - name: Copy Configure
-      run: cp .github/cherrypick/test.yml .config
+      run: cp .github/acuaskey/test.yml .config
     - name: Build
       run: pnpm build
     - name: Test
@@ -79,7 +79,7 @@ jobs:
         ports:
           - 54312:5432
         env:
-          POSTGRES_DB: test-cherrypick
+          POSTGRES_DB: test-acuaskey
           POSTGRES_HOST_AUTH_METHOD: trust
       redis:
         image: redis:7
@@ -102,7 +102,7 @@ jobs:
       - name: Check pnpm-lock.yaml
         run: git diff --exit-code pnpm-lock.yaml
       - name: Copy Configure
-        run: cp .github/cherrypick/test.yml .config
+        run: cp .github/acuaskey/test.yml .config
       - name: Build
         run: pnpm build
       - name: Test

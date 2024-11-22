@@ -107,7 +107,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 <script lang="ts" setup>
 import { inject, watch, nextTick, onMounted, defineAsyncComponent, provide, shallowRef, ref, computed } from 'vue';
 import * as mfm from 'mfc-js';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'acuaskey-js';
 import insertTextAtCursor from 'insert-text-at-cursor';
 import { toASCII } from 'punycode/';
 import { host, url } from '@@/js/config.js';
@@ -957,8 +957,8 @@ async function post(ev?: MouseEvent) {
 
 			const text = postData.text ?? '';
 			const lowerCase = text.toLowerCase();
-			if ((lowerCase.includes('love') || lowerCase.includes('❤')) && lowerCase.includes('cherrypick')) {
-				claimAchievement('iLoveCherryPick');
+			if ((lowerCase.includes('love') || lowerCase.includes('❤')) && lowerCase.includes('acuaskey')) {
+				claimAchievement('iLoveacuaskey');
 			}
 			if ([
 				'https://youtu.be/Efrlqw8ytg4',

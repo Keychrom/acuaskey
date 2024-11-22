@@ -6,12 +6,12 @@ services:
   setup:
     extends:
       file: ./compose.tpl.yml
-      service: cherrypick
+      service: acuaskey
     command: >
       bash -c "
         corepack enable && corepack prepare
         pnpm -F backend i
-        pnpm -F cherrypick-js i
+        pnpm -F acuaskey-js i
         pnpm -F misskey-reversi i
       "
 
@@ -28,53 +28,53 @@ services:
     volumes:
       - type: bind
         source: ../package.json
-        target: /cherrypick/packages/backend/package.json
+        target: /acuaskey/packages/backend/package.json
         read_only: true
       - type: bind
         source: ../test/resources
-        target: /cherrypick/packages/backend/test/resources
+        target: /acuaskey/packages/backend/test/resources
         read_only: true
       - type: bind
         source: ./test
-        target: /cherrypick/packages/backend/test-federation/test
+        target: /acuaskey/packages/backend/test-federation/test
         read_only: true
       - type: bind
         source: ../jest.config.cjs
-        target: /cherrypick/packages/backend/jest.config.cjs
+        target: /acuaskey/packages/backend/jest.config.cjs
         read_only: true
       - type: bind
         source: ../jest.config.fed.cjs
-        target: /cherrypick/packages/backend/jest.config.fed.cjs
+        target: /acuaskey/packages/backend/jest.config.fed.cjs
         read_only: true
       - type: bind
-        source: ../../cherrypick-js/built
-        target: /cherrypick/packages/cherrypick-js/built
+        source: ../../acuaskey-js/built
+        target: /acuaskey/packages/acuaskey-js/built
         read_only: true
       - type: bind
-        source: ../../cherrypick-js/package.json
-        target: /cherrypick/packages/cherrypick-js/package.json
+        source: ../../acuaskey-js/package.json
+        target: /acuaskey/packages/acuaskey-js/package.json
         read_only: true
       - type: bind
         source: ../../../package.json
-        target: /cherrypick/package.json
+        target: /acuaskey/package.json
         read_only: true
       - type: bind
         source: ../../../pnpm-lock.yaml
-        target: /cherrypick/pnpm-lock.yaml
+        target: /acuaskey/pnpm-lock.yaml
         read_only: true
       - type: bind
         source: ../../../pnpm-workspace.yaml
-        target: /cherrypick/pnpm-workspace.yaml
+        target: /acuaskey/pnpm-workspace.yaml
         read_only: true
       - type: bind
         source: ./certificates/rootCA.crt
         target: /usr/local/share/ca-certificates/rootCA.crt
         read_only: true
-    working_dir: /cherrypick
+    working_dir: /acuaskey
     entrypoint: >
       bash -c '
         corepack enable && corepack prepare
-        pnpm -F cherrypick-js i --frozen-lockfile
+        pnpm -F acuaskey-js i --frozen-lockfile
         pnpm -F backend i --frozen-lockfile
         exec "$0" "$@"
       '
@@ -88,29 +88,29 @@ services:
     volumes:
       - type: bind
         source: ../package.json
-        target: /cherrypick/packages/backend/package.json
+        target: /acuaskey/packages/backend/package.json
         read_only: true
       - type: bind
         source: ./daemon.ts
-        target: /cherrypick/packages/backend/test-federation/daemon.ts
+        target: /acuaskey/packages/backend/test-federation/daemon.ts
         read_only: true
       - type: bind
         source: ./tsconfig.json
-        target: /cherrypick/packages/backend/test-federation/tsconfig.json
+        target: /acuaskey/packages/backend/test-federation/tsconfig.json
         read_only: true
       - type: bind
         source: ../../../package.json
-        target: /cherrypick/package.json
+        target: /acuaskey/package.json
         read_only: true
       - type: bind
         source: ../../../pnpm-lock.yaml
-        target: /cherrypick/pnpm-lock.yaml
+        target: /acuaskey/pnpm-lock.yaml
         read_only: true
       - type: bind
         source: ../../../pnpm-workspace.yaml
-        target: /cherrypick/pnpm-workspace.yaml
+        target: /acuaskey/pnpm-workspace.yaml
         read_only: true
-    working_dir: /cherrypick
+    working_dir: /acuaskey
     command: >
       bash -c "
         corepack enable && corepack prepare

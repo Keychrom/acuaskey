@@ -23,7 +23,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 				</template>
 			</I18n>
 			<div style="margin-top: 0.2em;">
-				<a class="_link" @click="donateCherryPick">{{ i18n.ts.learnMore }}</a>
+				<a class="_link" @click="donateacuaskey">{{ i18n.ts.learnMore }}</a>
 			</div>
 		</div>
 		<div class="_buttons">
@@ -60,7 +60,7 @@ function neverShow() {
 	close();
 }
 
-function donateCherryPick(ev: MouseEvent) {
+function donateacuaskey(ev: MouseEvent) {
 	os.popupMenu([{
 		text: 'Patreon',
 		icon: 'ti ti-pig-money',

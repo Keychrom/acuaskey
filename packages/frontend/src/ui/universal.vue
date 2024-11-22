@@ -289,7 +289,7 @@ body {
 	overscroll-behavior: none;
 }
 
-#cherrypick_app {
+#acuaskey_app {
 	width: 100%;
 	height: 100%;
 	overflow: clip;

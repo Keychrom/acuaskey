@@ -4,10 +4,10 @@
  */
 
 import { markRaw, ref } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'acuaskey-js';
 import { hemisphere } from '@@/js/intl-const.js';
-import lightTheme from '@@/themes/l-cherrypick.json5';
-import darkTheme from '@@/themes/d-cherrypick.json5';
+import lightTheme from '@@/themes/l-acuaskey.json5';
+import darkTheme from '@@/themes/d-acuaskey.json5';
 import type { SoundType } from '@/scripts/sound.js';
 import type { Ast } from '@syuilo/aiscript';
 import { DEFAULT_DEVICE_KIND, type DeviceKind } from '@/scripts/device-kind.js';
@@ -548,7 +548,7 @@ export const defaultStore = markRaw(new Storage('base', {
 		default: { type: 'syuilo/bubble2', volume: 1 } as SoundStore,
 	},
 
-	// #region CherryPick
+	// #region acuaskey
 	// - Settings/General
 	newNoteReceivedNotificationBehavior: {
 		where: 'device',
@@ -791,7 +791,7 @@ export const defaultStore = markRaw(new Storage('base', {
 		default: true,
 	},
 
-	// - Settings/CherryPick
+	// - Settings/acuaskey
 	nicknameEnabled: {
 		where: 'account',
 		default: true,

@@ -8,7 +8,7 @@ on:
     paths:
       - packages/frontend/**
       # for permissions
-      - packages/cherrypick-js/**
+      - packages/acuaskey-js/**
       # for e2e
       - packages/backend/**
       - .github/workflows/test-frontend.yml
@@ -16,7 +16,7 @@ on:
     paths:
       - packages/frontend/**
       # for permissions
-      - packages/cherrypick-js/**
+      - packages/acuaskey-js/**
       # for e2e
       - packages/backend/**
       - .github/workflows/test-frontend.yml
@@ -44,7 +44,7 @@ jobs:
     - name: Check pnpm-lock.yaml
       run: git diff --exit-code pnpm-lock.yaml
     - name: Copy Configure
-      run: cp .github/cherrypick/test.yml .config
+      run: cp .github/acuaskey/test.yml .config
     - name: Build
       run: pnpm build
     - name: Test
@@ -70,7 +70,7 @@ jobs:
         ports:
           - 54312:5432
         env:
-          POSTGRES_DB: test-cherrypick
+          POSTGRES_DB: test-acuaskey
           POSTGRES_HOST_AUTH_METHOD: trust
       redis:
         image: redis:7
@@ -97,7 +97,7 @@ jobs:
     - run: corepack enable
     - run: pnpm i --frozen-lockfile
     - name: Copy Configure
-      run: cp .github/cherrypick/test.yml .config
+      run: cp .github/acuaskey/test.yml .config
     - name: Build
       run: pnpm build
     # https://github.com/cypress-io/cypress/issues/4351#issuecomment-559489091

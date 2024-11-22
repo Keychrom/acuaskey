@@ -113,7 +113,7 @@ export function getConfig(): UserConfig {
 			_LANGS_: JSON.stringify(Object.entries(locales).map(([k, v]) => [k, v._lang_])),
 			_ENV_: JSON.stringify(process.env.NODE_ENV),
 			_DEV_: process.env.NODE_ENV !== 'production',
-			_PERF_PREFIX_: JSON.stringify('CherryPick:'),
+			_PERF_PREFIX_: JSON.stringify('acuaskey:'),
 			__VUE_OPTIONS_API__: false,
 			__VUE_PROD_DEVTOOLS__: false,
 		},
@@ -156,7 +156,7 @@ export function getConfig(): UserConfig {
 
 			// https://vitejs.dev/guide/dep-pre-bundling.html#monorepos-and-linked-dependencies
 			commonjsOptions: {
-				include: [/cherrypick-js/, /node_modules/],
+				include: [/acuaskey-js/, /node_modules/],
 			},
 		},
 

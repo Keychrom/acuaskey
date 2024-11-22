@@ -17,7 +17,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 			<div>✨{{ version }}🚀</div>
 			<div style="font-size: 0.8em;">{{ basedMisskeyVersion }}</div>
 		</div>
-		<MkButton rounded full @click="whatIsNewCherryPick">{{ i18n.ts.whatIsNew }}</MkButton>
+		<MkButton rounded full @click="whatIsNewacuaskey">{{ i18n.ts.whatIsNew }}</MkButton>
 		<MkButton :class="$style.gotIt" primary rounded full @click="close">{{ i18n.ts.gotIt }}</MkButton>
 	</div>
 </MkModal>
@@ -26,7 +26,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 	<div :class="$style.root">
 		<div :class="$style.title" style="margin: 0 0 1.5em; font-weight: normal;">{{ i18n.ts.whatIsNew }}</div>
 		<MkButton rounded full @click="whatIsNewMisskey">Misskey</MkButton>
-		<MkButton rounded full style="margin: 8px 0 0;" @click="whatIsNewCherryPick">CherryPick</MkButton>
+		<MkButton rounded full style="margin: 8px 0 0;" @click="whatIsNewacuaskey">acuaskey</MkButton>
 		<MkButton :class="$style.gotIt" primary rounded full @click="close">{{ i18n.ts.ok }}</MkButton>
 	</div>
 </MkModal>
@@ -53,22 +53,22 @@ const whatIsNewMisskey = () => {
 	window.open(`https://misskey-hub.net/docs/releases/#_${basedMisskeyVersion.replace(/\./g, '')}`, '_blank');
 };
 
-const whatIsNewCherryPick = () => {
+const whatIsNewacuaskey = () => {
 	// modal.value?.close();
-	window.open(`https://github.com/kokonect-link/cherrypick/blob/develop/CHANGELOG_CHERRYPICK.md#${version.replace(/\./g, '')}`, '_blank');
+	window.open(`https://github.com/kokonect-link/acuaskey/blob/develop/CHANGELOG_acuaskey.md#${version.replace(/\./g, '')}`, '_blank');
 };
 
 const close = async () => {
 	modal.value?.close();
 	const { canceled } = await os.confirm({
 		type: 'info',
-		title: i18n.ts.cherrypickUpdatedCacheClearTitle,
-		text: i18n.ts.cherrypickUpdatedCacheClear,
+		title: i18n.ts.acuaskeyUpdatedCacheClearTitle,
+		text: i18n.ts.acuaskeyUpdatedCacheClear,
 	});
 	if (canceled) {
 		await os.alert({
 			type: 'info',
-			text: i18n.ts.cherrypickUpdatedCacheClearLater,
+			text: i18n.ts.acuaskeyUpdatedCacheClearLater,
 		});
 		return;
 	}

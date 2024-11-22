@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: syuilo and misskey-project & noridev and cherrypick-project
+SPDX-FileCopyrightText: syuilo and misskey-project & noridev and acuaskey-project
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 
@@ -108,7 +108,7 @@ const otherMenuItemIndicated = computed(() => {
 	return false;
 });
 const controlPanelIndicated = ref(false);
-const releasesCherryPick = ref(null);
+const releasesacuaskey = ref(null);
 const bannerDisplay = ref('');
 
 if ($i.isAdmin ?? $i.isModerator) {
@@ -121,17 +121,17 @@ if ($i.isAdmin ?? $i.isModerator) {
 
 	misskeyApi('admin/meta')
 		.then(meta => {
-			return fetch('https://api.github.com/repos/kokonect-link/cherrypick/releases')
+			return fetch('https://api.github.com/repos/kokonect-link/acuaskey/releases')
 				.then(res => res.json())
-				.then(cherryPickData => {
-					releasesCherryPick.value = meta.enableReceivePrerelease ? cherryPickData : cherryPickData.filter(x => !x.prerelease);
-					if ((compareVersions(version, releasesCherryPick.value[0].tag_name) < 0) && (compareVersions(meta.skipCherryPickVersion, releasesCherryPick.value[0].tag_name) < 0)) {
+				.then(acuaskeyData => {
+					releasesacuaskey.value = meta.enableReceivePrerelease ? acuaskeyData : acuaskeyData.filter(x => !x.prerelease);
+					if ((compareVersions(version, releasesacuaskey.value[0].tag_name) < 0) && (compareVersions(meta.skipacuaskeyVersion, releasesacuaskey.value[0].tag_name) < 0)) {
 						controlPanelIndicated.value = true;
 					}
 				});
 		})
 		.catch(error => {
-			console.error('Failed to fetch CherryPick releases:', error);
+			console.error('Failed to fetch acuaskey releases:', error);
 		});
 }
 

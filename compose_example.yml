@@ -20,8 +20,8 @@ services:
     # env_file:
     #   - .config/docker.env
     volumes:
-      - ./files:/cherrypick/files
-      - ./.config:/cherrypick/.config:ro
+      - ./files:/acuaskey/files
+      - ./.config:/acuaskey/.config:ro
 
   redis:
     restart: always

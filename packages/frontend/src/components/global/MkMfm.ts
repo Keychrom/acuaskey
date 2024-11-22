@@ -5,7 +5,7 @@
 
 import { VNode, h, SetupContext, provide } from 'vue';
 import * as mfm from 'mfc-js';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'acuaskey-js';
 import temml from 'temml/dist/temml.mjs';
 import { host } from '@@/js/config.js';
 import MkUrl from '@/components/global/MkUrl.vue';
