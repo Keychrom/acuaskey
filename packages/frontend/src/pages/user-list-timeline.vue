@@ -25,7 +25,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { computed, watch, ref, shallowRef } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import { scroll } from '@@/js/scroll.js';
 import MkTimeline from '@/components/MkTimeline.vue';
 import { misskeyApi } from '@/scripts/misskey-api.js';

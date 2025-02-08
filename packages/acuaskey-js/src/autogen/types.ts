@@ -17,7 +17,7 @@ export type paths = {
      * admin/abuse-report-resolver/create
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *arr-create*
      */
     post: operations['admin___abuse-report-resolver___create'];
@@ -27,7 +27,7 @@ export type paths = {
      * admin/abuse-report-resolver/delete
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *No* / **Permission**: *arr-delete*
      */
     post: operations['admin___abuse-report-resolver___delete'];
@@ -37,7 +37,7 @@ export type paths = {
      * admin/abuse-report-resolver/list
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *arr-list*
      */
     post: operations['admin___abuse-report-resolver___list'];
@@ -47,7 +47,7 @@ export type paths = {
      * admin/abuse-report-resolver/update
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *arr-update*
      */
     post: operations['admin___abuse-report-resolver___update'];
@@ -57,7 +57,7 @@ export type paths = {
      * admin/abuse-report/notification-recipient/create
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *write:admin:abuse-report:notification-recipient*
      */
     post: operations['admin___abuse-report___notification-recipient___create'];
@@ -67,7 +67,7 @@ export type paths = {
      * admin/abuse-report/notification-recipient/delete
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *write:admin:abuse-report:notification-recipient*
      */
     post: operations['admin___abuse-report___notification-recipient___delete'];
@@ -77,7 +77,7 @@ export type paths = {
      * admin/abuse-report/notification-recipient/list
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *read:admin:abuse-report:notification-recipient*
      */
     post: operations['admin___abuse-report___notification-recipient___list'];
@@ -87,7 +87,7 @@ export type paths = {
      * admin/abuse-report/notification-recipient/show
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *read:admin:abuse-report:notification-recipient*
      */
     post: operations['admin___abuse-report___notification-recipient___show'];
@@ -97,7 +97,7 @@ export type paths = {
      * admin/abuse-report/notification-recipient/update
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *write:admin:abuse-report:notification-recipient*
      */
     post: operations['admin___abuse-report___notification-recipient___update'];
@@ -377,7 +377,7 @@ export type paths = {
      * admin/emoji/import-zip
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['admin___emoji___import-zip'];
@@ -801,7 +801,7 @@ export type paths = {
      * admin/system-webhook/create
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *write:admin:system-webhook*
      */
     post: operations['admin___system-webhook___create'];
@@ -811,7 +811,7 @@ export type paths = {
      * admin/system-webhook/delete
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *write:admin:system-webhook*
      */
     post: operations['admin___system-webhook___delete'];
@@ -821,7 +821,7 @@ export type paths = {
      * admin/system-webhook/list
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *write:admin:system-webhook*
      */
     post: operations['admin___system-webhook___list'];
@@ -831,7 +831,7 @@ export type paths = {
      * admin/system-webhook/show
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *write:admin:system-webhook*
      */
     post: operations['admin___system-webhook___show'];
@@ -841,7 +841,7 @@ export type paths = {
      * admin/system-webhook/test
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *read:admin:system-webhook*
      */
     post: operations['admin___system-webhook___test'];
@@ -851,7 +851,7 @@ export type paths = {
      * admin/system-webhook/update
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *write:admin:system-webhook*
      */
     post: operations['admin___system-webhook___update'];
@@ -1023,7 +1023,7 @@ export type paths = {
      * auth/accept
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['auth___accept'];
@@ -1741,7 +1741,7 @@ export type paths = {
      * export-custom-emojis
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['export-custom-emojis'];
@@ -1828,7 +1828,7 @@ export type paths = {
      * fetch-external-resources
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['fetch-external-resources'];
@@ -1881,7 +1881,7 @@ export type paths = {
      * flash/gen-token
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['flash___gen-token'];
@@ -2202,7 +2202,7 @@ export type paths = {
      * i/2fa/done
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___2fa___done'];
@@ -2212,7 +2212,7 @@ export type paths = {
      * i/2fa/key-done
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___2fa___key-done'];
@@ -2222,7 +2222,7 @@ export type paths = {
      * i/2fa/password-less
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___2fa___password-less'];
@@ -2232,7 +2232,7 @@ export type paths = {
      * i/2fa/register
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___2fa___register'];
@@ -2242,7 +2242,7 @@ export type paths = {
      * i/2fa/register-key
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___2fa___register-key'];
@@ -2252,7 +2252,7 @@ export type paths = {
      * i/2fa/remove-key
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___2fa___remove-key'];
@@ -2262,7 +2262,7 @@ export type paths = {
      * i/2fa/unregister
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___2fa___unregister'];
@@ -2272,7 +2272,7 @@ export type paths = {
      * i/2fa/update-key
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___2fa___update-key'];
@@ -2282,7 +2282,7 @@ export type paths = {
      * i/apps
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___apps'];
@@ -2292,7 +2292,7 @@ export type paths = {
      * i/authorized-apps
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___authorized-apps'];
@@ -2302,7 +2302,7 @@ export type paths = {
      * i/change-password
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___change-password'];
@@ -2321,7 +2321,7 @@ export type paths = {
      * i/delete-account
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___delete-account'];
@@ -2331,7 +2331,7 @@ export type paths = {
      * i/export-antennas
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___export-antennas'];
@@ -2341,7 +2341,7 @@ export type paths = {
      * i/export-blocking
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___export-blocking'];
@@ -2351,7 +2351,7 @@ export type paths = {
      * i/export-clips
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___export-clips'];
@@ -2361,7 +2361,7 @@ export type paths = {
      * i/export-favorites
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___export-favorites'];
@@ -2371,7 +2371,7 @@ export type paths = {
      * i/export-following
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___export-following'];
@@ -2381,7 +2381,7 @@ export type paths = {
      * i/export-mute
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___export-mute'];
@@ -2391,7 +2391,7 @@ export type paths = {
      * i/export-notes
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___export-notes'];
@@ -2401,7 +2401,7 @@ export type paths = {
      * i/export-user-lists
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___export-user-lists'];
@@ -2438,7 +2438,7 @@ export type paths = {
      * i/import-antennas
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___import-antennas'];
@@ -2448,7 +2448,7 @@ export type paths = {
      * i/import-blocking
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___import-blocking'];
@@ -2458,7 +2458,7 @@ export type paths = {
      * i/import-following
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___import-following'];
@@ -2468,7 +2468,7 @@ export type paths = {
      * i/import-muting
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___import-muting'];
@@ -2478,7 +2478,7 @@ export type paths = {
      * i/import-user-lists
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___import-user-lists'];
@@ -2488,7 +2488,7 @@ export type paths = {
      * i/move
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___move'];
@@ -2570,7 +2570,7 @@ export type paths = {
      * i/regenerate-token
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___regenerate-token'];
@@ -2634,7 +2634,7 @@ export type paths = {
      * i/registry/scopes-with-domain
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___registry___scopes-with-domain'];
@@ -2653,7 +2653,7 @@ export type paths = {
      * i/revoke-token
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___revoke-token'];
@@ -2663,7 +2663,7 @@ export type paths = {
      * i/signin-history
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___signin-history'];
@@ -2673,7 +2673,7 @@ export type paths = {
      * i/truncate-account
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___truncate-account'];
@@ -2701,7 +2701,7 @@ export type paths = {
      * i/update-email
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['i___update-email'];
@@ -2756,7 +2756,7 @@ export type paths = {
      * i/webhooks/test
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
     post: operations['i___webhooks___test'];
@@ -2865,7 +2865,7 @@ export type paths = {
      * miauth/gen-token
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['miauth___gen-token'];
@@ -3330,7 +3330,7 @@ export type paths = {
      * page-push
      * @description No description provided.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['page-push'];
@@ -3624,7 +3624,7 @@ export type paths = {
      * sw/register
      * @description Register to receive push notifications.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['sw___register'];
@@ -3634,7 +3634,7 @@ export type paths = {
      * sw/show-registration
      * @description Check push notification registration exists.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['sw___show-registration'];
@@ -3653,7 +3653,7 @@ export type paths = {
      * sw/update-registration
      * @description Update push notification registration.
      *
-     * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+     * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
     post: operations['sw___update-registration'];
@@ -4129,7 +4129,7 @@ export type components = {
       username: string;
       /**
        * @description The local host is represented with `null`.
-       * @example cherrypick.example.com
+       * @example acuaskey.example.com
        */
       host: string | null;
       /** Format: url */
@@ -4830,7 +4830,7 @@ export type components = {
       /** @enum {string} */
       type: 'achievementEarned';
       /** @enum {string} */
-      achievement: 'notes1' | 'notes10' | 'notes100' | 'notes500' | 'notes1000' | 'notes5000' | 'notes10000' | 'notes20000' | 'notes30000' | 'notes40000' | 'notes50000' | 'notes60000' | 'notes70000' | 'notes80000' | 'notes90000' | 'notes100000' | 'login3' | 'login7' | 'login15' | 'login30' | 'login60' | 'login100' | 'login200' | 'login300' | 'login400' | 'login500' | 'login600' | 'login700' | 'login800' | 'login900' | 'login1000' | 'passedSinceAccountCreated1' | 'passedSinceAccountCreated2' | 'passedSinceAccountCreated3' | 'loggedInOnBirthday' | 'loggedInOnNewYearsDay' | 'noteClipped1' | 'noteFavorited1' | 'myNoteFavorited1' | 'profileFilled' | 'markedAsCat' | 'following1' | 'following10' | 'following50' | 'following100' | 'following300' | 'followers1' | 'followers10' | 'followers50' | 'followers100' | 'followers300' | 'followers500' | 'followers1000' | 'collectAchievements30' | 'viewAchievements3min' | 'iLoveCherryPick' | 'foundTreasure' | 'client30min' | 'client60min' | 'noteDeletedWithin1min' | 'postedAtLateNight' | 'postedAt0min0sec' | 'selfQuote' | 'htl20npm' | 'viewInstanceChart' | 'outputHelloWorldOnScratchpad' | 'open3windows' | 'driveFolderCircularReference' | 'reactWithoutRead' | 'clickedClickHere' | 'justPlainLucky' | 'setNameToSyuilo' | 'setNameToNoriDev' | 'cookieClicked' | 'brainDiver' | 'smashTestNotificationButton' | 'tutorialCompleted' | 'bubbleGameExplodingHead' | 'bubbleGameDoubleExplodingHead';
+      achievement: 'notes1' | 'notes10' | 'notes100' | 'notes500' | 'notes1000' | 'notes5000' | 'notes10000' | 'notes20000' | 'notes30000' | 'notes40000' | 'notes50000' | 'notes60000' | 'notes70000' | 'notes80000' | 'notes90000' | 'notes100000' | 'login3' | 'login7' | 'login15' | 'login30' | 'login60' | 'login100' | 'login200' | 'login300' | 'login400' | 'login500' | 'login600' | 'login700' | 'login800' | 'login900' | 'login1000' | 'passedSinceAccountCreated1' | 'passedSinceAccountCreated2' | 'passedSinceAccountCreated3' | 'loggedInOnBirthday' | 'loggedInOnNewYearsDay' | 'noteClipped1' | 'noteFavorited1' | 'myNoteFavorited1' | 'profileFilled' | 'markedAsCat' | 'following1' | 'following10' | 'following50' | 'following100' | 'following300' | 'followers1' | 'followers10' | 'followers50' | 'followers100' | 'followers300' | 'followers500' | 'followers1000' | 'collectAchievements30' | 'viewAchievements3min' | 'iLoveacuaskey' | 'foundTreasure' | 'client30min' | 'client60min' | 'noteDeletedWithin1min' | 'postedAtLateNight' | 'postedAt0min0sec' | 'selfQuote' | 'htl20npm' | 'viewInstanceChart' | 'outputHelloWorldOnScratchpad' | 'open3windows' | 'driveFolderCircularReference' | 'reactWithoutRead' | 'clickedClickHere' | 'justPlainLucky' | 'setNameToSyuilo' | 'setNameToNoriDev' | 'cookieClicked' | 'brainDiver' | 'smashTestNotificationButton' | 'tutorialCompleted' | 'bubbleGameExplodingHead' | 'bubbleGameDoubleExplodingHead';
     }) | ({
       /** Format: id */
       id: string;
@@ -5033,7 +5033,7 @@ export type components = {
       blockee: components['schemas']['UserDetailedNotMe'];
     };
     Hashtag: {
-      /** @example cherrypick */
+      /** @example acuaskey */
       tag: string;
       mentionedUsersCount: number;
       mentionedLocalUsersCount: number;
@@ -5200,7 +5200,7 @@ export type components = {
       id: string;
       /** Format: date-time */
       firstRetrievedAt: string;
-      /** @example cherrypick.example.com */
+      /** @example acuaskey.example.com */
       host: string;
       usersCount: number;
       notesCount: number;
@@ -5211,7 +5211,7 @@ export type components = {
       /** @enum {string} */
       suspensionState: 'none' | 'manuallySuspended' | 'goneSuspended' | 'autoSuspendedForNotResponding';
       isBlocked: boolean;
-      /** @example cherrypick */
+      /** @example acuaskey */
       softwareName: string | null;
       softwareVersion: string | null;
       /** @example true */
@@ -5537,15 +5537,15 @@ export type components = {
       shortName: string | null;
       /**
        * Format: url
-       * @example https://cherrypick.example.com
+       * @example https://acuaskey.example.com
        */
       uri: string;
       description: string | null;
       langs: string[];
       tosUrl: string | null;
-      /** @default https://github.com/kokonect-link/cherrypick */
+      /** @default https://github.com/kokonect-link/acuaskey */
       repositoryUrl: string | null;
-      /** @default https://github.com/kokonect-link/cherrypick/issues/new */
+      /** @default https://github.com/kokonect-link/acuaskey/issues/new */
       feedbackUrl: string | null;
       defaultDarkTheme: string | null;
       defaultLightTheme: string | null;
@@ -5679,7 +5679,7 @@ export type operations = {
    * admin/abuse-report-resolver/create
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *arr-create*
    */
   'admin___abuse-report-resolver___create': {
@@ -5746,7 +5746,7 @@ export type operations = {
    * admin/abuse-report-resolver/delete
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *No* / **Permission**: *arr-delete*
    */
   'admin___abuse-report-resolver___delete': {
@@ -5799,7 +5799,7 @@ export type operations = {
    * admin/abuse-report-resolver/list
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *arr-list*
    */
   'admin___abuse-report-resolver___list': {
@@ -5865,7 +5865,7 @@ export type operations = {
    * admin/abuse-report-resolver/update
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *arr-update*
    */
   'admin___abuse-report-resolver___update': {
@@ -5925,7 +5925,7 @@ export type operations = {
    * admin/abuse-report/notification-recipient/create
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *write:admin:abuse-report:notification-recipient*
    */
   'admin___abuse-report___notification-recipient___create': {
@@ -5986,7 +5986,7 @@ export type operations = {
    * admin/abuse-report/notification-recipient/delete
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *write:admin:abuse-report:notification-recipient*
    */
   'admin___abuse-report___notification-recipient___delete': {
@@ -6039,7 +6039,7 @@ export type operations = {
    * admin/abuse-report/notification-recipient/list
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *read:admin:abuse-report:notification-recipient*
    */
   'admin___abuse-report___notification-recipient___list': {
@@ -6093,7 +6093,7 @@ export type operations = {
    * admin/abuse-report/notification-recipient/show
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *read:admin:abuse-report:notification-recipient*
    */
   'admin___abuse-report___notification-recipient___show': {
@@ -6148,7 +6148,7 @@ export type operations = {
    * admin/abuse-report/notification-recipient/update
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *write:admin:abuse-report:notification-recipient*
    */
   'admin___abuse-report___notification-recipient___update': {
@@ -8061,7 +8061,7 @@ export type operations = {
    * admin/emoji/import-zip
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'admin___emoji___import-zip': {
@@ -9314,7 +9314,7 @@ export type operations = {
             emailToReceiveAbuseReport: string | null;
             enableReceivePrerelease: boolean;
             skipVersion: boolean;
-            skipCherryPickVersion?: string | null;
+            skipacuaskeyVersion?: string | null;
             trustedLinkUrlPatterns: string[];
             customSplashText: string[];
             disableRegistrationWhenInactive: boolean;
@@ -10990,7 +10990,7 @@ export type operations = {
    * admin/system-webhook/create
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *write:admin:system-webhook*
    */
   'admin___system-webhook___create': {
@@ -11048,7 +11048,7 @@ export type operations = {
    * admin/system-webhook/delete
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *write:admin:system-webhook*
    */
   'admin___system-webhook___delete': {
@@ -11101,7 +11101,7 @@ export type operations = {
    * admin/system-webhook/list
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *write:admin:system-webhook*
    */
   'admin___system-webhook___list': {
@@ -11156,7 +11156,7 @@ export type operations = {
    * admin/system-webhook/show
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *write:admin:system-webhook*
    */
   'admin___system-webhook___show': {
@@ -11211,7 +11211,7 @@ export type operations = {
    * admin/system-webhook/test
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *read:admin:system-webhook*
    */
   'admin___system-webhook___test': {
@@ -11276,7 +11276,7 @@ export type operations = {
    * admin/system-webhook/update
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *write:admin:system-webhook*
    */
   'admin___system-webhook___update': {
@@ -11696,7 +11696,7 @@ export type operations = {
           emailToReceiveAbuseReport?: string | null;
           enableReceivePrerelease?: boolean;
           skipVersion?: boolean;
-          skipCherryPickVersion?: string | null;
+          skipacuaskeyVersion?: string | null;
           trustedLinkUrlPatterns?: string[] | null;
           customSplashText?: string[] | null;
           disableRegistrationWhenInactive?: boolean | null;
@@ -12501,7 +12501,7 @@ export type operations = {
    * auth/accept
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   auth___accept: {
@@ -16532,7 +16532,7 @@ export type operations = {
    * export-custom-emojis
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'export-custom-emojis': {
@@ -16995,7 +16995,7 @@ export type operations = {
    * fetch-external-resources
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'fetch-external-resources': {
@@ -17334,7 +17334,7 @@ export type operations = {
    * flash/gen-token
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'flash___gen-token': {
@@ -19262,7 +19262,7 @@ export type operations = {
    * i/2fa/done
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   i___2fa___done: {
@@ -19318,7 +19318,7 @@ export type operations = {
    * i/2fa/key-done
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___2fa___key-done': {
@@ -19378,7 +19378,7 @@ export type operations = {
    * i/2fa/password-less
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___2fa___password-less': {
@@ -19430,7 +19430,7 @@ export type operations = {
    * i/2fa/register
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   i___2fa___register: {
@@ -19491,7 +19491,7 @@ export type operations = {
    * i/2fa/register-key
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___2fa___register-key': {
@@ -19580,7 +19580,7 @@ export type operations = {
    * i/2fa/remove-key
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___2fa___remove-key': {
@@ -19634,7 +19634,7 @@ export type operations = {
    * i/2fa/unregister
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   i___2fa___unregister: {
@@ -19687,7 +19687,7 @@ export type operations = {
    * i/2fa/update-key
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___2fa___update-key': {
@@ -19740,7 +19740,7 @@ export type operations = {
    * i/apps
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   i___apps: {
@@ -19804,7 +19804,7 @@ export type operations = {
    * i/authorized-apps
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___authorized-apps': {
@@ -19873,7 +19873,7 @@ export type operations = {
    * i/change-password
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___change-password': {
@@ -19934,7 +19934,7 @@ export type operations = {
       content: {
         'application/json': {
           /** @enum {string} */
-          name: 'notes1' | 'notes10' | 'notes100' | 'notes500' | 'notes1000' | 'notes5000' | 'notes10000' | 'notes20000' | 'notes30000' | 'notes40000' | 'notes50000' | 'notes60000' | 'notes70000' | 'notes80000' | 'notes90000' | 'notes100000' | 'login3' | 'login7' | 'login15' | 'login30' | 'login60' | 'login100' | 'login200' | 'login300' | 'login400' | 'login500' | 'login600' | 'login700' | 'login800' | 'login900' | 'login1000' | 'passedSinceAccountCreated1' | 'passedSinceAccountCreated2' | 'passedSinceAccountCreated3' | 'loggedInOnBirthday' | 'loggedInOnNewYearsDay' | 'noteClipped1' | 'noteFavorited1' | 'myNoteFavorited1' | 'profileFilled' | 'markedAsCat' | 'following1' | 'following10' | 'following50' | 'following100' | 'following300' | 'followers1' | 'followers10' | 'followers50' | 'followers100' | 'followers300' | 'followers500' | 'followers1000' | 'collectAchievements30' | 'viewAchievements3min' | 'iLoveCherryPick' | 'foundTreasure' | 'client30min' | 'client60min' | 'noteDeletedWithin1min' | 'postedAtLateNight' | 'postedAt0min0sec' | 'selfQuote' | 'htl20npm' | 'viewInstanceChart' | 'outputHelloWorldOnScratchpad' | 'open3windows' | 'driveFolderCircularReference' | 'reactWithoutRead' | 'clickedClickHere' | 'justPlainLucky' | 'setNameToSyuilo' | 'setNameToNoriDev' | 'cookieClicked' | 'brainDiver' | 'smashTestNotificationButton' | 'tutorialCompleted' | 'bubbleGameExplodingHead' | 'bubbleGameDoubleExplodingHead';
+          name: 'notes1' | 'notes10' | 'notes100' | 'notes500' | 'notes1000' | 'notes5000' | 'notes10000' | 'notes20000' | 'notes30000' | 'notes40000' | 'notes50000' | 'notes60000' | 'notes70000' | 'notes80000' | 'notes90000' | 'notes100000' | 'login3' | 'login7' | 'login15' | 'login30' | 'login60' | 'login100' | 'login200' | 'login300' | 'login400' | 'login500' | 'login600' | 'login700' | 'login800' | 'login900' | 'login1000' | 'passedSinceAccountCreated1' | 'passedSinceAccountCreated2' | 'passedSinceAccountCreated3' | 'loggedInOnBirthday' | 'loggedInOnNewYearsDay' | 'noteClipped1' | 'noteFavorited1' | 'myNoteFavorited1' | 'profileFilled' | 'markedAsCat' | 'following1' | 'following10' | 'following50' | 'following100' | 'following300' | 'followers1' | 'followers10' | 'followers50' | 'followers100' | 'followers300' | 'followers500' | 'followers1000' | 'collectAchievements30' | 'viewAchievements3min' | 'iLoveacuaskey' | 'foundTreasure' | 'client30min' | 'client60min' | 'noteDeletedWithin1min' | 'postedAtLateNight' | 'postedAt0min0sec' | 'selfQuote' | 'htl20npm' | 'viewInstanceChart' | 'outputHelloWorldOnScratchpad' | 'open3windows' | 'driveFolderCircularReference' | 'reactWithoutRead' | 'clickedClickHere' | 'justPlainLucky' | 'setNameToSyuilo' | 'setNameToNoriDev' | 'cookieClicked' | 'brainDiver' | 'smashTestNotificationButton' | 'tutorialCompleted' | 'bubbleGameExplodingHead' | 'bubbleGameDoubleExplodingHead';
         };
       };
     };
@@ -19979,7 +19979,7 @@ export type operations = {
    * i/delete-account
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___delete-account': {
@@ -20032,7 +20032,7 @@ export type operations = {
    * i/export-antennas
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___export-antennas': {
@@ -20083,7 +20083,7 @@ export type operations = {
    * i/export-blocking
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___export-blocking': {
@@ -20134,7 +20134,7 @@ export type operations = {
    * i/export-clips
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___export-clips': {
@@ -20185,7 +20185,7 @@ export type operations = {
    * i/export-favorites
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___export-favorites': {
@@ -20236,7 +20236,7 @@ export type operations = {
    * i/export-following
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___export-following': {
@@ -20297,7 +20297,7 @@ export type operations = {
    * i/export-mute
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___export-mute': {
@@ -20348,7 +20348,7 @@ export type operations = {
    * i/export-notes
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___export-notes': {
@@ -20399,7 +20399,7 @@ export type operations = {
    * i/export-user-lists
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___export-user-lists': {
@@ -20628,7 +20628,7 @@ export type operations = {
    * i/import-antennas
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___import-antennas': {
@@ -20687,7 +20687,7 @@ export type operations = {
    * i/import-blocking
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___import-blocking': {
@@ -20746,7 +20746,7 @@ export type operations = {
    * i/import-following
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___import-following': {
@@ -20806,7 +20806,7 @@ export type operations = {
    * i/import-muting
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___import-muting': {
@@ -20865,7 +20865,7 @@ export type operations = {
    * i/import-user-lists
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___import-user-lists': {
@@ -20924,7 +20924,7 @@ export type operations = {
    * i/move
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   i___move: {
@@ -21434,7 +21434,7 @@ export type operations = {
    * i/regenerate-token
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___regenerate-token': {
@@ -21822,7 +21822,7 @@ export type operations = {
    * i/registry/scopes-with-domain
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___registry___scopes-with-domain': {
@@ -21927,7 +21927,7 @@ export type operations = {
    * i/revoke-token
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___revoke-token': {
@@ -21981,7 +21981,7 @@ export type operations = {
    * i/signin-history
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___signin-history': {
@@ -22040,7 +22040,7 @@ export type operations = {
    * i/truncate-account
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___truncate-account': {
@@ -22397,7 +22397,7 @@ export type operations = {
    * i/update-email
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'i___update-email': {
@@ -22769,7 +22769,7 @@ export type operations = {
    * i/webhooks/test
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
   i___webhooks___test: {
@@ -23444,7 +23444,7 @@ export type operations = {
    * miauth/gen-token
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'miauth___gen-token': {
@@ -26664,7 +26664,7 @@ export type operations = {
    * page-push
    * @description No description provided.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'page-push': {
@@ -28374,7 +28374,7 @@ export type operations = {
    * sw/register
    * @description Register to receive push notifications.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   sw___register: {
@@ -28439,7 +28439,7 @@ export type operations = {
    * sw/show-registration
    * @description Check push notification registration exists.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'sw___show-registration': {
@@ -28552,7 +28552,7 @@ export type operations = {
    * sw/update-registration
    * @description Update push notification registration.
    *
-   * **Internal Endpoint**: This endpoint is an API for the cherrypick mainframe and is not intended for use by third parties.
+   * **Internal Endpoint**: This endpoint is an API for the acuaskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
   'sw___update-registration': {

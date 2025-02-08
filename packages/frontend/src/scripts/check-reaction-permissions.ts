@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import * as Misskey from 'cherrypick-js';
-import type { UnicodeEmojiDef } from '@@/js/emojilist.js';
+import * as Misskey from 'Acuaskey-js';
+import { UnicodeEmojiDef } from '@@/js/emojilist.js';
 
 export function checkReactionPermissions(me: Misskey.entities.MeDetailed, note: Misskey.entities.Note, emoji: Misskey.entities.EmojiSimple | UnicodeEmojiDef | string): boolean {
 	if (typeof emoji === 'string') return true; // UnicodeEmojiDefにも無い絵文字であれば文字列で来る。Unicode絵文字であることには変わりないので常にリアクション可能とする;

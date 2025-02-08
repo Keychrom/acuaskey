@@ -22,7 +22,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 </template>
 
 <script lang="ts" setup>
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import MkAnimBg from '@/components/MkAnimBg.vue';
 import { definePageMetadata } from '@/scripts/page-metadata.js';
 import MkAuthConfirm from '@/components/MkAuthConfirm.vue';

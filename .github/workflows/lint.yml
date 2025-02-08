@@ -11,7 +11,7 @@ on:
       - packages/frontend-shared/**
       - packages/frontend-embed/**
       - packages/sw/**
-      - packages/cherrypick-js/**
+      - packages/acuaskey-js/**
       - packages/misskey-bubble-game/**
       - packages/misskey-reversi/**
       - packages/shared/eslint.config.js
@@ -23,7 +23,7 @@ on:
       - packages/frontend-shared/**
       - packages/frontend-embed/**
       - packages/sw/**
-      - packages/cherrypick-js/**
+      - packages/acuaskey-js/**
       - packages/misskey-bubble-game/**
       - packages/misskey-reversi/**
       - packages/shared/eslint.config.js
@@ -60,7 +60,7 @@ jobs:
         - frontend-shared
         - frontend-embed
         - sw
-        - cherrypick-js
+        - Acuaskey-js
         - misskey-bubble-game
         - misskey-reversi
     env:
@@ -95,7 +95,7 @@ jobs:
         workspace:
         - backend
         - sw
-        - cherrypick-js
+        - Acuaskey-js
     steps:
     - uses: actions/checkout@v4.1.1
       with:
@@ -108,7 +108,7 @@ jobs:
         cache: 'pnpm'
     - run: corepack enable
     - run: pnpm i --frozen-lockfile
-    - run: pnpm --filter cherrypick-js run build
+    - run: pnpm --filter Acuaskey-js run build
       if: ${{ matrix.workspace == 'backend' || matrix.workspace == 'sw' }}
     - run: pnpm --filter misskey-reversi run build
       if: ${{ matrix.workspace == 'backend' }}

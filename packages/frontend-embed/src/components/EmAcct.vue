@@ -11,7 +11,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 </template>
 
 <script lang="ts" setup>
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import { toUnicode } from 'punycode.js';
 import { host as hostRaw } from '@@/js/config.js';
 

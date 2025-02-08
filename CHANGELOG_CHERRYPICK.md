@@ -21,7 +21,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2025xx](CHANGE
 -->
 
 # 릴리스 노트
-이 문서는 CherryPick의 변경 사항만 포함합니다.
+이 문서는 Acuaskey의 변경 사항만 포함합니다.
 
 ## 4.15.0
 출시일: 2025/2/8<br>
@@ -29,18 +29,18 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2025xx](CHANGE
 Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202520](CHANGELOG.md#202520) 문서를 참고하십시오.
 
 ### General
-- Feat: 계정 정리 기능 ([yodangang-express/cherrypick@dc51c907](https://github.com/yodangang-express/cherrypick/commit/dc51c907236570d6f072409832d312c937239514))
+- Feat: 계정 정리 기능 ([yodangang-express/Acuaskey@dc51c907](https://github.com/yodangang-express/Acuaskey/commit/dc51c907236570d6f072409832d312c937239514))
   - `다이렉트 메시지` 및 `고정된 노트`와 관련된 파일을 제외한 모든 노트와 파일을 자동으로 삭제할 수 있음
 - Feat: 프로필 아이콘 모양 설정 연합
   - 자신의 프로필 아이콘 모양<small>(원형, 사각형)</small>을 로컬 사용자 및 원격 사용자에게 연합시킬 수 있습니다.
-    - 로컬 사용자 뿐만 아니라, CherryPick `4.15.0` 이상 버전을 사용하는 서버에서는 해당 사용자가 지정한 모양으로 프로필이 표시됩니다.
-  - CherryPick `4.15.0` 이상 버전을 사용하는 서버에서만 이 기능을 사용할 수 있습니다.
+    - 로컬 사용자 뿐만 아니라, Acuaskey `4.15.0` 이상 버전을 사용하는 서버에서는 해당 사용자가 지정한 모양으로 프로필이 표시됩니다.
+  - Acuaskey `4.15.0` 이상 버전을 사용하는 서버에서만 이 기능을 사용할 수 있습니다.
   - 이 설정은 서버마다 추구하는 방향이 다를 수 있기 때문에, 역할에서 `프로필 아이콘 모양 설정 연합 허용`이 제한되지 않은 상태에서만 사용할 수 있습니다.
     - 이 역할이 꺼져있으면 프로필 아이콘 모양 설정이 연합되지 않으며, 모든 사용자의 프로필 아이콘 모양이 `프로필 아이콘을 사각형으로 표시` 설정에 따라 표시됩니다.
     - 역할이 꺼져있을 때 이 설정을 활성화한 사용자는 역할이 켜지면 자동으로 연합됩니다.
 - Feat: robots.txt 사용자화 (bettaku/engawa#226)
   - 기본 `robots.txt`에 정의된 내용을 사용자화 할 수 있습니다.
-- Feat: 노트의 초안을 저장할 수 있음 (kokonect-link/cherrypick#513, misskey-dev/misskey#15298)
+- Feat: 노트의 초안을 저장할 수 있음 (kokonect-link/Acuaskey#513, misskey-dev/misskey#15298)
   - 작성 중인 노트를 서버 또는 기기에 저장할 수 있습니다.
   - 서버에 저장된 초안은 모든 기기에서 동기화 됩니다.
 - Enhance: 프록시 계정을 확인할 수 있는 배지 추가 (misskey-dev/misskey#14855)
@@ -52,7 +52,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202520](CHANGE
 	- 이 설정은 `이미 본 리노트를 간략화하기`의 상위 개념으로, 이 설정이 켜져있으면 `이미 본 리노트를 간략화하기`의 설정을 변경할 수 없게 됩니다.
 - Enhance: 사용자 페이지에서 `이름`, `자기소개`, `팔로우 메시지`, `추가 정보`에 포함된 외부 이모지를 가져올 수 있음
 - Enhance: 노트에 여러 장의 이미지가 있을 때 미디어 탭에서 이미지 수를 숫자로 표시함
-- Enhance: 키보드 단축키 목록을 볼 수 있음 (kokonect-link/cherrypick#562)
+- Enhance: 키보드 단축키 목록을 볼 수 있음 (kokonect-link/Acuaskey#562)
 - Enhance: 아바타 장식 개선
   - 세부 설정값을 더욱 세밀하게 조절할 수 있습니다.
     - `각도`는 이제 `1°` 단위로 조절할 수 있습니다.
@@ -63,10 +63,10 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202520](CHANGE
 - Enhance: 사진 위젯의 미디어 왼쪽 상단에 미디어 정보(`ALT`/`GIF`/`APNG`/`NSFW`) 표시
 - Enhance: 노트 게시 예약 시 사운드를 재생함
 - Fix: 노트 헤더의 사용자 이름을 클릭하면 페이지가 중복으로 이동됨
-- Fix: CherryPick 클라이언트 업데이트 알림이 잘못 반환될 수 있음
+- Fix: Acuaskey 클라이언트 업데이트 알림이 잘못 반환될 수 있음
   - 출시 전 빌드 태그가 고려되지 않음(`alpha`, `beta`, `rc`)
     - 예: `4.14.2 < 4.14.3-alpha.0` 계산 시 `4.14.2`가 더 큰 것으로 계산됨
-- Fix: 파일을 포함한 노트에서 일부 기능이 제대로 작동하지 않을 수 있음 (kokonect-link/cherrypick#552)
+- Fix: 파일을 포함한 노트에서 일부 기능이 제대로 작동하지 않을 수 있음 (kokonect-link/Acuaskey#552)
   - 사용자 페이지에서 다음 기능이 제대로 작동하지 않을 수 있는 문제가 수정됨
     - `민감한 미디어 표시` 설정이 반영되지 않음
     - `민감한 콘텐츠로 표시된 미디어를 열 때` 설정이 반영되지 않음
@@ -80,11 +80,11 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202520](CHANGE
 ### Server
 - Fix: 신고 즉시 해결 기능에서 발생할 수 있는 일부 문제 해결 ([misskey-dev/misskey#11032 (review)](https://github.com/misskey-dev/misskey/pull/11032#pullrequestreview-2425669540))
 	- forward가 `true`가 되면 `false`로 변경할 수 없음
-- Fix: 채널에서 `노트 게시 예약`을 사용하면 채널 타임라인이 아닌 일반 타임라인에 게시됨 (kokonect-link/cherrypick#559)
+- Fix: 채널에서 `노트 게시 예약`을 사용하면 채널 타임라인이 아닌 일반 타임라인에 게시됨 (kokonect-link/Acuaskey#559)
 - Fix: 움직이는 이미지를 사용한 사용자의 아바타 장식이 원격 서버에서 정지된 이미지로 보일 수 있음
   - 시간이 지남에 따라 천천히 갱신되지만, 즉시 갱신하고 싶다면 해당 사용자의 드롭다운 메뉴에서 `원격 사용자 정보 갱신`을 클릭하면 아바타 장식이 즉시 갱신됩니다.
 - Fix: 팔로워/팔로잉의 공개 범위를 볼 수 없는 사용자가 `int`가 아닌 `string` 값을 반환할 수 있음 ([참고](https://kokonect.link/notes/a3z05a3vc39q3cph))
-  - 타사 클라이언트와의 원활한 호환성을 유지하기 위해 변경이 일부 복구되었습니다. (kokonect-link/cherrypick#362)
+  - 타사 클라이언트와의 원활한 호환성을 유지하기 위해 변경이 일부 복구되었습니다. (kokonect-link/Acuaskey#362)
   - 이 변경으로 팔로워/팔로잉의 공개 범위를 볼 수 없는 사용자는 이제 API에서 `?`이 아닌 `0`을 반환합니다.
 
 ---
@@ -108,21 +108,21 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024111](CHANG
 Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024111](CHANGELOG.md#2024111) 문서를 참고하십시오.
 
 ### General
-- Feat: 번역 서비스 추가 지원 (kokonect-link/cherrypick#551)
+- Feat: 번역 서비스 추가 지원 (kokonect-link/Acuaskey#551)
   - [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) 지원 추가
     - 외부 서비스를 이용하는 번역 서비스는 요금제에 따른 API 제한이 적용되므로, 자체 호스팅으로 구동할 수 있는 번역 API를 사용할 수 있음
-- Feat: 검색 엔진 사용자화 (kokonect-link/cherrypick#554)
+- Feat: 검색 엔진 사용자화 (kokonect-link/Acuaskey#554)
   - MFC 구문 중 `[검색]`, `[search]`, `[検索]`를 사용했을 때, 사용할 검색 엔진을 지정할 수 있음
 - Enhance: 예약된 노트 게시에 실패할 경우 사용자에게 알림 ([penginn-net/kokonect@a0e47980](https://github.com/penginn-net/kokonect/commit/a0e47980470b49e79e84ff3b7ccaf2b4502928c8))
 
 ### Client
 - Fix: 노트 상세 페이지에서 사용자 이름이 중복으로 표시될 수 있음
 - Fix: 커스텀 이모지 관리 역할이 있는 사용자가 원격 서버의 이모지를 가져올 수 없음
-- Fix: 신고 알림을 받을 이메일 주소 설정을 저장할 수 없음 (kokonect-link/cherrypick#540)
-- Fix: 네비게이션 바에 배너 이미지가 표시되지 않을 수 있음 (kokonect-link/cherrypick#545)
-- Fix: 고정된 리스트 타임라인을 사용할 수 없음 (kokonect-link/cherrypick#546)
-- Fix: 버블 타임라인이 비활성화 상태면 버블 타임라인의 호스트 목록을 수정할 수 없음 (kokonect-link/cherrypick#544)
-- Fix: 특정 환경에서 리액션을 변경할 수 없을 수 있음 (kokonect-link/cherrypick#549)
+- Fix: 신고 알림을 받을 이메일 주소 설정을 저장할 수 없음 (kokonect-link/Acuaskey#540)
+- Fix: 네비게이션 바에 배너 이미지가 표시되지 않을 수 있음 (kokonect-link/Acuaskey#545)
+- Fix: 고정된 리스트 타임라인을 사용할 수 없음 (kokonect-link/Acuaskey#546)
+- Fix: 버블 타임라인이 비활성화 상태면 버블 타임라인의 호스트 목록을 수정할 수 없음 (kokonect-link/Acuaskey#544)
+- Fix: 특정 환경에서 리액션을 변경할 수 없을 수 있음 (kokonect-link/Acuaskey#549)
 
 ---
 
@@ -132,7 +132,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024111](CHANG
 Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024110](CHANGELOG.md#2024110) 문서를 참고하십시오.
 
 ### General
-- Feat: 버블 타임라인 (kokonect-link/cherrypick#512, [TransFem-org/Sharkey#154](https://activitypub.software/TransFem-org/Sharkey/-/issues/154), [TransFem-org/Sharkey@2f99c7e9](https://activitypub.software/TransFem-org/Sharkey/-/commit/2f99c7e9dc2e5e3ca06c9672a6ab4887eb094310))
+- Feat: 버블 타임라인 (kokonect-link/Acuaskey#512, [TransFem-org/Sharkey#154](https://activitypub.software/TransFem-org/Sharkey/-/issues/154), [TransFem-org/Sharkey@2f99c7e9](https://activitypub.software/TransFem-org/Sharkey/-/commit/2f99c7e9dc2e5e3ca06c9672a6ab4887eb094310))
   - 관리자가 설정한 서버의 게시글만 볼 수 있는 타임라인으로, 글로벌 타임라인의 무분별한 내용을 포함하는 게시글을 제한하는 목적으로 사용할 수 있습니다.
 - Enhance: 모더레이터 부재 감지 기간을 사용자화할 수 있음
   - 기간은 최소 `1`일부터 최대 `30`일까지 설정할 수 있습니다.
@@ -143,13 +143,13 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024110](CHANG
 - Enhance: 미디어 그리드 레이아옷 조정
   - 여러 장의 이미지가 있을 때 표시되는 아이콘을 보다 명확하게 볼 수 있도록 개선됨
   - 배경과 같은 이미지를 구분하기 쉽도록 배경색 및 구분선 추가
-- Enhance: 외부 사이트 이동 경고 표시 개선 (kokonect-link/cherrypick#533)
+- Enhance: 외부 사이트 이동 경고 표시 개선 (kokonect-link/Acuaskey#533)
   - 신뢰할 수 있는 도메인 목록을 편집할 수 있음
   - 경고를 표시하지 않도록 설정할 수 있음
 - Enhance: Bluesky 게시물 임베디드 미리보기 지원 (misskey-dev/misskey#14933)
 - Fix: 아바타 장식에서 가이드라인이 표시되지 않음
 - Fix: 설정 페이지에서 글자수가 긴 일부 항목의 디자인이 잘못 표시될 수 있음
-- Fix: 서브 노트의 동작 버튼이 정상적으로 작동하지 않을 수 있음 (kokonect-link/cherrypick#536)
+- Fix: 서브 노트의 동작 버튼이 정상적으로 작동하지 않을 수 있음 (kokonect-link/Acuaskey#536)
 
 ### Server
 - Fix: 그룹 초대 알림을 수락하거나 거절하면 알림 목록을 볼 수 없음
@@ -185,7 +185,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024101](CHANG
 - Enhance: 로그인 알림 개선
   - 로그인 알림에서 로그인 한 장치의 `IP`를 표시하고 승인되지 않은 기기에 대한 대응 방법이 표시됩니다.
 - Enhance: 노트 상세 페이지의 노트 헤더에서도 `편집됨`과 `노트 삭제 예약` 아이콘을 표시함
-- Enhance: 타임라인의 옵션 메뉴에서 타임라인 탭을 편집할 수 있음 (kokonect-link/cherrypick#528)
+- Enhance: 타임라인의 옵션 메뉴에서 타임라인 탭을 편집할 수 있음 (kokonect-link/Acuaskey#528)
 - Enhance: 타임라인을 모두 비활성화하면 타임라인이 비활성화되었다는 안내 문구 표시
 - Enhance: 항상 `고양이체로 표시하지 않기`로 설정할 수 있음
 - Fix: (Friendly) 알림 영역에 `새 노트` 탭이 누락됨
@@ -230,14 +230,14 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
 - `오브젝트 스토리지 (리모트)`의 내부 변경으로 인해 DB 마이그레이션 과정에서 이전에 설정한 값이 제거됩니다. 마이그레이션 이후 값을 다시 설정해 주십시오.
 
 ### General
-- Feat: 사용자 메뉴에서 서버를 뮤트할 수 있음 (kokonect-link/cherrypick#502)
+- Feat: 사용자 메뉴에서 서버를 뮤트할 수 있음 (kokonect-link/Acuaskey#502)
   - 이전 빌드에 추가된 기능은 관리자 전용이며, 이 빌드에서 추가된 기능은 일반 사용자용 기능입니다.
-- Feat: 새 노트 알림을 묶어서 표시할 수 있음 (yojo-art/cherrypick#328)
-- Feat: 노트 게시를 예약할 수 있음 (kokonect-link/cherrypick#513, yojo-art/cherrypick#483, [Type4ny-Project/Type4ny@271c872c](https://github.com/Type4ny-Project/Type4ny/commit/271c872c97f215ef5d8e0be62251dd422a52e5b1))
+- Feat: 새 노트 알림을 묶어서 표시할 수 있음 (yojo-art/Acuaskey#328)
+- Feat: 노트 게시를 예약할 수 있음 (kokonect-link/Acuaskey#513, yojo-art/Acuaskey#483, [Type4ny-Project/Type4ny@271c872c](https://github.com/Type4ny-Project/Type4ny/commit/271c872c97f215ef5d8e0be62251dd422a52e5b1))
 
 ### Client
 - Enhance: (Friendly) 모바일 환경에서 계정 목록을 표시할 때 내 프로필을 표시함
-- Enhance: 업데이트 및 마이그레이션 알림에서 CherryPick의 변경 사항만 표시함
+- Enhance: 업데이트 및 마이그레이션 알림에서 Acuaskey의 변경 사항만 표시함
 - Enhance: 검색과 같은 입력 블록에서 `Enter`를 입력하면 자동으로 가상 키보드를 숨김
 - Enhance: 환영 페이지의 타임라인에서 사용할 수 있는 일부 노트 메뉴 추가
   - QR 코드 생성
@@ -259,7 +259,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
     - 팔로우 버튼
     - 사용자 페이지에서 기본 정보 외 다른 모든 정보는 열람할 수 없음
     - 사용자 페이지에서 요약 탭 외에 모든 탭이 사용할 수 없게됨
-- Fix: 임베디드 코드에서 CherryPick의 색상 설정이 반영되지 않음
+- Fix: 임베디드 코드에서 Acuaskey의 색상 설정이 반영되지 않음
 - Fix: 임베디드 코드에 `fade`와 `Temml(KaTex)`가 반영되지 않음
 - Fix: 노트의 QR 코드를 생성했을 때 `링크 복사` 버튼을 누르면 잘못된 토스트 알림이 표시됨
 - Fix: 노트 메뉴에 `링크 복사` 옵션이 표시되지 않음
@@ -271,25 +271,25 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
 - Fix: 특정 조건에서 노트 동작 버튼을 비활성화 해도 버튼이 사라지지 않음
   - 노트에 답글을 작성할 수 없을 때
   - 노트를 리노트할 수 없을 때
-- Fix: 캡션이 512자를 초과하면 초과한 내용이 잘릴 수 있음 (kokonect-link/cherrypick#518)
+- Fix: 캡션이 512자를 초과하면 초과한 내용이 잘릴 수 있음 (kokonect-link/Acuaskey#518)
   - 캡션을 512자를 초과해서 작성하면 캡션 내용을 저장하기 전에 경고를 표시합니다.
 - Fix: 노트 상세 페이지의 InstanceTicker에 커서를 올릴 때 마우스 포인터가 올바르게 표시되지 않음
 - Fix: `UI에 흐림 효과 사용` 옵션이 토스트 알림에서 제대로 적용되지 않음
   - 모바일 환경에서만 적용되는 문제를 해결합니다.
 - Fix: 모바일 환경에서 제어판의 인디케이터가 잘못된 위치에 표시될 수 있음
-- Fix: `답글을 자동으로 더 보기`를 활성화하면 3개 미만의 답글이 있는 노트에서 답글이 보이지 않음 (kokonect-link/cherrypick#521)
+- Fix: `답글을 자동으로 더 보기`를 활성화하면 3개 미만의 답글이 있는 노트에서 답글이 보이지 않음 (kokonect-link/Acuaskey#521)
 - Fix: 제어판에서 문의처 URL이 설정되지 않았을 때 표시되는 경고의 바로가기가 잘못 설정되어 있음
-- Fix: 캡션이 설정된 이미지 위에 마우스 커서를 올려도 캡션이 표시되지 않음 (kokonect-link/cherrypick#514)
-- Fix: 코드 편집기의 커서 위치가 올바르게 표시되지 않을 수 있음 (kokonect-link/cherrypick#520)
-- Fix: 투표 기한을 `기간 지정`으로 설정한 경우 투표가 즉시 종료될 수 있음 (kokonect-link/cherrypick#523)
-- Fix: 로그인하지 않은 사용자가 리버시 전적을 볼 수 없음 (yojo-art/cherrypick#404)
+- Fix: 캡션이 설정된 이미지 위에 마우스 커서를 올려도 캡션이 표시되지 않음 (kokonect-link/Acuaskey#514)
+- Fix: 코드 편집기의 커서 위치가 올바르게 표시되지 않을 수 있음 (kokonect-link/Acuaskey#520)
+- Fix: 투표 기한을 `기간 지정`으로 설정한 경우 투표가 즉시 종료될 수 있음 (kokonect-link/Acuaskey#523)
+- Fix: 로그인하지 않은 사용자가 리버시 전적을 볼 수 없음 (yojo-art/Acuaskey#404)
 
 ### Server
 - Enhance: 노트 편집 제한 완화
   - 1시간에 10번 편집할 수 있던 것을 5분에 10번 편집할 수 있도록 완화함.
-- Enhance: 이모지를 등록할 때 시스템 사용자로 다시 업로드 하도록 변경함 (yojo-art/cherrypick#510)
+- Enhance: 이모지를 등록할 때 시스템 사용자로 다시 업로드 하도록 변경함 (yojo-art/Acuaskey#510)
   - 이모지를 등록한 사용자가 계정을 삭제하면 이모지도 같이 삭제되기 때문에 변경되었습니다.
-- Fix: 로컬 전용 노트를 편집하면 편집한 노트가 연합될 수 있음 (kokonect-link/cherrypick#519, [libnare/shiftkey@654821da](https://github.com/libnare/shiftkey/commit/654821da003be7471f3c6fc320bf50afcb599d4e))
+- Fix: 로컬 전용 노트를 편집하면 편집한 노트가 연합될 수 있음 (kokonect-link/Acuaskey#519, [libnare/shiftkey@654821da](https://github.com/libnare/shiftkey/commit/654821da003be7471f3c6fc320bf50afcb599d4e))
 
 ---
 
@@ -309,28 +309,28 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
 ### General
 - Feat: 위젯 영역을 숨길 수 있음
 	- 기존 Friendly UI 한정 기능이 다른 UI에서도 사용할 수 있도록 확대됨
-- Feat: `내용 숨기기`로 설정한 내용을 항상 보이게 설정할 수 있음 (kokonect-link/cherrypick#495)
-- Feat: 내용이 긴 노트의 간략화 여부를 선택할 수 있음 (kokonect-link/cherrypick#495)
-- Feat: 답글로 작성된 노트를 간략화하여 표시할 수 있음 (kokonect-link/cherrypick#495)
+- Feat: `내용 숨기기`로 설정한 내용을 항상 보이게 설정할 수 있음 (kokonect-link/Acuaskey#495)
+- Feat: 내용이 긴 노트의 간략화 여부를 선택할 수 있음 (kokonect-link/Acuaskey#495)
+- Feat: 답글로 작성된 노트를 간략화하여 표시할 수 있음 (kokonect-link/Acuaskey#495)
 	- 리액션한 노트는 옵션 활성화 유무와 상관없이 항상 표시됩니다.
-- Feat: 사용자 메뉴에서 원격 서버를 관리할 수 있음 (kokonect-link/cherrypick#502)
+- Feat: 사용자 메뉴에서 원격 서버를 관리할 수 있음 (kokonect-link/Acuaskey#502)
 	- `서버 차단`, `서버 사일런스`, `서버 미디어 사일런스`
-- Feat: 노트 동작 버튼을 개인화할 수 있음 (kokonect-link/cherrypick#501)
-- Feat: 답글 대상 노트의 반투명 옵션을 선택할 수 있음 (kokonect-link/cherrypick#495)
-- Feat: 사용자 페이지의 미디어 탭을 그리드 레이아웃으로 설정할 수 있음 (kokonect-link/cherrypick#494)
-- Feat: 검색 위젯 (1673beta/cherrypick#125)
-- Feat: 캡션 미설정 안내 표시 (1673beta/cherrypick#142)
+- Feat: 노트 동작 버튼을 개인화할 수 있음 (kokonect-link/Acuaskey#501)
+- Feat: 답글 대상 노트의 반투명 옵션을 선택할 수 있음 (kokonect-link/Acuaskey#495)
+- Feat: 사용자 페이지의 미디어 탭을 그리드 레이아웃으로 설정할 수 있음 (kokonect-link/Acuaskey#494)
+- Feat: 검색 위젯 (1673beta/Acuaskey#125)
+- Feat: 캡션 미설정 안내 표시 (1673beta/Acuaskey#142)
   - 노트를 게시하기 전에 첨부한 파일에 캡션이 없으면 경고를 표시합니다.
   - 이 변경으로 이미지 뷰어의 파일 이름 영역에는 더 이상 캡션이 아닌 실제 파일 이름이 표시됩니다.
-- Feat: 사용자 정의 스플래시 텍스트를 설정할 수 있음 (1673beta/cherrypick#153)
-- Feat: 주사위 위젯 (1673beta/cherrypick#73)
+- Feat: 사용자 정의 스플래시 텍스트를 설정할 수 있음 (1673beta/Acuaskey#153)
+- Feat: 주사위 위젯 (1673beta/Acuaskey#73)
 - Feat: QR 코드를 생성하고 공유할 수 있음
-  - 노트를 QR 코드로 공유 (1673beta/cherrypick#45)
-  - 사용자를 QR 코드로 공유 (1673beta/cherrypick#46), (1673beta/cherrypick#49)
-  - 갤러리를 QR 코드로 공유 (1673beta/cherrypick#51)
-  - 페이지를 QR 코드로 공유 (1673beta/cherrypick#53)
+  - 노트를 QR 코드로 공유 (1673beta/Acuaskey#45)
+  - 사용자를 QR 코드로 공유 (1673beta/Acuaskey#46), (1673beta/Acuaskey#49)
+  - 갤러리를 QR 코드로 공유 (1673beta/Acuaskey#51)
+  - 페이지를 QR 코드로 공유 (1673beta/Acuaskey#53)
   - Play를 QR 코드로 공유
-- Feat: 설정한 시간이 지나면 노트를 자동으로 삭제할 수 있음 (1673beta/cherrypick#70)
+- Feat: 설정한 시간이 지나면 노트를 자동으로 삭제할 수 있음 (1673beta/Acuaskey#70)
 - Feat: 모바일 환경에서 하단 내비게이션 바를 개인화할 수 있음
   - `설정` - `내비게이션 바`의 `하단 내비게이션 바`에서 설정할 수 있습니다.
 - Feat: 리버시 대전 중에 상대방에게 리액션을 보낼 수 있음 (misskey-dev/misskey#13119)
@@ -343,12 +343,12 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
     - 노트가 `내용 가리기`로 설정되어 있음
     - 내용이 긴 노트
     - 노트에 5개 이상의 파일이 포함되어 있음
-- Feat: 노트의 전체 대화와 전체 답글을 불러올 수 있음 (kokonect-link/cherrypick#495)
+- Feat: 노트의 전체 대화와 전체 답글을 불러올 수 있음 (kokonect-link/Acuaskey#495)
   - `답글을 자동으로 더 보기`를 활성화하면 `더 보기` 버튼을 누르지 않아도 노트 내 답글을 전부 표시합니다.
   - `대화를 자동으로 더 보기`를 활성화하면 `대화 보기` 버튼을 누르지 않아도 노트 내 대화를 전부 표시합니다.
 
 ### Client
-- Enhance: CherryPick 업데이트 페이지를 제어판 목록에 추가함
+- Enhance: Acuaskey 업데이트 페이지를 제어판 목록에 추가함
 - Enhance: Webhook 추가 버튼을 헤더로 이동해 디자인 개선
 - Enhance: 노트 번역 영역에서도 이모지를 눌러 이모지 메뉴를 열 수 있음
 - Enhance: 노트 상세 페이지에서 InstanceTicker를 클릭해 리모트에서 노트를 볼 수 있음
@@ -375,12 +375,12 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
 - Fix: 역할 권한에 의해 번역 기능을 사용할 수 없을 때도 번역 버튼이 표시됨
 
 ### Server
-- Enhance: 보안 향상을 위해 비밀번호 해싱 알고리즘이 `bcrypt`에서 `argon2`로 변경됨 (kokonect-link/cherrypick#511)
+- Enhance: 보안 향상을 위해 비밀번호 해싱 알고리즘이 `bcrypt`에서 `argon2`로 변경됨 (kokonect-link/Acuaskey#511)
   - 이제 72 바이트를 초과하는 비밀번호를 사용할 수 있습니다.
-  - 이로써 `Sharkey`, `FireFish`, `IceShrimp` 등의 클라이언트에서 `CherryPick`으로 이전할 때 암호 호환성이 보장됩니다.
+  - 이로써 `Sharkey`, `FireFish`, `IceShrimp` 등의 클라이언트에서 `Acuaskey`으로 이전할 때 암호 호환성이 보장됩니다.
 - Enhance: `Sharkey`를 사용하는 서버의 사용자가 설정한 아바타 장식을 자동으로 불러옴
-- Fix: 이모지를 등록하거나 가져오려고 할 때 오류가 발생할 수 있음 (kokonect-link/cherrypick#487), (kokonect-link/cherrypick#508)
-- Fix: 사용자 이름에 `.`이 있는 경우 멘션을 할 수 없음 (kokonect-link/cherrypick#509)
+- Fix: 이모지를 등록하거나 가져오려고 할 때 오류가 발생할 수 있음 (kokonect-link/Acuaskey#487), (kokonect-link/Acuaskey#508)
+- Fix: 사용자 이름에 `.`이 있는 경우 멘션을 할 수 없음 (kokonect-link/Acuaskey#509)
 
 ---
 
@@ -411,15 +411,15 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202480](CHANGE
 Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202470](CHANGELOG.md#202470) 문서를 참고하십시오.
 
 ### Client
-- Fix: CherryPick 클라이언트 업데이트를 올바르게 확인하지 못할 수 있음
+- Fix: Acuaskey 클라이언트 업데이트를 올바르게 확인하지 못할 수 있음
   - 일부 버전에서 버전 확인 오류가 발생할 수 있음
     - 예: `4.9.0 < 4.10.0` 계산 시 `4.9.0`이 더 큰 것으로 계산됨
-  - CherryPick 클라이언트 업데이트 페이지에서 버전 알림이 작동하지 않을 수 있음
+  - Acuaskey 클라이언트 업데이트 페이지에서 버전 알림이 작동하지 않을 수 있음
 
 ### Server
-- Fix: `Announce`를 사용하는 릴레이 서버의 노트를 가져올 수 없음 (kokonect-link/cherrypick#483)
-- Fix: 번역 기능을 사용할 수 없을 수 있음 (kokonect-link/cherrypick#486)
-- Fix: withCats 상태인 사용자가 작성하는 노트가 streaming에서 필터링되지 않을 수 있음 (kokonect-link/cherrypick#485)
+- Fix: `Announce`를 사용하는 릴레이 서버의 노트를 가져올 수 없음 (kokonect-link/Acuaskey#483)
+- Fix: 번역 기능을 사용할 수 없을 수 있음 (kokonect-link/Acuaskey#486)
+- Fix: withCats 상태인 사용자가 작성하는 노트가 streaming에서 필터링되지 않을 수 있음 (kokonect-link/Acuaskey#485)
 
 ---
 
@@ -433,7 +433,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202450](CHANGE
 - Fix: 타임라인 노트의 리액션 뷰어에 리모트 서버의 커스텀 이모지가 표시되지 않음
 - Fix: '리노트 공개 범위 지정' 옵션이 `없음`으로 설정된 경우 리노트를 할 수 없음
 - Fix: 아바타 장식을 설정할 때 설정 팝업이 두 번 표시될 수 있음
-- Fix: 코드 블록의 하이라이트가 실제 위치와 다르게 표시될 수 있음 (kokonect-link/cherrypick#475)
+- Fix: 코드 블록의 하이라이트가 실제 위치와 다르게 표시될 수 있음 (kokonect-link/Acuaskey#475)
 
 ### Server
 - Feat: 리모트 유저의 아바타 장식을 여러 개 불러올 수 있음([yunochi/misskey@696787b3](https://github.com/yunochi/misskey/commit/696787b38bac31e7586899a5a59611a6fe50b9a1), [yunochi/misskey@4a5fcfe4](https://github.com/yunochi/misskey/commit/4a5fcfe43880f08380541caa6b7593b90306d103))
@@ -452,18 +452,18 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202431](CHANGE
 
 ### Client
 - Enhance: 노트 메뉴에 '새 탭에서 열기' 추가
-- Fix: (Friendly) 타임라인 헤더와 알림 영역의 헤더 타이틀이 잘못 표시될 수 있음 (kokonect-link/cherrypick#461)
-- Fix: (Friendly) 윈도우 크기를 조정하면 타임라인 탭의 하이라이트가 잘못된 위치에 표시될 수 있음 (kokonect-link/cherrypick#415)
+- Fix: (Friendly) 타임라인 헤더와 알림 영역의 헤더 타이틀이 잘못 표시될 수 있음 (kokonect-link/Acuaskey#461)
+- Fix: (Friendly) 윈도우 크기를 조정하면 타임라인 탭의 하이라이트가 잘못된 위치에 표시될 수 있음 (kokonect-link/Acuaskey#415)
 - Fix: (Friendly) 일부 페이지에서 알림 영역의 디자인이 잘못 표시될 수 있음
   - 사용자 프로필 페이지
   - 노트 상세 페이지
 - Fix: 노트를 내보낼 때 노트의 편집 기록을 포함
-- Fix: MkA 컴포넌트를 사용하는 항목이 작동하지 않을 수 있음 (kokonect-link/cherrypick#422)
+- Fix: MkA 컴포넌트를 사용하는 항목이 작동하지 않을 수 있음 (kokonect-link/Acuaskey#422)
   - 알림의 읽음 표시, 테스트 알림, 기본 업로드 위치 등
-- Fix: 코드 복사 버튼을 누르면 노트 상세 페이지가 표시될 수 있음 (kokonect-link/cherrypick#414)
-- Fix: 창으로 제어판을 열었을 때 뒤로 가기 버튼이 잘못된 작동을 야기할 수 있음 (kokonect-link/cherrypick#407)
-- Fix: 서버 이름이 매우 긴 경우, CherryPick에 대하여(MkSourceCodeAvailablePopup) 대화 상자의 디자인이 잘못 표시될 수 있음
-- Fix: '노트를 클릭하여 자세히 표시' 기능을 활성화하면 일부 기능이 올바르게 작동하지 않을 수 있음 (kokonect-link/cherrypick#451)
+- Fix: 코드 복사 버튼을 누르면 노트 상세 페이지가 표시될 수 있음 (kokonect-link/Acuaskey#414)
+- Fix: 창으로 제어판을 열었을 때 뒤로 가기 버튼이 잘못된 작동을 야기할 수 있음 (kokonect-link/Acuaskey#407)
+- Fix: 서버 이름이 매우 긴 경우, Acuaskey에 대하여(MkSourceCodeAvailablePopup) 대화 상자의 디자인이 잘못 표시될 수 있음
+- Fix: '노트를 클릭하여 자세히 표시' 기능을 활성화하면 일부 기능이 올바르게 작동하지 않을 수 있음 (kokonect-link/Acuaskey#451)
   - 타임라인에서 노트의 프로필 아이콘을 클릭하면 프로필로 이동하지 않음
   - 노트 본문 내의 프로필 아이콘을 클릭하면 화면에 아무것도 표시되지 않음
 
@@ -480,14 +480,14 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202431](CHANGE
 Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202420](CHANGELOG.md#202420) 문서를 참고하십시오.
 
 ### Client
-- Feat: 리노트 공개 범위를 지정할 수 있음 (kokonect-link/cherrypick#406)
+- Feat: 리노트 공개 범위를 지정할 수 있음 (kokonect-link/Acuaskey#406)
   - 이 기능은 '리노트 공개 범위 옵션 표시' 기능이 꺼져있어야 합니다.
 - Enhance: 빌트인 테마를 설치하려고 할 때 오류 메시지 개선
 - Enhance: '노트를 클릭하여 자세히 표시' 기능 개선
   - 노트를 두 번 클릭해서 열 수 있음
 - Fix: 장식 추가로 일부 태그를 추가할 수 없음
-- Fix: 알림 위젯 필터링이 작동하지 않을 수 있음 (kokonect-link/cherrypick#404)
-- Fix: 노트 자세히 보기에서 노트 작성 폼을 클릭하면 내용이 초기화될 수 있음 (kokonect-link/cherrypick#410)
+- Fix: 알림 위젯 필터링이 작동하지 않을 수 있음 (kokonect-link/Acuaskey#404)
+- Fix: 노트 자세히 보기에서 노트 작성 폼을 클릭하면 내용이 초기화될 수 있음 (kokonect-link/Acuaskey#410)
 - Fix: '설정 - 타임라인' 페이지가 표시되지 않음
 - Fix: '노트 - 리액션 목록' 기능이 작동하지 않음
 
@@ -500,7 +500,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2023122](CHANG
 
 ### General
 - Change: 노트를 번역할 때 유저가 고양이로 설정되어 있으면 nyaize를 적용
-- Change: Misskey 또는 CherryPick v4.3.0 이전 버전에서 마이그레이션 시, 마이그레이션 관련 대화 상자가 표시됨
+- Change: Misskey 또는 Acuaskey v4.3.0 이전 버전에서 마이그레이션 시, 마이그레이션 관련 대화 상자가 표시됨
 - Feat: 리모트 서버의 이모지를 즉시 가져올 수 있음 ([pikokr/cherrypicnic@03d536c0](https://github.com/pikokr/cherrypicnic/commit/03d536c00212f2dfbebecf75e5d58e0ddb749444), [pikokr/cherrypicnic@8a2d6f3b](https://github.com/pikokr/cherrypicnic/commit/8a2d6f3b518fc13a6c32364780fba3be5eea3e5d))
   - 노트 본문 및 리액션 뷰어에서 사용 가능
 - Feat: 아이콘 장식을 세부 조정할 수 있음 ([Secineralyr/misskey.dream@b3299181](https://github.com/Secineralyr/misskey.dream/commit/b329918194f1991c84633361d8a1319cf203641c), [Secineralyr/misskey.dream@1a9642bb](https://github.com/Secineralyr/misskey.dream/commit/1a9642bb9087a256522767e113c3bbfa87ec2e47))
@@ -509,7 +509,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2023122](CHANG
 - Feat: 텍스트 장식(MFM, HTML, Markdown)을 보다 편하게 추가할 수 있음
   - 노트 작성 폼에서 텍스트 장식 버튼을 눌러 사용할 수 있음
   - 텍스트를 선택한 상태에서도 적용 가능
-- Enhance: 다양한 자산의 출력 파일 이름에 CherryPick 버전을 포함하도록 설정 ([MisskeyIO/misskey@436ddb8f](https://github.com/MisskeyIO/misskey/commit/436ddb8fdb2e585987f403c1527915947c7aae7c))
+- Enhance: 다양한 자산의 출력 파일 이름에 Acuaskey 버전을 포함하도록 설정 ([MisskeyIO/misskey@436ddb8f](https://github.com/MisskeyIO/misskey/commit/436ddb8fdb2e585987f403c1527915947c7aae7c))
 - Revert: 사용자 통계 표시 기능 제거 ([MisskeyIO/misskey@114c7fe6](https://github.com/MisskeyIO/misskey/commit/114c7fe6b37dd6bddbcd9d92406f8b13bf688e8b))
 
 ### Client
@@ -580,7 +580,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2023122](CHANG
 - Fix: redisForJobQueue 연결 사용 (MisskeyIO/misskey#268)
 - Fix: redisForJobQueue의 maxRetriesPerRequest를 null로 설정 (MisskeyIO/misskey#272)
 - Fix: Inbox 또는 Deliver 큐에 data 필드가 비어 있는 작업이 등록되지 않도록 (MisskeyIO/misskey#307)
-- Fix: Misskey에서 CherryPick으로 마이그레이션 하면 타임라인이 표시되지 않음
+- Fix: Misskey에서 Acuaskey으로 마이그레이션 하면 타임라인이 표시되지 않음
 
 ---
 
@@ -757,7 +757,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202393](CHANGE
 
 ### Server
 - Fix: 마이그레이션 문제
-	- Misskey에서 CherryPick으로 마이그레이션하면 오류가 발생함
+	- Misskey에서 Acuaskey으로 마이그레이션하면 오류가 발생함
 
 ---
 
@@ -834,7 +834,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202391](CHANGE
 
 ### Client
 - Feat: (Friendly) 길게 눌러 계정 메뉴를 표시하는 옵션을 비활성화 할 수 있음
-- Feat: (Friendly) 알림 영역과 위젯 영역의 표시 설정을 '설정 - CherryPick'에서 변경할 수 있음
+- Feat: (Friendly) 알림 영역과 위젯 영역의 표시 설정을 '설정 - Acuaskey'에서 변경할 수 있음
 - Feat: about-misskey 페이지에서 클라이언트 버전을 누르면 변경 사항을 볼 수 있음
 - Feat: 이미지 압축 방식을 선택할 수 있음
   - 사이즈 변경 여부를 선택할 수 있음
@@ -883,7 +883,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202391](CHANGE
 - Fix: 대화 페이지의 스크롤이 의도하지 않은 방향으로 작동할 수 있음
 
 ### Server
-- Nodeinfo의 Software 이름을 CherryPick이 아닌 다른 이름으로 변경할 때 관련 주석 추가
+- Nodeinfo의 Software 이름을 Acuaskey이 아닌 다른 이름으로 변경할 때 관련 주석 추가
 - Graceful Shutdown (MisskeyIO/misskey#156)
 - Perf: 부팅 시 MeiliSearch 설정을 업데이트하지 마십시오 (MisskeyIO/misskey#158)
 - Enhance: 종료 시 DB 연결이 끊어지면 확실하게 종료 (MisskeyIO/misskey#159)
@@ -934,7 +934,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#13142](CHANGEL
 - 헤더의 블러 설정 추가
 - 「이미 팔로우한 경우 알림 필드에 팔로우 버튼을 표시하지 않음」설정 사용 시, 팔로우 했다는 문구를 표시하도록
 - 흐림 효과를 비활성화 하면 알림을 불투명하게 표시하도록
-- 설정 - 일반에 있는 일부 기능의 위치를 CherryPick 으로 이동
+- 설정 - 일반에 있는 일부 기능의 위치를 Acuaskey 으로 이동
 - 리노트할 때 확인 팝업 표시 유무를 선택할 수 있음
 - Fix: 그룹 초대 알림 아이콘이 잘못 표시되는 문제
 - Fix: 노트 디자인이 올바르지 않게 표시되는 문제
@@ -995,7 +995,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#13132](CHANGEL
 - 일부 제어판 페이지의 헤더 개선
 - 스크롤이 최상단일 때 헤더를 누르면 새로고침 메뉴를 표시하도록
 - MkImgWithBlurhash에서 blurhash 그리기에 사용하는 canvas는 재사용하도록(misskey-dev/misskey#10966)
-- CherryPick 고유 기능 및 개선된 기능은 「CherryPick」 배지 추가
+- Acuaskey 고유 기능 및 개선된 기능은 「Acuaskey」 배지 추가
 - 네비게이션 메뉴 편집 페이지 UI 개선 ([shrimpia/misskey@bf8c84d](https://github.com/shrimpia/misskey/commit/bf8c84d299bd06cb21e18a9fe68ff9abc11fd4a0))
 - 「노트 본문에 번역 버튼 표시」를 선택 사항으로 설정
 - 답글도 번역할 수 있도록 개선
@@ -1024,10 +1024,10 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#13132](CHANGEL
 - Fix: 채팅 내용이 길이가 너무 길어도 그만큼 공간을 차지하는 문제
 
 ### Server
-- mfm-js를 cherrypick-mfm-js로 변경
-- misskey-js를 cherrypick-js로 변경
+- mfm-js를 Acuaskey-mfm-js로 변경
+- misskey-js를 Acuaskey-js로 변경
 - Add: Cloud Logging 기능 ([libnare/mk-castella@0a883ef](https://github.com/libnare/mk-castella/commit/0a883efe08921d5e5b7914a1075c3931122a623b), [libnare/mk-castella@7987d57](https://github.com/libnare/mk-castella/commit/7987d57789316084b38665e539e41a463ddaa110))
-- Fix: 알림에서 UserGroupInvitation 관련 문제 해결 (kokonect-link/cherrypick#75)
+- Fix: 알림에서 UserGroupInvitation 관련 문제 해결 (kokonect-link/Acuaskey#75)
 - Fix: 정의되지 않은 OffscreenCanvas (misskey-dev/misskey#11017)
 
 ---
@@ -1051,7 +1051,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#13131](CHANGEL
 - (Friendly) 오조작 방지를 위해 플로팅 버튼을 길게 눌러 새로고침 기능 제거
 - (Friendly) 채팅 탭에 플로팅 버튼 추가
 - 클라이언트에서 사용되는 폰트의 확장자를 ttf에서 woff2 및 woff로 변경 ([libnare/mk-castella@f439b3e](https://github.com/libnare/mk-castella/commit/f439b3e007618c02da7a352016b3d0f397311f54))
-- about-misskey 페이지에 CherryPick 관련 정보 추가 및 Misskey 문단 구분명 추가
+- about-misskey 페이지에 Acuaskey 관련 정보 추가 및 Misskey 문단 구분명 추가
 - 계정 초기 설정 마법사 개선
   - 뒤로 가기 버튼 추가
   - 나중에 버튼 추가
@@ -1067,13 +1067,13 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#13131](CHANGEL
 - 볼드체 텍스트 설정 추가
 - 노트 작성 폼의 디자인 개선
 - 헤더에 뒤로 가기 버튼 추가
-- 업데이트 팝업 개선 (Misskey와 CherryPick의 변경 사항을 직관적으로 볼 수 있도록)
+- 업데이트 팝업 개선 (Misskey와 Acuaskey의 변경 사항을 직관적으로 볼 수 있도록)
 - 서버 통계 위젯의 원 그래프 디자인 개선
 - 새로운 서버 통계 위젯 추가
 - 알림 기본 정렬을 수직으로 변경
 - 채팅방 목록 페이지 디자인 개선
 - 리노트 문구를 노트 최상단으로 배치
-- 특정 MFM 구문이 포함된 노트를 간략화 할지 선택할 수 있음(enhance: [@aba0755](https://github.com/kokonect-link/cherrypick/commit/aba0755880d6797f49d34c8b7fe2c602d153e367))
+- 특정 MFM 구문이 포함된 노트를 간략화 할지 선택할 수 있음(enhance: [@aba0755](https://github.com/kokonect-link/Acuaskey/commit/aba0755880d6797f49d34c8b7fe2c602d153e367))
 - 노트 사이를 띄우는 옵션 활성화 시 알림 페이지의 노트도 띄우도록
 - 안테나, 그룹, 리스트, 클립 페이지의 생성 버튼을 헤더로 이동
 - 채팅 디자인 일부 개선
@@ -1230,7 +1230,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md](CHANGELOG.md)
 - 의존 패키지 업데이트
 
 ### Changes
-- 보수성 및 사용성 측면에서 CherryPick 명령줄 옵션이 제거되었습니다.
+- 보수성 및 사용성 측면에서 Acuaskey 명령줄 옵션이 제거되었습니다.
 	- 필요한 경우, 환경변수로 대체할 수 있습니다.
 - MFM: 성능, 보수성, 구문 오인식 억제 관점에서 구형 함수 구문의 지원을 종료했습니다.
 	- 구문 (`[foo bar]`)를 사용하지 않으며, 현행 구문 (`$[foo bar]`)를 사용해 주세요.
@@ -1348,12 +1348,12 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md](CHANGELOG.md)
 - 노트가 보여지는 타임라인을 노트 본문에 표시
 - UI 흐림 효과 전환 기능
 - 해시태그를 간편하게 추가할 수 있도록 노트 작성 폼에 기능 추가
-- CherryPick 디스코드 커뮤니티 추가
+- Acuaskey 디스코드 커뮤니티 추가
 - 이모지 목록을 볼 수 있는 페이지 추가
 - 인스턴스 목록을 볼 수 있는 페이지 추가
 - 노트 번역 기능 추가
 	- 사용하려면 서버 관리자가 DeepL 무료 계정을 생성하고 발급받은 인증 키를 '인스턴스 설정 > 기타 > DeepL Auth Key'에 추가해야 합니다.
-- CherryPick을 업데이트 하면 대화상자를 표시하도록 추가
+- Acuaskey을 업데이트 하면 대화상자를 표시하도록 추가
 - 작업 대기열 위젯에 경보음을 울리는 설정 추가
 - 미디어 우클릭 방지 기능 추가
 
@@ -1418,10 +1418,10 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md](CHANGELOG.md)
 
 ## 12.83.0-cp-2.0.0 (2021/06/14)
 
-### CherryPick
+### Acuaskey
 Misskey 기반의 새로운 클라이언트를 선보입니다!
-CherryPick은 다른 클라이언트의 유용한 기능들을 **이식**하고 **자체 기능**을 추가하여 사용성을 높인 **개조 클라이언트** 입니다.
-~ CherryPick은 좋은 것만 뽑아서 쓰는 Cherry picking의 의미를 지니고 있어요! ~
+Acuaskey은 다른 클라이언트의 유용한 기능들을 **이식**하고 **자체 기능**을 추가하여 사용성을 높인 **개조 클라이언트** 입니다.
+~ Acuaskey은 좋은 것만 뽑아서 쓰는 Cherry picking의 의미를 지니고 있어요! ~
 
 
 ### Friendly UI
@@ -1443,7 +1443,7 @@ CherryPick은 다른 클라이언트의 유용한 기능들을 **이식**하고 
 - Friendly UI: 그룹, 채널, 안테나 페이지에도 플로팅 버튼을 추가했어요!
 - 노트 페이지에서 리노트 하거나 인용한 개수를 확인할 수 있어요.
 - 리노트 하거나 인용한 유저를 확인할 수 있어요.
-- 인스턴스 요약 탭에 CherryPick 버전이 표시돼요.
+- 인스턴스 요약 탭에 Acuaskey 버전이 표시돼요.
 - 노트 작성 시 보여질 내용을 미리 볼 수 있는 기능을 추가했어요!
 - 노트 작성 화면에서 사용할 수 있는 각종 퀵액션을 추가했어요!
 - 노트 게시 전 최종 확인(검토)하는 옵션이 추가됐어요! 설정에서 켤 수 있어요.

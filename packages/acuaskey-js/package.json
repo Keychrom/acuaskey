@@ -1,9 +1,9 @@
 {
 	"type": "module",
-	"name": "cherrypick-js",
+	"name": "acuaskey-js",
 	"version": "4.15.0",
 	"basedMisskeyVersion": "2025.2.0",
-	"description": "CherryPick SDK for JavaScript",
+	"description": "acuaskey SDK for JavaScript",
 	"license": "MIT",
 	"main": "./built/index.js",
 	"types": "./built/index.d.ts",
@@ -31,12 +31,12 @@
 		"format:write": "pnpm biome format --write",
 		"jest": "jest --coverage --detectOpenHandles",
 		"test": "pnpm jest && pnpm tsd",
-		"update-autogen-code": "pnpm --filter cherrypick-js-type-generator generate && ncp generator/built/autogen src/autogen"
+		"update-autogen-code": "pnpm --filter acuaskey-js-type-generator generate && ncp generator/built/autogen src/autogen"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kokonect-link/cherrypick.git",
-		"directory": "packages/cherrypick-js"
+		"url": "git+https://github.com/Keychrom/acuaskey",
+		"directory": "packages/acuaskey-js"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.3",

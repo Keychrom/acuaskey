@@ -186,9 +186,9 @@ const routes: RouteDef[] = [{
 		name: 'other',
 		component: page(() => import('@/pages/settings/account-stats.vue')),
 	}, {
-		path: '/cherrypick',
-		name: 'cherrypick',
-		component: page(() => import('@/pages/settings/cherrypick.vue')),
+		path: '/Acuaskey',
+		name: 'Acuaskey',
+		component: page(() => import('@/pages/settings/Acuaskey.vue')),
 	}, {
 		path: '/appearance',
 		name: 'appearance',

@@ -49,7 +49,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { nextTick, shallowRef, ref, computed } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import MkModal from '@/components/MkModal.vue';
 import MkSwitch from '@/components/MkSwitch.vue';
 import MkDivider from '@/components/MkDivider.vue';

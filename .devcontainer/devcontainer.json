@@ -1,5 +1,5 @@
 {
-	"name": "CherryPick",
+	"name": "Acuaskey",
 	"dockerComposeFile": "compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspace",

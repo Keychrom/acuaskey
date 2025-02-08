@@ -73,7 +73,7 @@ const noInquiryUrl = computed(() => isEmpty(instance.inquiryUrl));
 const thereIsUnresolvedAbuseReport = ref(false);
 const currentPage = computed(() => router.currentRef.value.child);
 const updateAvailable = ref(false);
-const releasesCherryPick = ref(null);
+const releasesAcuaskey = ref(null);
 
 misskeyApi('admin/abuse-user-reports', {
 	state: 'unresolved',
@@ -84,17 +84,17 @@ misskeyApi('admin/abuse-user-reports', {
 
 misskeyApi('admin/meta')
 	.then(meta => {
-		return fetch('https://api.github.com/repos/kokonect-link/cherrypick/releases')
+		return fetch('https://api.github.com/repos/kokonect-link/Acuaskey/releases')
 			.then(res => res.json())
-			.then(cherryPickData => {
-				releasesCherryPick.value = meta.enableReceivePrerelease ? cherryPickData : cherryPickData.filter(x => !x.prerelease);
-				if ((compareVersions(version, releasesCherryPick.value[0].tag_name) < 0) && (compareVersions(meta.skipCherryPickVersion, releasesCherryPick.value[0].tag_name) < 0)) {
+			.then(AcuaskeyData => {
+				releasesAcuaskey.value = meta.enableReceivePrerelease ? AcuaskeyData : AcuaskeyData.filter(x => !x.prerelease);
+				if ((compareVersions(version, releasesAcuaskey.value[0].tag_name) < 0) && (compareVersions(meta.skipAcuaskeyVersion, releasesAcuaskey.value[0].tag_name) < 0)) {
 					updateAvailable.value = true;
 				}
 			});
 	})
 	.catch(error => {
-		console.error('Failed to fetch CherryPick releases:', error);
+		console.error('Failed to fetch Acuaskey releases:', error);
 	});
 
 const NARROW_THRESHOLD = 600;
@@ -244,7 +244,7 @@ const menuDef = computed<SuperMenuDef[]>(() => [{
 		active: currentPage.value?.route.name === 'performance',
 	}, {
 		icon: 'ti ti-refresh-alert',
-		text: i18n.ts.cherrypickUpdate,
+		text: i18n.ts.AcuaskeyUpdate,
 		to: '/admin/update',
 		active: currentPage.value?.route.name === 'update',
 	}],

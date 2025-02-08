@@ -193,9 +193,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 <script lang="ts" setup>
 import { computed, onDeactivated, onMounted, onUnmounted, ref, shallowRef, watch } from 'vue';
 import * as Matter from 'matter-js';
-import * as Misskey from 'cherrypick-js';
-import { DropAndFusionGame } from 'misskey-bubble-game';
-import type { Mono } from 'misskey-bubble-game';
+import * as Misskey from 'Acuaskey-js';
+import { DropAndFusionGame, Mono } from 'misskey-bubble-game';
 import { useInterval } from '@@/js/use-interval.js';
 import { apiUrl } from '@@/js/config.js';
 import { definePageMetadata } from '@/scripts/page-metadata.js';

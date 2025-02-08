@@ -3,10 +3,10 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import { misskeyApi } from '@/misskey-api.js';
 
-const providedMetaEl = document.getElementById('cherrypick_meta');
+const providedMetaEl = document.getElementById('Acuaskey_meta');
 
 const _serverMetadata: Misskey.entities.MetaDetailed | null = (providedMetaEl && providedMetaEl.textContent) ? JSON.parse(providedMetaEl.textContent) : null;
 

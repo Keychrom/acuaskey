@@ -9,7 +9,7 @@ import JSON5 from 'json5';
 const keys = [
 	'_dark',
 	'_light',
-	'l-cherrypick',
+	'l-Acuaskey',
 	'l-rosepinedawn',
 	'l-mirerado',
 	'l-byeolvit-polaris',
@@ -25,7 +25,7 @@ const keys = [
 	'l-cherry',
 	'l-sushi',
 	'l-u0',
-	'd-cherrypick',
+	'd-Acuaskey',
 	'd-rosepine',
 	'd-rosepinemoon',
 	'd-mirerado',

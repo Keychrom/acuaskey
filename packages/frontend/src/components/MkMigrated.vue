@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: syuilo and misskey-project & noridev and cherrypick-project
+SPDX-FileCopyrightText: syuilo and misskey-project & noridev and Acuaskey-project
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 
@@ -10,14 +10,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 			<Mfm text="$[tada 🎉]"/>
 			<MkSparkle>
 				<div :class="$style.title">{{ i18n.ts.welcome }}</div>
-				<small style="opacity: 0.7;">{{ i18n.ts.cherrypickMigrated }}</small>
+				<small style="opacity: 0.7;">{{ i18n.ts.AcuaskeyMigrated }}</small>
 			</MkSparkle>
 		</div>
 		<div :class="$style.version">
 			<div>✨{{ version }}🚀</div>
 			<div style="font-size: 0.8em;">{{ basedMisskeyVersion }}</div>
 		</div>
-		<MkButton rounded full @click="whatIsNewCherryPick">{{ i18n.ts.whatIsNew }}</MkButton>
+		<MkButton rounded full @click="whatIsNewAcuaskey">{{ i18n.ts.whatIsNew }}</MkButton>
 		<MkButton :class="$style.gotIt" primary rounded full @click="close">{{ i18n.ts.gotIt }}</MkButton>
 	</div>
 </MkModal>
@@ -25,7 +25,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 <MkModal v-else-if="showChangelog" ref="modal" :zPriority="'middle'">
 	<div :class="$style.root">
 		<div :class="$style.title" style="margin: 0 0 1.5em; font-weight: normal;">{{ i18n.ts.whatIsNew }}</div>
-		<MkButton rounded full style="margin: 8px 0 0;" @click="whatIsNewCherryPick">CherryPick</MkButton>
+		<MkButton rounded full style="margin: 8px 0 0;" @click="whatIsNewAcuaskey">Acuaskey</MkButton>
 		<MkButton rounded full @click="whatIsNewMisskey">Misskey</MkButton>
 		<MkButton :class="$style.gotIt" primary rounded full @click="close">{{ i18n.ts.ok }}</MkButton>
 	</div>
@@ -53,16 +53,16 @@ const whatIsNewMisskey = () => {
 	window.open(`https://misskey-hub.net/docs/releases/#_${basedMisskeyVersion.replace(/\./g, '')}`, '_blank');
 };
 
-const whatIsNewCherryPick = () => {
-	window.open(`https://github.com/kokonect-link/cherrypick/blob/develop/CHANGELOG_CHERRYPICK.md#${version.replace(/\./g, '')}`, '_blank');
+const whatIsNewAcuaskey = () => {
+	window.open(`https://github.com/kokonect-link/Acuaskey/blob/develop/CHANGELOG_Acuaskey.md#${version.replace(/\./g, '')}`, '_blank');
 };
 
 const close = async () => {
 	modal.value?.close();
 	await os.alert({
 		type: 'warning',
-		title: i18n.ts.cherrypickMigratedCacheClearTitle,
-		text: i18n.ts.cherrypickMigratedCacheClear,
+		title: i18n.ts.AcuaskeyMigratedCacheClearTitle,
+		text: i18n.ts.AcuaskeyMigratedCacheClear,
 	});
 	miLocalStorage.setItem('lastVersion', version);
 	await clearCache();

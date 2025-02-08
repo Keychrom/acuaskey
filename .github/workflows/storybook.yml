@@ -19,7 +19,7 @@ env:
 jobs:
   build:
     # chromatic is not likely to be available for fork repositories, so we disable for fork repositories.
-    if: github.repository == 'kokonect-link/cherrypick'
+    if: github.repository == 'kokonect-link/Acuaskey'
     runs-on: ubuntu-latest
 
     env:
@@ -54,8 +54,8 @@ jobs:
     - run: pnpm i --frozen-lockfile
     - name: Check pnpm-lock.yaml
       run: git diff --exit-code pnpm-lock.yaml
-    - name: Build cherrypick-js
-      run: pnpm --filter cherrypick-js build
+    - name: Build Acuaskey-js
+      run: pnpm --filter Acuaskey-js build
     - name: Build storybook
       run: pnpm --filter frontend build-storybook
     - name: Publish to Chromatic

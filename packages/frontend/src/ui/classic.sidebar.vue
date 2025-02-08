@@ -45,7 +45,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 			<img :src="instance.iconUrl ?? instance.faviconUrl ?? '/favicon.ico'" class="_ghost"/>
 		</button>
 	</div>
-	<!--<CherryPickLogo class="cherrypick"/>-->
+	<!--<AcuaskeyLogo class="Acuaskey"/>-->
 </div>
 </template>
 
@@ -62,7 +62,7 @@ import { openAccountMenu as openAccountMenu_, $i } from '@/account.js';
 import MkButton from '@/components/MkButton.vue';
 // import { StickySidebar } from '@/scripts/sticky-sidebar.js';
 // import { mainRouter } from '@/router/main.js';
-// import CherryPickLogo from '@assets/client/cherrypick.svg';
+// import AcuaskeyLogo from '@assets/client/Acuaskey.svg';
 import { defaultStore } from '@/store.js';
 import { instance } from '@/instance.js';
 import { i18n } from '@/i18n.js';
@@ -84,7 +84,7 @@ const el = shallowRef<HTMLElement>();
 const iconOnly = ref(false);
 const settingsWindowed = ref(false);
 const controlPanelIndicated = ref(false);
-const releasesCherryPick = ref(null);
+const releasesAcuaskey = ref(null);
 
 if ($i && ($i.isAdmin ?? $i.isModerator)) {
 	misskeyApi('admin/abuse-user-reports', {
@@ -96,17 +96,17 @@ if ($i && ($i.isAdmin ?? $i.isModerator)) {
 
 	misskeyApi('admin/meta')
 		.then(meta => {
-			return fetch('https://api.github.com/repos/kokonect-link/cherrypick/releases')
+			return fetch('https://api.github.com/repos/kokonect-link/Acuaskey/releases')
 				.then(res => res.json())
-				.then(cherryPickData => {
-					releasesCherryPick.value = meta.enableReceivePrerelease ? cherryPickData : cherryPickData.filter(x => !x.prerelease);
-					if ((compareVersions(version, releasesCherryPick.value[0].tag_name) < 0) && (compareVersions(meta.skipCherryPickVersion, releasesCherryPick.value[0].tag_name) < 0)) {
+				.then(AcuaskeyData => {
+					releasesAcuaskey.value = meta.enableReceivePrerelease ? AcuaskeyData : AcuaskeyData.filter(x => !x.prerelease);
+					if ((compareVersions(version, releasesAcuaskey.value[0].tag_name) < 0) && (compareVersions(meta.skipAcuaskeyVersion, releasesAcuaskey.value[0].tag_name) < 0)) {
 						controlPanelIndicated.value = true;
 					}
 				});
 		})
 		.catch(error => {
-			console.error('Failed to fetch CherryPick releases:', error);
+			console.error('Failed to fetch Acuaskey releases:', error);
 		});
 }
 

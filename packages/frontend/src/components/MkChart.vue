@@ -52,7 +52,7 @@ export type ChartSrc =
 */
 import { onMounted, ref, shallowRef, watch } from 'vue';
 import { Chart } from 'chart.js';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import { misskeyApiGet } from '@/scripts/misskey-api.js';
 import { defaultStore } from '@/store.js';
 import { useChartTooltip } from '@/scripts/use-chart-tooltip.js';

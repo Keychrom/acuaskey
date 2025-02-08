@@ -11,7 +11,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 	<div class="shape2"></div>
 	<div class="logo-wrapper">
 		<div class="powered-by">Powered by</div>
-		<img :src="cherrypicksvg" class="cherrypick"/>
+		<img :src="Acuaskeysvg" class="Acuaskey"/>
 	</div>
 	<div class="emojis">
 		<MkEmoji :normal="true" :noStyle="true" emoji="👍"/>
@@ -37,11 +37,11 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import XTimeline from './welcome.timeline.vue';
 import MarqueeText from '@/components/MkMarquee.vue';
 import MkFeaturedPhotos from '@/components/MkFeaturedPhotos.vue';
-import cherrypicksvg from '/client-assets/cherrypick.svg';
+import Acuaskeysvg from '/client-assets/Acuaskey.svg';
 import misskeysvg from '/client-assets/misskey.svg';
 import { misskeyApiGet } from '@/scripts/misskey-api.js';
 import MkVisitorDashboard from '@/components/MkVisitorDashboard.vue';
@@ -128,7 +128,7 @@ misskeyApiGet('federation/instances', {
 			margin-bottom: 2px;
 		}
 
-		> .misskey, .cherrypick {
+		> .misskey, .Acuaskey {
 			width: 140px;
 			@media (max-width: 450px) {
 				width: 130px;

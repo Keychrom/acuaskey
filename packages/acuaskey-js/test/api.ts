@@ -26,7 +26,7 @@ describe('API', () => {
 		fetchMock.resetMocks();
 		fetchMock.mockResponse(async (req) => {
 			const body = await req.json();
-			if (req.method == 'POST' && req.url == 'https://cherrypick.test/api/i') {
+			if (req.method == 'POST' && req.url == 'https://acuaskey.test/api/i') {
 				if (body.i === 'TOKEN') {
 					return JSON.stringify({ id: 'foo' });
 				} else {
@@ -38,7 +38,7 @@ describe('API', () => {
 		});
 
 		const cli = new APIClient({
-			origin: 'https://cherrypick.test',
+			origin: 'https://acuaskey.test',
 			credential: 'TOKEN',
 		});
 
@@ -49,7 +49,7 @@ describe('API', () => {
 		});
 
 		expect(getFetchCall(fetchMock.mock.calls[0])).toEqual({
-			url: 'https://cherrypick.test/api/i',
+			url: 'https://acuaskey.test/api/i',
 			method: 'POST',
 			contentType: 'application/json',
 			body: { i: 'TOKEN' }
@@ -60,7 +60,7 @@ describe('API', () => {
 		fetchMock.resetMocks();
 		fetchMock.mockResponse(async (req) => {
 			const body = await req.json();
-			if (req.method == 'POST' && req.url == 'https://cherrypick.test/api/notes/show') {
+			if (req.method == 'POST' && req.url == 'https://acuaskey.test/api/notes/show') {
 				if (body.i === 'TOKEN' && body.noteId === 'aaaaa') {
 					return JSON.stringify({ id: 'foo' });
 				} else {
@@ -72,7 +72,7 @@ describe('API', () => {
 		});
 
 		const cli = new APIClient({
-			origin: 'https://cherrypick.test',
+			origin: 'https://acuaskey.test',
 			credential: 'TOKEN',
 		});
 
@@ -83,7 +83,7 @@ describe('API', () => {
 		});
 
 		expect(getFetchCall(fetchMock.mock.calls[0])).toEqual({
-			url: 'https://cherrypick.test/api/notes/show',
+			url: 'https://acuaskey.test/api/notes/show',
 			method: 'POST',
 			contentType: 'application/json',
 			body: { i: 'TOKEN', noteId: 'aaaaa' }
@@ -134,7 +134,7 @@ describe('API', () => {
 	test('204 No Content で null が返る', async () => {
 		fetchMock.resetMocks();
 		fetchMock.mockResponse(async (req) => {
-			if (req.method == 'POST' && req.url == 'https://cherrypick.test/api/reset-password') {
+			if (req.method == 'POST' && req.url == 'https://acuaskey.test/api/reset-password') {
 				return { status: 204 };
 			} else {
 				return { status: 404 };
@@ -142,7 +142,7 @@ describe('API', () => {
 		});
 
 		const cli = new APIClient({
-			origin: 'https://cherrypick.test',
+			origin: 'https://acuaskey.test',
 			credential: 'TOKEN',
 		});
 
@@ -151,7 +151,7 @@ describe('API', () => {
 		expect(res).toEqual(null);
 
 		expect(getFetchCall(fetchMock.mock.calls[0])).toEqual({
-			url: 'https://cherrypick.test/api/reset-password',
+			url: 'https://acuaskey.test/api/reset-password',
 			method: 'POST',
 			contentType: 'application/json',
 			body: { i: 'TOKEN', token: 'aaa', password: 'aaa' }
@@ -162,7 +162,7 @@ describe('API', () => {
 		fetchMock.resetMocks();
 		fetchMock.mockResponse(async (req) => {
 			const body = await req.json();
-			if (req.method == 'POST' && req.url == 'https://cherrypick.test/api/i') {
+			if (req.method == 'POST' && req.url == 'https://acuaskey.test/api/i') {
 				if (typeof body.i === 'string') {
 					return JSON.stringify({ id: 'foo' });
 				} else {
@@ -184,7 +184,7 @@ describe('API', () => {
 
 		try {
 			const cli = new APIClient({
-				origin: 'https://cherrypick.test',
+				origin: 'https://acuaskey.test',
 				credential: 'TOKEN',
 			});
 
@@ -212,7 +212,7 @@ describe('API', () => {
 
 		try {
 			const cli = new APIClient({
-				origin: 'https://cherrypick.test',
+				origin: 'https://acuaskey.test',
 				credential: 'TOKEN',
 			});
 
@@ -229,7 +229,7 @@ describe('API', () => {
 
 		try {
 			const cli = new APIClient({
-				origin: 'https://cherrypick.test',
+				origin: 'https://acuaskey.test',
 				credential: 'TOKEN',
 			});
 
@@ -250,7 +250,7 @@ describe('API', () => {
 
 		try {
 			const cli = new APIClient({
-				origin: 'https://cherrypick.test',
+				origin: 'https://acuaskey.test',
 				credential: 'TOKEN',
 			});
 

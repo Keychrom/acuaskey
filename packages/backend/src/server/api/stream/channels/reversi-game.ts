@@ -4,7 +4,7 @@
  */
 
 import { Inject, Injectable } from '@nestjs/common';
-import { reversiUpdateKeys } from 'cherrypick-js';
+import { reversiUpdateKeys } from 'Acuaskey-js';
 import type { MiReversiGame } from '@/models/_.js';
 import { DI } from '@/di-symbols.js';
 import { bindThis } from '@/decorators.js';

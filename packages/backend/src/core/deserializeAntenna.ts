@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: noridev and cherrypick-project
+ * SPDX-FileCopyrightText: noridev and Acuaskey-project
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 

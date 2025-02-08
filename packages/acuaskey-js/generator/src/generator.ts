@@ -89,7 +89,7 @@ async function generateEndpoints(
 	const endpointReqMediaTypes: EndpointReqMediaType[] = [];
 	const endpointReqMediaTypesSet = new Set<string>();
 
-	// cherrypick-jsはPOST固定で送っているので、こちらも決め打ちする。別メソッドに対応することがあればこちらも直す必要あり
+	// acuaskey-jsはPOST固定で送っているので、こちらも決め打ちする。別メソッドに対応することがあればこちらも直す必要あり
 	const paths = openApiDocs.paths ?? {};
 	const postPathItems = Object.keys(paths)
 		.map(it => ({
@@ -207,7 +207,7 @@ async function generateApiClientJSDoc(
 		description: string;
 	}[] = [];
 
-	// cherrypick-jsはPOST固定で送っているので、こちらも決め打ちする。別メソッドに対応することがあればこちらも直す必要あり
+	// acuaskey-jsはPOST固定で送っているので、こちらも決め打ちする。別メソッドに対応することがあればこちらも直す必要あり
 	const paths = openApiDocs.paths ?? {};
 	const postPathItems = Object.keys(paths)
 		.map(it => ({

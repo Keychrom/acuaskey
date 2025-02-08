@@ -5,10 +5,9 @@
 
 import { createApp, defineAsyncComponent, markRaw } from 'vue';
 import { ui } from '@@/js/config.js';
-import * as Misskey from 'cherrypick-js';
 import { common } from './common.js';
+import type * as Misskey from 'Acuaskey-js';
 import type { Component } from 'vue';
-import type { Keymap } from '@/scripts/hotkey.js';
 import * as os from '@/os.js';
 import { i18n } from '@/i18n.js';
 import { alert, confirm, popup, post, welcomeToast } from '@/os.js';
@@ -24,7 +23,7 @@ import { initializeSw } from '@/scripts/initialize-sw.js';
 import { deckStore } from '@/ui/deck/deck-store.js';
 import { emojiPicker } from '@/scripts/emoji-picker.js';
 import { mainRouter } from '@/router/main.js';
-import { makeHotkey } from '@/scripts/hotkey.js';
+import { type Keymap, makeHotkey } from '@/scripts/hotkey.js';
 import { addCustomEmoji, removeCustomEmojis, updateCustomEmojis } from '@/custom-emojis.js';
 import { userName } from '@/filters/user.js';
 import { vibrate } from '@/scripts/vibrate.js';
@@ -343,7 +342,7 @@ export async function mainBoot() {
 		}
 
 		const modifiedVersionMustProminentlyOfferInAgplV3Section13Read = miLocalStorage.getItem('modifiedVersionMustProminentlyOfferInAgplV3Section13Read');
-		if (modifiedVersionMustProminentlyOfferInAgplV3Section13Read !== 'true' && instance.repositoryUrl !== 'https://github.com/kokonect-link/cherrypick') {
+		if (modifiedVersionMustProminentlyOfferInAgplV3Section13Read !== 'true' && instance.repositoryUrl !== 'https://github.com/kokonect-link/Acuaskey') {
 			const { dispose } = popup(defineAsyncComponent(() => import('@/components/MkSourceCodeAvailablePopup.vue')), {}, {
 				closed: () => dispose(),
 			});
@@ -421,7 +420,7 @@ export async function mainBoot() {
 		main.on('announcementCreated', onAnnouncementCreated);
 
 		// トークンが再生成されたとき
-		// このままではCherryPickが利用できないので強制的にサインアウトさせる
+		// このままではAcuaskeyが利用できないので強制的にサインアウトさせる
 		main.on('myTokenRegenerated', () => {
 			signout();
 		});

@@ -5,7 +5,7 @@
 
 import { toUnicode } from 'punycode.js';
 import { defineAsyncComponent, ref, watch } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import { host, url } from '@@/js/config.js';
 import type { MenuItem } from '@/types/menu.js';
 import { i18n } from '@/i18n.js';

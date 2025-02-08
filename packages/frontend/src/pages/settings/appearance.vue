@@ -24,7 +24,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 			-->
 
 		<div style="padding-bottom: 1.5em;">
-			<div :class="$style.label">{{ i18n.ts.fontSize }} <span class="_beta" style="vertical-align: middle;">CherryPick</span></div>
+			<div :class="$style.label">{{ i18n.ts.fontSize }} <span class="_beta" style="vertical-align: middle;">Acuaskey</span></div>
 			<div :class="$style.fontSize" class="_panel">
 				<div v-if="fontSize === 1" style="font-size: 7px;">{{ i18n.ts._mfc.dummy }}</div>
 				<div v-else-if="fontSize === 2" style="font-size: 8px;">{{ i18n.ts._mfc.dummy }}</div>
@@ -82,7 +82,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<MkSwitch v-model="reduceAnimation">{{ i18n.ts.reduceUiAnimation }}</MkSwitch>
 				<MkSwitch v-model="useBlurEffect">{{ i18n.ts.useBlurEffect }}<template #caption>{{ i18n.ts.useBlurEffectDescription }}</template></MkSwitch>
 				<MkSwitch v-model="useBlurEffectForModal">{{ i18n.ts.useBlurEffectForModal }}</MkSwitch>
-				<MkSwitch v-if="useBlurEffect && useBlurEffectForModal" v-model="removeModalBgColorForBlur">{{ i18n.ts.removeModalBgColorForBlur }} <span class="_beta">CherryPick</span></MkSwitch>
+				<MkSwitch v-if="useBlurEffect && useBlurEffectForModal" v-model="removeModalBgColorForBlur">{{ i18n.ts.removeModalBgColorForBlur }} <span class="_beta">Acuaskey</span></MkSwitch>
 				<MkSwitch v-model="disableShowingAnimatedImages">{{ i18n.ts.disableShowingAnimatedImages }}<template #caption><i class="ti ti-alert-triangle" style="color: var(--MI_THEME-warn);"></i> {{ i18n.ts.disableShowingAnimatedImagesDescription }}</template></MkSwitch>
 				<MkSelect v-if="!disableShowingAnimatedImages" v-model="showingAnimatedImages" style="margin-left: 44px;">
 					<option value="always">{{ i18n.ts._showingAnimatedImages.always }}</option>
@@ -93,7 +93,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<MkSwitch v-model="highlightSensitiveMedia">{{ i18n.ts.highlightSensitiveMedia }}</MkSwitch>
 				<MkSwitch v-model="squareAvatars">{{ i18n.ts.squareAvatars }}</MkSwitch>
 				<MkSwitch v-model="setFederationAvatarShape" @update:modelValue="cantUseSetFederationAvatarShape">
-					{{ i18n.ts.setFederationAvatarShape }} <span class="_beta" style="vertical-align: middle;">CherryPick</span>
+					{{ i18n.ts.setFederationAvatarShape }} <span class="_beta" style="vertical-align: middle;">Acuaskey</span>
 					<template #caption>{{ $i?.policies.canSetFederationAvatarShape ? i18n.ts.setFederationAvatarShapeDescription : i18n.ts.cannotBeUsedFunc }}<span v-if="!$i?.policies.canSetFederationAvatarShape" style="margin-left: 3px;"><a class="_link" @click="learnMoreCantUseSetFederationAvatarShape">{{ i18n.ts.learnMore }}</a></span></template>
 				</MkSwitch>
 				<MkSwitch v-model="showAvatarDecorations">{{ i18n.ts.showAvatarDecorations }}</MkSwitch>
@@ -103,7 +103,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<MkSwitch v-model="useNativeUIForVideoAudioPlayer">{{ i18n.ts.useNativeUIForVideoAudioPlayer }}</MkSwitch>
 				<MkSwitch v-model="showUnreadNotificationsCount">{{ i18n.ts.showUnreadNotificationsCount }}</MkSwitch>
 				<MkSwitch v-model="filesGridLayoutInUserPage">
-					{{ i18n.ts.filesGridLayoutInUserPage }} <span class="_beta">CherryPick</span>
+					{{ i18n.ts.filesGridLayoutInUserPage }} <span class="_beta">Acuaskey</span>
 					<template #caption>{{ i18n.ts.filesGridLayoutInUserPageDescription }}</template>
 				</MkSwitch>
 			</div>
@@ -143,13 +143,13 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<MkSwitch v-model="collapseReplies">
 					<template #label>{{ i18n.ts.collapseReplies }}</template>
 					<template #caption>{{ i18n.ts.collapseRepliesDescription }}</template>
-					<span class="_beta">CherryPick</span>
+					<span class="_beta">Acuaskey</span>
 				</MkSwitch>
-				<MkSwitch v-model="collapseLongNoteContent">{{ i18n.ts.collapseLongNoteContent }} <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="collapseDefault">{{ i18n.ts.collapseDefault }} <span class="_beta">CherryPick</span></MkSwitch>
+				<MkSwitch v-model="collapseLongNoteContent">{{ i18n.ts.collapseLongNoteContent }} <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="collapseDefault">{{ i18n.ts.collapseDefault }} <span class="_beta">Acuaskey</span></MkSwitch>
 				<MkSwitch v-model="showNoteActionsOnlyHover">{{ i18n.ts.showNoteActionsOnlyHover }}</MkSwitch>
 				<MkSwitch v-model="showClipButtonInNoteFooter">{{ i18n.ts.showClipButtonInNoteFooter }}</MkSwitch>
-				<MkSwitch v-model="showTranslateButtonInNote">{{ i18n.ts.showTranslateButtonInNote }} <span class="_beta">CherryPick</span></MkSwitch>
+				<MkSwitch v-model="showTranslateButtonInNote">{{ i18n.ts.showTranslateButtonInNote }} <span class="_beta">Acuaskey</span></MkSwitch>
 				<MkSwitch v-model="advancedMfm">{{ i18n.ts.enableAdvancedMfm }}</MkSwitch>
 				<MkSwitch v-if="advancedMfm" v-model="animatedMfm">{{ i18n.ts.enableAnimatedMfm }}</MkSwitch>
 				<div :class="$style.mfmPreview" class="_panel">
@@ -171,14 +171,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 					<option value="large">{{ i18n.ts.large }}</option>
 				</MkRadios>
 				<MkSwitch v-model="limitWidthOfReaction">{{ i18n.ts.limitWidthOfReaction }}</MkSwitch>
-				<MkSwitch v-model="hideAvatarsInNote">{{ i18n.ts.hideAvatarsInNote }} <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="enableAbsoluteTime">{{ i18n.ts.enableAbsoluteTime }} <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="enableMarkByDate" :disabled="defaultStore.state.enableAbsoluteTime">{{ i18n.ts.enableMarkByDate }} <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="showSubNoteFooterButton">{{ i18n.ts.showSubNoteFooterButton }}<template #caption>{{ i18n.ts.showSubNoteFooterButtonDescription }}</template> <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="infoButtonForNoteActionsEnabled">{{ i18n.ts.infoButtonForNoteActions }}<template #caption>{{ i18n.ts.infoButtonForNoteActionsDescription }}</template> <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="showReplyInNotification">{{ i18n.ts.showReplyInNotification }} <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="renoteQuoteButtonSeparation">{{ i18n.ts.renoteQuoteButtonSeparation }} <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="renoteVisibilitySelection">{{ i18n.ts.showRenoteVisibilitySelector }} <span class="_beta">CherryPick</span></MkSwitch>
+				<MkSwitch v-model="hideAvatarsInNote">{{ i18n.ts.hideAvatarsInNote }} <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="enableAbsoluteTime">{{ i18n.ts.enableAbsoluteTime }} <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="enableMarkByDate" :disabled="defaultStore.state.enableAbsoluteTime">{{ i18n.ts.enableMarkByDate }} <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="showSubNoteFooterButton">{{ i18n.ts.showSubNoteFooterButton }}<template #caption>{{ i18n.ts.showSubNoteFooterButtonDescription }}</template> <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="infoButtonForNoteActionsEnabled">{{ i18n.ts.infoButtonForNoteActions }}<template #caption>{{ i18n.ts.infoButtonForNoteActionsDescription }}</template> <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="showReplyInNotification">{{ i18n.ts.showReplyInNotification }} <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="renoteQuoteButtonSeparation">{{ i18n.ts.renoteQuoteButtonSeparation }} <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="renoteVisibilitySelection">{{ i18n.ts.showRenoteVisibilitySelector }} <span class="_beta">Acuaskey</span></MkSwitch>
 				<MkSelect v-if="!renoteVisibilitySelection" v-model="forceRenoteVisibilitySelection">
 					<template #label>{{ i18n.ts.forceRenoteVisibilitySelector }}</template>
 					<option value="none">{{ i18n.ts.auto }}</option>
@@ -186,15 +186,15 @@ SPDX-License-Identifier: AGPL-3.0-only
 					<option value="home">{{ i18n.ts._visibility.home }}</option>
 					<option value="followers">{{ i18n.ts._visibility.followers }}</option>
 				</MkSelect>
-				<MkSwitch v-model="showFixedPostFormInReplies">{{ i18n.ts.showFixedPostFormInReplies }}<template #caption>{{ i18n.ts.showFixedPostFormInRepliesDescription }}</template> <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="allMediaNoteCollapse">{{ i18n.ts.allMediaNoteCollapse }} <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="showNoAltTextWarning">{{ i18n.ts.showNoAltWarning }}<template #caption>{{ i18n.ts.showNoAltWarningDescription }}</template> <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="alwaysShowCw">{{ i18n.ts.alwaysShowCw }} <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="showReplyTargetNoteInSemiTransparent">{{ i18n.ts.showReplyTargetNoteInSemiTransparent }} <span class="_beta">CherryPick</span></MkSwitch>
+				<MkSwitch v-model="showFixedPostFormInReplies">{{ i18n.ts.showFixedPostFormInReplies }}<template #caption>{{ i18n.ts.showFixedPostFormInRepliesDescription }}</template> <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="allMediaNoteCollapse">{{ i18n.ts.allMediaNoteCollapse }} <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="showNoAltTextWarning">{{ i18n.ts.showNoAltWarning }}<template #caption>{{ i18n.ts.showNoAltWarningDescription }}</template> <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="alwaysShowCw">{{ i18n.ts.alwaysShowCw }} <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="showReplyTargetNoteInSemiTransparent">{{ i18n.ts.showReplyTargetNoteInSemiTransparent }} <span class="_beta">Acuaskey</span></MkSwitch>
 			</div>
 
 			<div class="_gaps_s" style="margin: 0 10px;">
-				<div style="font-weight: bold; padding: 0.5em 0 0 0; margin: 0 0 8px 0;">{{ i18n.ts.noteFooterButton }} <span class="_beta" style="vertical-align: middle;">CherryPick</span></div>
+				<div style="font-weight: bold; padding: 0.5em 0 0 0; margin: 0 0 8px 0;">{{ i18n.ts.noteFooterButton }} <span class="_beta" style="vertical-align: middle;">Acuaskey</span></div>
 
 				<MkSwitch v-model="showReplyButtonInNoteFooter"><i class="ti ti-arrow-back-up"></i> {{ i18n.ts.reply }}</MkSwitch>
 				<MkSwitch v-model="showRenoteButtonInNoteFooter"><i class="ti ti-repeat"></i> {{ i18n.ts.renote }}</MkSwitch>
@@ -204,7 +204,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<MkSwitch v-model="showMoreButtonInNoteFooter"><i class="ti ti-dots"></i> {{ i18n.ts.more }}</MkSwitch>
 
 				<MkFolder>
-					<template #label><i class="ti ti-heart"></i> {{ i18n.ts.like }} <span class="_beta" style="vertical-align: middle;">CherryPick</span></template>
+					<template #label><i class="ti ti-heart"></i> {{ i18n.ts.like }} <span class="_beta" style="vertical-align: middle;">Acuaskey</span></template>
 					<div class="_gaps_m">
 						<FromSlot v-model="selectReaction">
 							<template #label>{{ i18n.ts.selectReaction }}</template>
@@ -235,7 +235,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 			</MkSelect>
 
 			<MkSelect v-model="nsfwOpenBehavior">
-				<template #label>{{ i18n.ts.nsfwOpenBehavior }} <span class="_beta" style="vertical-align: middle;">CherryPick</span></template>
+				<template #label>{{ i18n.ts.nsfwOpenBehavior }} <span class="_beta" style="vertical-align: middle;">Acuaskey</span></template>
 				<option value="click">{{ i18n.ts._nsfwOpenBehavior.click }}</option>
 				<option value="doubleClick">{{ i18n.ts._nsfwOpenBehavior.doubleClick }}</option>
 			</MkSelect>
@@ -278,7 +278,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { computed, onMounted, ref, watch } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import * as os from '@/os.js';
 import MkSwitch from '@/components/MkSwitch.vue';
 import MkSelect from '@/components/MkSelect.vue';

@@ -215,13 +215,13 @@ export interface Locale extends ILocale {
      */
     "forceRenoteVisibilitySelector": string;
     /**
-     * CherryPick研究室
+     * Acuaskey研究室
      */
-    "cherrypickLabs": string;
+    "AcuaskeyLabs": string;
     /**
      * まだ開発中の機能を試してみませんか。一部の機能はちゃんと動かないかもしれません。
      */
-    "cherrypickLabsDescription": string;
+    "AcuaskeyLabsDescription": string;
     /**
      * リンクをコピーしました！
      */
@@ -239,20 +239,20 @@ export interface Locale extends ILocale {
      */
     "welcome": string;
     /**
-     * CherryPickへの移行が完了しました！
+     * Acuaskeyへの移行が完了しました！
      */
-    "cherrypickMigrated": string;
+    "AcuaskeyMigrated": string;
     /**
      * キャッシュクリアのご案内
      */
-    "cherrypickMigratedCacheClearTitle": string;
+    "AcuaskeyMigratedCacheClearTitle": string;
     /**
-     * このサーバーは<b>Misskey</b>または<b>CherryPick v4.3.0以前</b>のバージョンから移行されました。
+     * このサーバーは<b>Misskey</b>または<b>Acuaskey v4.3.0以前</b>のバージョンから移行されました。
      * バージョン管理方式が異なり、残っているキャッシュが問題を引き起こす可能性があるため、移行後、最初の接続時にキャッシュを削除する作業を行う必要があります。
      *
      * この作業は最初一度だけ行われます。
      */
-    "cherrypickMigratedCacheClear": string;
+    "AcuaskeyMigratedCacheClear": string;
     /**
      * リノートの公開範囲オプションを表示
      */
@@ -298,7 +298,7 @@ export interface Locale extends ILocale {
      */
     "disableNoteEditConfirm": string;
     /**
-     * ノート編集に対応しているソフトウェア<small>（Mastodon、CherryPick、FireFishなど）</small>でのみ、編集された内容と履歴を見ることができます。
+     * ノート編集に対応しているソフトウェア<small>（Mastodon、Acuaskey、FireFishなど）</small>でのみ、編集された内容と履歴を見ることができます。
      * ノート編集に対応していないソフトウェアでは、ノートを編集する前の内容が表示されるので、すべての連合サーバーで修正した内容を反映させたい場合は、<b>「削除して編集」</b>でノートを書き直してください。
      */
     "disableNoteEditConfirmWarn": string;
@@ -339,13 +339,13 @@ export interface Locale extends ILocale {
      */
     "enableReceivePrerelease": string;
     /**
-     * 未発売バージョンのCherryPickを利用しています！
+     * 未発売バージョンのAcuaskeyを利用しています！
      */
     "youAreRunningBetaClient": string;
     /**
-     * CherryPickアップデート
+     * Acuaskeyアップデート
      */
-    "cherrypickUpdate": string;
+    "AcuaskeyUpdate": string;
     /**
      * すべてのメディアノートを省略して表示
      */
@@ -424,7 +424,7 @@ export interface Locale extends ILocale {
      */
     "renoteConfirm": string;
     /**
-     * この設定は「設定 - CherryPick」で変更できます。
+     * この設定は「設定 - Acuaskey」で変更できます。
      */
     "renoteConfirmDescription": string;
     /**
@@ -490,29 +490,29 @@ export interface Locale extends ILocale {
     /**
      * キャッシュをクリアしましょうか？
      */
-    "cherrypickUpdatedCacheClearTitle": string;
+    "AcuaskeyUpdatedCacheClearTitle": string;
     /**
      * テーマや色、ロケールなどの変更が正しく反映されない可能性があるため、クライアントが更新されたら<b>キャッシュをクリアすることをお勧め</b>します。
      * アカウントログイン状態はそのまま維持されます！
      */
-    "cherrypickUpdatedCacheClear": string;
+    "AcuaskeyUpdatedCacheClear": string;
     /**
      * あとでキャッシュをクリアするには、<b>設定</b> - <b>キャッシュをクリア</b>でできます！
      */
-    "cherrypickUpdatedCacheClearLater": string;
+    "AcuaskeyUpdatedCacheClearLater": string;
     /**
      * ノートでつながるネットワーク
      */
     "headlineMisskey": string;
     /**
-     * ようこそ！CherryPickは、オープンソースの分散型マイクロブログサービスです。
+     * ようこそ！Acuaskeyは、オープンソースの分散型マイクロブログサービスです。
      * 「ノート」を作成して、いま起こっていることを共有したり、あなたについて皆に発信しよう📡
      * 「リアクション」機能で、皆のノートに素早く反応を追加することもできます👍
      * 新しい世界を探検しよう🚀
      */
     "introMisskey": string;
     /**
-     * {name}は、オープンソースのプラットフォーム<b>CherryPick</b>のサーバーのひとつです。
+     * {name}は、オープンソースのプラットフォーム<b>Acuaskey</b>のサーバーのひとつです。
      */
     "poweredByMisskeyDescription": ParameterizedString<"name">;
     /**
@@ -548,8 +548,8 @@ export interface Locale extends ILocale {
      */
     "initialPasswordIsIncorrect": string;
     /**
-     * CherryPickを自分でインストールした場合は、設定ファイルに入力したパスワードを使用してください。
-     * CherryPickのホスティングサービスなどを使用している場合は、提供されたパスワードを使用してください。
+     * Acuaskeyを自分でインストールした場合は、設定ファイルに入力したパスワードを使用してください。
+     * Acuaskeyのホスティングサービスなどを使用している場合は、提供されたパスワードを使用してください。
      * パスワードを設定していない場合は、空欄にしたまま続行してください。
      */
     "initialPasswordForSetupDescription": string;
@@ -1250,7 +1250,7 @@ export interface Locale extends ILocale {
      */
     "flagAsBot": string;
     /**
-     * このアカウントがプログラムによって運用される場合は、このフラグをオンにします。オンにすると、反応の連鎖を防ぐためのフラグとして他の開発者に役立ったり、CherryPickのシステム上での扱いがBotに合ったものになります。
+     * このアカウントがプログラムによって運用される場合は、このフラグをオンにします。オンにすると、反応の連鎖を防ぐためのフラグとして他の開発者に役立ったり、Acuaskeyのシステム上での扱いがBotに合ったものになります。
      */
     "flagAsBotDescription": string;
     /**
@@ -1542,7 +1542,7 @@ export interface Locale extends ILocale {
      */
     "pinLimitExceeded": string;
     /**
-     * CherryPickのインストールが完了しました！管理者アカウントを作成しましょう。
+     * Acuaskeyのインストールが完了しました！管理者アカウントを作成しましょう。
      */
     "intro": string;
     /**
@@ -2326,7 +2326,7 @@ export interface Locale extends ILocale {
      */
     "about": string;
     /**
-     * CherryPickについて
+     * Acuaskeyについて
      */
     "aboutMisskey": string;
     /**
@@ -2966,7 +2966,7 @@ export interface Locale extends ILocale {
      */
     "notUseSound": string;
     /**
-     * CherryPickがアクティブな時のみサウンドを出力する
+     * Acuaskeyがアクティブな時のみサウンドを出力する
      */
     "useSoundOnlyWhenActive": string;
     /**
@@ -3034,7 +3034,7 @@ export interface Locale extends ILocale {
      */
     "scratchpad": string;
     /**
-     * スクラッチパッドは、AiScriptの実験環境を提供します。CherryPickと対話するコードの記述、実行、結果の確認ができます。
+     * スクラッチパッドは、AiScriptの実験環境を提供します。Acuaskeyと対話するコードの記述、実行、結果の確認ができます。
      */
     "scratchpadDescription": string;
     /**
@@ -3602,7 +3602,7 @@ export interface Locale extends ILocale {
      */
     "private": string;
     /**
-     * CherryPickは有志によって様々な言語に翻訳されています。{link}で翻訳に協力できます。
+     * Acuaskeyは有志によって様々な言語に翻訳されています。{link}で翻訳に協力できます。
      */
     "i18nInfo": ParameterizedString<"link">;
     /**
@@ -3827,7 +3827,7 @@ export interface Locale extends ILocale {
      */
     "sendErrorReports": string;
     /**
-     * オンにすると、問題が発生したときにエラーの詳細情報がCherryPickに共有され、ソフトウェアの品質向上に役立てることができます。エラー情報には、OSのバージョン、ブラウザの種類、行動履歴などが含まれます。
+     * オンにすると、問題が発生したときにエラーの詳細情報がAcuaskeyに共有され、ソフトウェアの品質向上に役立てることができます。エラー情報には、OSのバージョン、ブラウザの種類、行動履歴などが含まれます。
      */
     "sendErrorReportsDescription": string;
     /**
@@ -4211,7 +4211,7 @@ export interface Locale extends ILocale {
      */
     "learnMore": string;
     /**
-     * CherryPickが更新されました！
+     * Acuaskeyが更新されました！
      */
     "misskeyUpdated": string;
     /**
@@ -4751,11 +4751,11 @@ export interface Locale extends ILocale {
      */
     "remindMeLater": string;
     /**
-     * CherryPickを気に入っていただけましたか？
+     * Acuaskeyを気に入っていただけましたか？
      */
     "didYouLikeMisskey": string;
     /**
-     * CherryPickは{host}が使用している無料のソフトウェアです。これからも開発を続けられるように、ぜひ寄付をお願いします！
+     * Acuaskeyは{host}が使用している無料のソフトウェアです。これからも開発を続けられるように、ぜひ寄付をお願いします！
      */
     "pleaseDonate": ParameterizedString<"host">;
     /**
@@ -5279,7 +5279,7 @@ export interface Locale extends ILocale {
      */
     "later": string;
     /**
-     * CherryPickへ
+     * Acuaskeyへ
      */
     "goToMisskey": string;
     /**
@@ -5539,7 +5539,7 @@ export interface Locale extends ILocale {
      */
     "repositoryUrl": string;
     /**
-     * ソースコードが公開されているリポジトリがある場合、そのURLを記入します。CherryPickを現状のまま（ソースコードにいかなる変更も加えずに）使用している場合は https://github.com/kokonect-link/cherrypick と記入します。
+     * ソースコードが公開されているリポジトリがある場合、そのURLを記入します。Acuaskeyを現状のまま（ソースコードにいかなる変更も加えずに）使用している場合は https://github.com/kokonect-link/Acuaskey と記入します。
      */
     "repositoryUrlDescription": string;
     /**
@@ -6233,13 +6233,13 @@ export interface Locale extends ILocale {
          */
         "banishConfirm": ParameterizedString<"name" | "group">;
     };
-    "_cherrypick": {
+    "_Acuaskey": {
         /**
          * 独自機能
          */
         "function": string;
         /**
-         * CherryPickが追加する独自機能を有効・無効にします。
+         * Acuaskeyが追加する独自機能を有効・無効にします。
          */
         "functionDescription": string;
         /**
@@ -6478,7 +6478,7 @@ export interface Locale extends ILocale {
          */
         "haveFun": ParameterizedString<"name">;
         /**
-         * このまま{name}(CherryPick)の使い方についてのチュートリアルに進むこともできますが、ここで中断してすぐに使い始めることもできます。
+         * このまま{name}(Acuaskey)の使い方についてのチュートリアルに進むこともできますが、ここで中断してすぐに使い始めることもできます。
          */
         "youCanContinueTutorial": ParameterizedString<"name">;
         /**
@@ -6521,7 +6521,7 @@ export interface Locale extends ILocale {
              */
             "title": string;
             /**
-             * ここでは、CherryPickの基本的な使い方や機能を確認できます。
+             * ここでは、Acuaskeyの基本的な使い方や機能を確認できます。
              */
             "description": string;
         };
@@ -6531,7 +6531,7 @@ export interface Locale extends ILocale {
              */
             "title": string;
             /**
-             * CherryPickでの投稿は「ノート」と呼びます。ノートはタイムラインに時系列で並んでいて、リアルタイムで更新されていきます。
+             * Acuaskeyでの投稿は「ノート」と呼びます。ノートはタイムラインに時系列で並んでいて、リアルタイムで更新されていきます。
              */
             "description": string;
             /**
@@ -6591,7 +6591,7 @@ export interface Locale extends ILocale {
              */
             "title": string;
             /**
-             * CherryPickには、使い方に応じて複数のタイムラインが用意されています（サーバーによってはいずれかが無効になっていることがあります）。
+             * Acuaskeyには、使い方に応じて複数のタイムラインが用意されています（サーバーによってはいずれかが無効になっていることがあります）。
              */
             "description1": string;
             /**
@@ -6625,7 +6625,7 @@ export interface Locale extends ILocale {
              */
             "title": string;
             /**
-             * CherryPickにノートを投稿する際には、様々なオプションの設定が可能です。投稿フォームはこのようになっています。
+             * Acuaskeyにノートを投稿する際には、様々なオプションの設定が可能です。投稿フォームはこのようになっています。
              */
             "description1": string;
             "_visibility": {
@@ -6725,7 +6725,7 @@ export interface Locale extends ILocale {
              */
             "title": string;
             /**
-             * ここで紹介した機能はほんの一部にすぎません。CherryPickの使い方をより詳しく知るには、{link}をご覧ください。
+             * ここで紹介した機能はほんの一部にすぎません。Acuaskeyの使い方をより詳しく知るには、{link}をご覧ください。
              */
             "description": ParameterizedString<"link">;
         };
@@ -6970,7 +6970,7 @@ export interface Locale extends ILocale {
          * フォロワーの移行は自動ですが、フォローの移行は手動で行う必要があります。移行前にこのアカウントでフォローエクスポートし、移行後すぐに移行先アカウントでインポートを行なってください。
          * リスト・ミュート・ブロックについても同様ですので、手動で移行する必要があります。
          *
-         * （この説明はこのサーバー（CherryPick v13.12.0以降）の仕様です。Mastodonなどの他のActivityPubソフトウェアでは挙動が異なる場合があります。）
+         * （この説明はこのサーバー（Acuaskey v13.12.0以降）の仕様です。Mastodonなどの他のActivityPubソフトウェアでは挙動が異なる場合があります。）
          */
         "moveAccountDescription": string;
         /**
@@ -7018,7 +7018,7 @@ export interface Locale extends ILocale {
                  */
                 "description": string;
                 /**
-                 * 良いCherryPickライフを！
+                 * 良いAcuaskeyライフを！
                  */
                 "flavor": string;
             };
@@ -7342,7 +7342,7 @@ export interface Locale extends ILocale {
                  */
                 "description": string;
                 /**
-                 * CherryPickを使ってくれてありがとう！
+                 * Acuaskeyを使ってくれてありがとう！
                  */
                 "flavor": string;
             };
@@ -7540,17 +7540,17 @@ export interface Locale extends ILocale {
                  */
                 "description": string;
             };
-            "_iLoveCherryPick": {
+            "_iLoveAcuaskey": {
                 /**
-                 * I Love CherryPick
+                 * I Love Acuaskey
                  */
                 "title": string;
                 /**
-                 * "I ❤ #CherryPick"を投稿した
+                 * "I ❤ #Acuaskey"を投稿した
                  */
                 "description": string;
                 /**
-                 * CherryPickを使ってくださりありがとうございます！ by 開発チーム
+                 * Acuaskeyを使ってくださりありがとうございます！ by 開発チーム
                  */
                 "flavor": string;
             };
@@ -7576,7 +7576,7 @@ export interface Locale extends ILocale {
             };
             "_client60min": {
                 /**
-                 * CherryPickの見すぎ
+                 * Acuaskeyの見すぎ
                  */
                 "title": string;
                 /**
@@ -7724,7 +7724,7 @@ export interface Locale extends ILocale {
             };
             "_setNameToNoriDev": {
                 /**
-                 * 神様コンプレックス（CherryPick）
+                 * 神様コンプレックス（Acuaskey）
                  */
                 "title": string;
                 /**
@@ -7826,7 +7826,7 @@ export interface Locale extends ILocale {
             };
             "_tutorialCompleted": {
                 /**
-                 * CherryPick初心者講座 修了証
+                 * Acuaskey初心者講座 修了証
                  */
                 "title": string;
                 /**
@@ -8564,7 +8564,7 @@ export interface Locale extends ILocale {
     };
     "_aboutMisskey": {
         /**
-         * CherryPickは、Misskeyをベースに2021年から開発中のカスタマイズオープンソースのソフトウェアです。
+         * Acuaskeyは、Misskeyをベースに2021年から開発中のカスタマイズオープンソースのソフトウェアです。
          */
         "about": string;
         /**
@@ -8584,7 +8584,7 @@ export interface Locale extends ILocale {
          */
         "original": string;
         /**
-         * {name}はオリジナルのCherryPickを改変したバージョンを使用しています。
+         * {name}はオリジナルのAcuaskeyを改変したバージョンを使用しています。
          */
         "thisIsModifiedVersion": ParameterizedString<"name">;
         /**
@@ -8617,13 +8617,13 @@ export interface Locale extends ILocale {
              */
             "donate": string;
         };
-        "_cherrypick": {
+        "_Acuaskey": {
             /**
-             * CherryPickを翻訳
+             * Acuaskeyを翻訳
              */
             "translation": string;
             /**
-             * CherryPickに寄付
+             * Acuaskeyに寄付
              */
             "donate": string;
             /**
@@ -8656,11 +8656,11 @@ export interface Locale extends ILocale {
          */
         "cheatSheet": string;
         /**
-         * MFCは、CherryPick内の様々な場所で使用できる専用のマークアップ言語です。ここでは、MFCで使用可能な構文一覧が確認できます。
+         * MFCは、Acuaskey内の様々な場所で使用できる専用のマークアップ言語です。ここでは、MFCで使用可能な構文一覧が確認できます。
          */
         "intro": string;
         /**
-         * CherryPickでFediverseの世界が広がります
+         * AcuaskeyでFediverseの世界が広がります
          */
         "dummy": string;
         /**
@@ -9424,7 +9424,7 @@ export interface Locale extends ILocale {
          */
         "driveFileDurationWarn": string;
         /**
-         * 長い音声を使用するとCherryPickの使用に支障をきたす可能性があります。それでも続行しますか？
+         * 長い音声を使用するとAcuaskeyの使用に支障をきたす可能性があります。それでも続行しますか？
          */
         "driveFileDurationWarnDescription": string;
         /**
@@ -12085,7 +12085,7 @@ export interface Locale extends ILocale {
          */
         "summaryProxy": string;
         /**
-         * CherryPick本体ではなく、サマリープロキシを使用してプレビューを生成します。
+         * Acuaskey本体ではなく、サマリープロキシを使用してプレビューを生成します。
          */
         "summaryProxyDescription": string;
         /**
@@ -12418,7 +12418,7 @@ export interface Locale extends ILocale {
          */
         "description2": string;
         /**
-         * 貼り付けようとする項目が何なのか正確に理解しているのであれば、私たちと一緒にCherryPickを開発するのはいかがでしょうか？ {link}
+         * 貼り付けようとする項目が何なのか正確に理解しているのであれば、私たちと一緒にAcuaskeyを開発するのはいかがでしょうか？ {link}
          */
         "description3": ParameterizedString<"link">;
         /**
@@ -12909,7 +12909,7 @@ export interface Locale extends ILocale {
              */
             "toggleLocalOnly": string;
             /**
-             * この機能は「設定 - CherryPick」から該当の機能を有効にすることで利用できます。
+             * この機能は「設定 - Acuaskey」から該当の機能を有効にすることで利用できます。
              */
             "featureWarn": string;
             /**

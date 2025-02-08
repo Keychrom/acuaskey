@@ -51,7 +51,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 			<MkFolder :defaultOpen="true">
 				<template #icon><i class="ti ti-bolt"></i></template>
-				<template #label>CherryPick® Fan-out Timeline Technology™ (FTT)</template>
+				<template #label>Acuaskey® Fan-out Timeline Technology™ (FTT)</template>
 				<template v-if="fttForm.savedState.enableFanoutTimeline" #suffix>Enabled</template>
 				<template v-else #suffix>Disabled</template>
 				<template v-if="fttForm.modified.value" #footer>
@@ -94,7 +94,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 			<MkFolder :defaultOpen="true">
 				<template #icon><i class="ti ti-bolt"></i></template>
-				<template #label>CherryPick® Reactions Boost Technology™ (RBT)<span class="_beta">{{ i18n.ts.beta }}</span></template>
+				<template #label>Acuaskey® Reactions Boost Technology™ (RBT)<span class="_beta">{{ i18n.ts.beta }}</span></template>
 				<template v-if="rbtForm.savedState.enableReactionsBuffering" #suffix>Enabled</template>
 				<template v-else #suffix>Disabled</template>
 				<template v-if="rbtForm.modified.value" #footer>

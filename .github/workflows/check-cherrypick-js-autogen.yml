@@ -1,17 +1,17 @@
-name: Check CherryPick JS autogen
+name: Check Acuaskey JS autogen
 
 on:
   pull_request_target:
     branches:
       - master
       - develop
-      - improve-cherrypick-js-autogen-check
+      - improve-Acuaskey-js-autogen-check
     paths:
       - packages/backend/**
 
 jobs:
   # pull_request_target safety: permissions: read-all, and there are no secrets used in this job
-  generate-cherrypick-js:
+  generate-Acuaskey-js:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -45,21 +45,21 @@ jobs:
       - name: Generate API JSON
         run: pnpm --filter backend generate-api-json
 
-      # build cherrypick js
-      - name: Build cherrypick-js
+      # build Acuaskey js
+      - name: Build Acuaskey-js
         run: |-
-          cp packages/backend/built/api.json packages/cherrypick-js/generator/api.json
-          pnpm run --filter cherrypick-js-type-generator generate
+          cp packages/backend/built/api.json packages/acuaskey-js/generator/api.json
+          pnpm run --filter Acuaskey-js-type-generator generate
 
-      # packages/cherrypick-js/generator/built/autogen
+      # packages/acuaskey-js/generator/built/autogen
       - name: Upload Generated
         uses: actions/upload-artifact@v4
         with:
-          name: generated-cherrypick-js
-          path: packages/cherrypick-js/generator/built/autogen
+          name: generated-Acuaskey-js
+          path: packages/acuaskey-js/generator/built/autogen
 
   # pull_request_target safety: permissions: read-all, and no user codes are executed
-  get-actual-cherrypick-js:
+  get-actual-Acuaskey-js:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -75,61 +75,61 @@ jobs:
       - name: Upload From Merged
         uses: actions/upload-artifact@v4
         with:
-          name: actual-cherrypick-js
-          path: packages/cherrypick-js/src/autogen
+          name: actual-Acuaskey-js
+          path: packages/acuaskey-js/src/autogen
 
   # pull_request_target safety: nothing is cloned from repository
-  comment-cherrypick-js-autogen:
+  comment-Acuaskey-js-autogen:
     runs-on: ubuntu-latest
-    needs: [generate-cherrypick-js, get-actual-cherrypick-js]
+    needs: [generate-Acuaskey-js, get-actual-Acuaskey-js]
     permissions:
       pull-requests: write
     steps:
-      - name: download generated-cherrypick-js
+      - name: download generated-Acuaskey-js
         uses: actions/download-artifact@v4
         with:
-          name: generated-cherrypick-js
-          path: cherrypick-js-generated
+          name: generated-Acuaskey-js
+          path: Acuaskey-js-generated
 
-      - name: download actual-cherrypick-js
+      - name: download actual-Acuaskey-js
         uses: actions/download-artifact@v4
         with:
-          name: actual-cherrypick-js
-          path: cherrypick-js-actual
+          name: actual-Acuaskey-js
+          path: Acuaskey-js-actual
 
-      - name: check cherrypick-js changes
+      - name: check Acuaskey-js changes
         id: check-changes
         run: |
-          diff -r -u --label=generated --label=on-tree ./cherrypick-js-generated ./cherrypick-js-actual > cherrypick-js.diff || true
+          diff -r -u --label=generated --label=on-tree ./Acuaskey-js-generated ./Acuaskey-js-actual > Acuaskey-js.diff || true
 
-          if [ -s cherrypick-js.diff ]; then
+          if [ -s Acuaskey-js.diff ]; then
             echo "changes=true" >> $GITHUB_OUTPUT
           else
             echo "changes=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Print full diff
-        run: cat ./cherrypick-js.diff
+        run: cat ./Acuaskey-js.diff
 
       - name: send message
         if: steps.check-changes.outputs.changes == 'true'
         uses: thollander/actions-comment-pull-request@v2
         with:
-          comment_tag: check-cherrypick-js-autogen
+          comment_tag: check-Acuaskey-js-autogen
           message: |-
             Thank you for sending us a great Pull Request! 👍
-            Please regenerate cherrypick-js type definitions! 🙏
+            Please regenerate Acuaskey-js type definitions! 🙏
 
             example:
             ```sh
-            pnpm run build-cherrypick-js-with-types
+            pnpm run build-Acuaskey-js-with-types
             ```
 
       - name: send message
         if: steps.check-changes.outputs.changes == 'false'
         uses: thollander/actions-comment-pull-request@v2
         with:
-          comment_tag: check-cherrypick-js-autogen
+          comment_tag: check-Acuaskey-js-autogen
           mode: delete
           message: "Thank you!"
           create_if_not_exists: false

@@ -7,12 +7,12 @@ on:
       - develop
     paths:
       - packages/backend/**
-      - packages/cherrypick-js/**
+      - packages/acuaskey-js/**
       - .github/workflows/test-federation.yml
   pull_request:
     paths:
       - packages/backend/**
-      - packages/cherrypick-js/**
+      - packages/acuaskey-js/**
       - .github/workflows/test-federation.yml
 
 env:
@@ -51,7 +51,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
-      - name: Build CherryPick
+      - name: Build Acuaskey
         run: |
           corepack enable && corepack prepare
           pnpm i --frozen-lockfile

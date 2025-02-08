@@ -607,7 +607,7 @@ export const meta = {
 				type: 'boolean',
 				optional: false, nullable: false,
 			},
-			skipCherryPickVersion: {
+			skipAcuaskeyVersion: {
 				type: 'string',
 				optional: true, nullable: true,
 			},
@@ -819,7 +819,7 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 				emailToReceiveAbuseReport: instance.emailToReceiveAbuseReport,
 				enableReceivePrerelease: instance.enableReceivePrerelease,
 				skipVersion: instance.skipVersion,
-				skipCherryPickVersion: instance.skipCherryPickVersion,
+				skipAcuaskeyVersion: instance.skipAcuaskeyVersion,
 				trustedLinkUrlPatterns: instance.trustedLinkUrlPatterns,
 				customSplashText: instance.customSplashText,
 				disableRegistrationWhenInactive: instance.disableRegistrationWhenInactive,

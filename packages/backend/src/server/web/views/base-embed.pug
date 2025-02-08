@@ -9,11 +9,11 @@ html(class='embed')
 
 	head
 		meta(charset='utf-8')
-		meta(name='application-name' content='CherryPick')
+		meta(name='application-name' content='Acuaskey')
 		meta(name='referrer' content='origin')
 		meta(name='theme-color' content= themeColor || '#ffbcdc')
 		meta(name='theme-color-orig' content= themeColor || '#ffbcdc')
-		meta(property='og:site_name' content= instanceName || 'CherryPick')
+		meta(property='og:site_name' content= instanceName || 'Acuaskey')
 		meta(property='instance_url' content= instanceUrl)
 		meta(name='viewport' content='width=device-width, initial-scale=1')
 		meta(name='format-detection' content='telephone=no,date=no,address=no,email=no,url=no')
@@ -30,7 +30,7 @@ html(class='embed')
 
 		title
 			block title
-				= title || 'CherryPick'
+				= title || 'Acuaskey'
 
 		block meta
 			meta(name='robots' content='noindex')
@@ -43,10 +43,10 @@ html(class='embed')
 			var BASED_MISSKEY_VERSION = "#{basedMisskeyVersion}";
 			var CLIENT_ENTRY = "#{entry.file}";
 
-		script(type='application/json' id='cherrypick_meta' data-generated-at=now)
+		script(type='application/json' id='Acuaskey_meta' data-generated-at=now)
 			!= metaJson
 
-		script(type='application/json' id='cherrypick_embedCtx' data-generated-at=now)
+		script(type='application/json' id='Acuaskey_embedCtx' data-generated-at=now)
 			!= embedCtx
 
 		script

@@ -109,21 +109,21 @@ describe('MfmService', () => {
 		});
 
 		test('ruby', () => {
-			assert.deepStrictEqual(mfmService.fromHtml('<p>a <ruby>CherryPick<rp>(</rp><rt>チェリーピック</rt><rp>)</rp></ruby> b</p>'), 'a $[ruby CherryPick チェリーピック] b');
-			assert.deepStrictEqual(mfmService.fromHtml('<p>a <ruby>CherryPick<rp>(</rp><rt>チェリーピック</rt><rp>)</rp>CherryPick<rp>(</rp><rt>チェリーピック</rt><rp>)</rp></ruby> b</p>'), 'a $[ruby CherryPick チェリーピック]$[ruby CherryPick チェリーピック] b');
+			assert.deepStrictEqual(mfmService.fromHtml('<p>a <ruby>Acuaskey<rp>(</rp><rt>チェリーピック</rt><rp>)</rp></ruby> b</p>'), 'a $[ruby Acuaskey チェリーピック] b');
+			assert.deepStrictEqual(mfmService.fromHtml('<p>a <ruby>Acuaskey<rp>(</rp><rt>チェリーピック</rt><rp>)</rp>Acuaskey<rp>(</rp><rt>チェリーピック</rt><rp>)</rp></ruby> b</p>'), 'a $[ruby Acuaskey チェリーピック]$[ruby Acuaskey チェリーピック] b');
 		});
 
 		test('ruby with spaces', () => {
 			assert.deepStrictEqual(mfmService.fromHtml('<p>a <ruby>Cherry Pick<rp>(</rp><rt>チェリーピック</rt><rp>)</rp> b</ruby> c</p>'), 'a Cherry Pick(チェリーピック) b c');
-			assert.deepStrictEqual(mfmService.fromHtml('<p>a <ruby>CherryPick<rp>(</rp><rt>チェリー ピック</rt><rp>)</rp> b</ruby> c</p>'), 'a CherryPick(チェリー ピック) b c');
+			assert.deepStrictEqual(mfmService.fromHtml('<p>a <ruby>Acuaskey<rp>(</rp><rt>チェリー ピック</rt><rp>)</rp> b</ruby> c</p>'), 'a Acuaskey(チェリー ピック) b c');
 			assert.deepStrictEqual(
-				mfmService.fromHtml('<p>a <ruby>CherryPick<rp>(</rp><rt>チェリーピック</rt><rp>)</rp>CherryPick<rp>(</rp><rt>ミス キー</rt><rp>)</rp>CherryPick<rp>(</rp><rt>チェリーピック</rt><rp>)</rp></ruby> b</p>'),
-				'a CherryPick(チェリーピック)CherryPick(ミス キー)CherryPick(チェリーピック) b',
+				mfmService.fromHtml('<p>a <ruby>Acuaskey<rp>(</rp><rt>チェリーピック</rt><rp>)</rp>Acuaskey<rp>(</rp><rt>ミス キー</rt><rp>)</rp>Acuaskey<rp>(</rp><rt>チェリーピック</rt><rp>)</rp></ruby> b</p>'),
+				'a Acuaskey(チェリーピック)Acuaskey(ミス キー)Acuaskey(チェリーピック) b',
 			);
 		});
 
 		test('ruby with other inline tags', () => {
-			assert.deepStrictEqual(mfmService.fromHtml('<p>a <ruby><strong>CherryPick</strong><rp>(</rp><rt>チェリーピック</rt><rp>)</rp> b</ruby> c</p>'), 'a **CherryPick**(チェリーピック) b c');
+			assert.deepStrictEqual(mfmService.fromHtml('<p>a <ruby><strong>Acuaskey</strong><rp>(</rp><rt>チェリーピック</rt><rp>)</rp> b</ruby> c</p>'), 'a **Acuaskey**(チェリーピック) b c');
 		});
 
 		test('mention', () => {

@@ -70,7 +70,7 @@ export type EmojiSearchQuery = {
 
 <script setup lang="ts">
 import { computed, defineAsyncComponent, onMounted, ref, nextTick, useCssModule } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import * as os from '@/os.js';
 import {
 	emptyStrToEmptyArray,

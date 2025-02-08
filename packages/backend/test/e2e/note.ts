@@ -8,7 +8,7 @@ import type { Repository } from 'typeorm';
 process.env.NODE_ENV = 'test';
 
 import * as assert from 'assert';
-import type * as misskey from 'cherrypick-js';
+import type * as misskey from 'Acuaskey-js';
 import { MiNote } from '@/models/Note.js';
 import { MAX_NOTE_TEXT_LENGTH } from '@/const.js';
 import { api, castAsError, initTestDb, post, role, signup, uploadFile, uploadUrl } from '../utils.js';
@@ -43,7 +43,7 @@ describe('Note', () => {
 	});
 
 	test('ファイルを添付できる', async () => {
-		const file = await uploadUrl(alice, 'https://raw.githubusercontent.com/kokonect-link/cherrypick/develop/packages/backend/test/resources/192.jpg');
+		const file = await uploadUrl(alice, 'https://raw.githubusercontent.com/kokonect-link/Acuaskey/develop/packages/backend/test/resources/192.jpg');
 
 		const res = await api('notes/create', {
 			fileIds: [file.id],
@@ -55,7 +55,7 @@ describe('Note', () => {
 	}, 1000 * 10);
 
 	test('他人のファイルで怒られる', async () => {
-		const file = await uploadUrl(bob, 'https://raw.githubusercontent.com/kokonect-link/cherrypick/develop/packages/backend/test/resources/192.jpg');
+		const file = await uploadUrl(bob, 'https://raw.githubusercontent.com/kokonect-link/Acuaskey/develop/packages/backend/test/resources/192.jpg');
 
 		const res = await api('notes/create', {
 			text: 'test',

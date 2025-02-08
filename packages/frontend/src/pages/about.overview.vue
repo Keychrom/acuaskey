@@ -22,7 +22,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 	<FormSection>
 		<div class="_gaps_m">
 			<MkKeyValue :copy="version">
-				<template #key>CherryPick</template>
+				<template #key>Acuaskey</template>
 				<template #value>{{ version }}</template>
 			</MkKeyValue>
 			<div v-html="i18n.tsx.poweredByMisskeyDescription({ name: instance.name ?? host })">
@@ -31,7 +31,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<template #icon><i class="ti ti-info-circle"></i></template>
 				{{ i18n.ts.aboutMisskey }}
 			</FormLink>
-			<FormLink v-if="instance.repositoryUrl || instance.providesTarball" :to="instance.repositoryUrl || `/tarball/cherrypick-${version}.tar.gz`" external>
+			<FormLink v-if="instance.repositoryUrl || instance.providesTarball" :to="instance.repositoryUrl || `/tarball/Acuaskey-${version}.tar.gz`" external>
 				<template #icon><i class="ti ti-code"></i></template>
 				{{ i18n.ts.sourceCode }}
 			</FormLink>
@@ -92,10 +92,10 @@ SPDX-License-Identifier: AGPL-3.0-only
 					<template #icon><i class="ti ti-message"></i></template>
 					<template #default>{{ i18n.ts.feedback }}</template>
 				</FormLink>
-				<button :class="$style.main" class="_button" @click="donateCherryPick">
+				<button :class="$style.main" class="_button" @click="donateAcuaskey">
 					<span :class="$style.icon"><i class="ti ti-pig-money"></i></span>
 					<!-- <span :class="$style.text">{{ i18n.tsx.supportThisInstance({ name: instance.name ?? host }) }}</span> -->
-					<span :class="$style.text">{{ i18n.tsx.supportThisInstance({ name: 'CherryPick' }) }}</span>
+					<span :class="$style.text">{{ i18n.tsx.supportThisInstance({ name: 'Acuaskey' }) }}</span>
 					<span :class="$style.suffix">
 						<i class="ti ti-external-link"></i>
 					</span>
@@ -146,7 +146,7 @@ import FormSuspense from '@/components/form/suspense.vue';
 import MkFolder from '@/components/MkFolder.vue';
 import MkKeyValue from '@/components/MkKeyValue.vue';
 import MkLink from '@/components/MkLink.vue';
-import { donateCherryPick } from '@/scripts/donate-cherrypick.js';
+import { donateAcuaskey } from '@/scripts/donate-Acuaskey.js';
 
 const initStats = () => misskeyApi('stats', {});
 </script>

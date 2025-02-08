@@ -9,7 +9,7 @@ export const packedHashtagSchema = {
 		tag: {
 			type: 'string',
 			optional: false, nullable: false,
-			example: 'cherrypick',
+			example: 'Acuaskey',
 		},
 		mentionedUsersCount: {
 			type: 'number',

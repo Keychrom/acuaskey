@@ -433,7 +433,7 @@ const headerActions = computed(() => {
 							if (isDesktop.value) {
 								friendlyUiChildMenu.push({
 									type: 'switch',
-									text: i18n.ts._cherrypick.friendlyUiEnableNotificationsArea,
+									text: i18n.ts._Acuaskey.friendlyUiEnableNotificationsArea,
 									ref: friendlyUiEnableNotificationsArea,
 								});
 							}
@@ -445,7 +445,7 @@ const headerActions = computed(() => {
 
 				menuItems.push({
 					type: 'switch',
-					text: i18n.ts._cherrypick.enableWidgetsArea,
+					text: i18n.ts._Acuaskey.enableWidgetsArea,
 					ref: enableWidgetsArea,
 				});
 

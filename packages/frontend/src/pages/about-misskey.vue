@@ -12,8 +12,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<div v-panel class="about">
 					<div ref="containerEl" class="container" :class="{ playing: easterEggEngine != null }">
 						<img src="/client-assets/about-icon.png" alt="" class="icon" draggable="false" @load="iconLoaded" @click="gravity"/>
-						<div class="cherrypick">CherryPick</div>
-						<div class="version" @click="whatIsNewCherryPick">v{{ version }}</div>
+						<div class="Acuaskey">Acuaskey</div>
+						<div class="version" @click="whatIsNewAcuaskey">v{{ version }}</div>
 						<div class="version" style="font-size: 11px;" @click="whatIsNewMisskey">v{{ basedMisskeyVersion }} (Based on Misskey)</div>
 						<span v-for="emoji in easterEggEmojis" :key="emoji.id" class="emoji" :data-physics-x="emoji.left" :data-physics-y="emoji.top" :class="{ _physics_circle_: !emoji.emoji.startsWith(':') }">
 							<MkCustomEmoji v-if="emoji.emoji[0] === ':'" class="emoji" :name="emoji.emoji" :normal="true" :noStyle="true" :fallbackToImage="true"/>
@@ -26,7 +26,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 					{{ i18n.ts._aboutMisskey.about }}<br><a href="https://misskey-hub.net/docs/about-misskey/" target="_blank" class="_link">{{ i18n.ts.learnMore }}</a>
 				</div>
 				<div v-if="$i != null" style="text-align: center;">
-					<MkButton primary rounded inline @click="iLoveCherryPick">I <Mfm text="$[jelly ❤]"/> #CherryPick</MkButton>
+					<MkButton primary rounded inline @click="iLoveAcuaskey">I <Mfm text="$[jelly ❤]"/> #Acuaskey</MkButton>
 				</div>
 				<FormSection v-if="isKokonect">
 					<template #label>_KOKONECT_</template>
@@ -39,9 +39,9 @@ SPDX-License-Identifier: AGPL-3.0-only
 					</div>
 				</FormSection>
 				<FormSection>
-					<template #label>CherryPick</template>
+					<template #label>Acuaskey</template>
 					<div class="_gaps_s">
-						<FormLink to="https://github.com/kokonect-link/cherrypick" external>
+						<FormLink to="https://github.com/kokonect-link/Acuaskey" external>
 							<template #icon><i class="ti ti-code"></i></template>
 							{{ i18n.ts._aboutMisskey.source }} ({{ i18n.ts._aboutMisskey.original }})
 							<template #suffix>GitHub</template>
@@ -55,12 +55,12 @@ SPDX-License-Identifier: AGPL-3.0-only
 						-->
 						<FormLink to="https://discord.gg/V8qghB28Aj" external>
 							<template #icon><i class="ti ti-brand-discord"></i></template>
-							{{ i18n.ts._aboutMisskey._cherrypick.community }}
+							{{ i18n.ts._aboutMisskey._Acuaskey.community }}
 							<template #suffix>Discord</template>
 						</FormLink>
-						<button :class="$style.main" class="_button" @click="donateCherryPick">
+						<button :class="$style.main" class="_button" @click="donateAcuaskey">
 							<span :class="$style.icon"><i class="ti ti-pig-money"></i></span>
-							<span :class="$style.text">{{ i18n.ts._aboutMisskey._cherrypick.donate }}</span>
+							<span :class="$style.text">{{ i18n.ts._aboutMisskey._Acuaskey.donate }}</span>
 							<span :class="$style.suffix">
 								<i class="ti ti-external-link"></i>
 							</span>
@@ -87,7 +87,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 						</FormLink>
 					</div>
 				</FormSection>
-				<FormSection v-if="instance.repositoryUrl !== 'https://github.com/kokonect-link/cherrypick'">
+				<FormSection v-if="instance.repositoryUrl !== 'https://github.com/kokonect-link/Acuaskey'">
 					<div class="_gaps_s">
 						<MkInfo>
 							{{ i18n.tsx._aboutMisskey.thisIsModifiedVersion({ name: instance.name }) }}
@@ -96,7 +96,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 							<template #icon><i class="ti ti-code"></i></template>
 							{{ i18n.ts._aboutMisskey.source }}
 						</FormLink>
-						<FormLink v-if="instance.providesTarball" :to="`/tarball/cherrypick-${version}.tar.gz`" external>
+						<FormLink v-if="instance.providesTarball" :to="`/tarball/Acuaskey-${version}.tar.gz`" external>
 							<template #icon><i class="ti ti-download"></i></template>
 							{{ i18n.ts._aboutMisskey.source }}
 							<template #suffix>Tarball</template>
@@ -191,13 +191,13 @@ SPDX-License-Identifier: AGPL-3.0-only
 						<span style="color: var(--CP-pick);">Pick</span>
 					</p>
 					<div :class="$style.patronsWithIcon">
-						<div v-for="patron in patronsWithIconWithCherryPick" :class="$style.patronWithIcon">
+						<div v-for="patron in patronsWithIconWithAcuaskey" :class="$style.patronWithIcon">
 							<img :src="patron.icon" :class="$style.patronIcon">
 							<span :class="$style.patronName">{{ patron.name }}</span>
 						</div>
 					</div>
 					<div style="margin-top: 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); grid-gap: 12px;">
-						<div v-for="patron in patronsWithCherryPick" :key="patron">{{ patron }}</div>
+						<div v-for="patron in patronsWithAcuaskey" :key="patron">{{ patron }}</div>
 					</div>
 					<p style="font-weight: bold; padding-top: 20px; color: var(--CP-misskey);"><b>Misskey</b></p>
 					<div :class="$style.patronsWithIcon">
@@ -232,23 +232,23 @@ import * as os from '@/os.js';
 import { definePageMetadata } from '@/scripts/page-metadata.js';
 import { claimAchievement, claimedAchievements } from '@/scripts/achievements.js';
 import { $i } from '@/account.js';
-import { donateCherryPick } from '@/scripts/donate-cherrypick.js';
+import { donateAcuaskey } from '@/scripts/donate-Acuaskey.js';
 
-const patronsWithIconWithCherryPick = [{
+const patronsWithIconWithAcuaskey = [{
 	name: 'Etone Sabasappugawa',
-	icon: 'https://s3.kokonect.link/cherrypick/patreons/b3bd97949b664c81857cc7286552c65e.png',
+	icon: 'https://s3.kokonect.link/Acuaskey/patreons/b3bd97949b664c81857cc7286552c65e.png',
 }, {
 	name: 'okin',
-	icon: 'https://s3.kokonect.link/cherrypick/patreons/c185756cf04d483b9c7687d98ce1103c.png',
+	icon: 'https://s3.kokonect.link/Acuaskey/patreons/c185756cf04d483b9c7687d98ce1103c.png',
 }, {
 	name: 'Kitty',
-	icon: 'https://s3.kokonect.link/cherrypick/patreons/5f8e4bac9cf34984bc59875f6d8d5c1d.gif',
+	icon: 'https://s3.kokonect.link/Acuaskey/patreons/5f8e4bac9cf34984bc59875f6d8d5c1d.gif',
 }, {
 	name: 'breadguy',
-	icon: 'https://s3.kokonect.link/cherrypick/patreons/04cd46fba69c4953949cd1cc15d8c691.jpg',
+	icon: 'https://s3.kokonect.link/Acuaskey/patreons/04cd46fba69c4953949cd1cc15d8c691.jpg',
 }, {
 	name: 'Evgeni Ku',
-	icon: 'https://s3.kokonect.link/cherrypick/patreons/f8c53a4244844192be76e7cbbb57bb48.jpeg',
+	icon: 'https://s3.kokonect.link/Acuaskey/patreons/f8c53a4244844192be76e7cbbb57bb48.jpeg',
 }];
 
 const patronsWithIconWithMisskey = [{
@@ -385,7 +385,7 @@ const patronsWithIconWithMisskey = [{
 	icon: 'https://assets.misskey-hub.net/patrons/d160876f20394674a17963a0e609600a.jpg',
 }];
 
-const patronsWithCherryPick = [
+const patronsWithAcuaskey = [
 	'',
 ];
 
@@ -513,8 +513,8 @@ const easterEggEmojis = ref<{
 const easterEggEngine = ref<{ stop: () => void } | null>(null);
 const containerEl = shallowRef<HTMLElement>();
 
-const whatIsNewCherryPick = () => {
-	window.open(`https://github.com/kokonect-link/cherrypick/blob/develop/CHANGELOG_CHERRYPICK.md#${version.replace(/\./g, '')}`, '_blank');
+const whatIsNewAcuaskey = () => {
+	window.open(`https://github.com/kokonect-link/Acuaskey/blob/develop/CHANGELOG_Acuaskey.md#${version.replace(/\./g, '')}`, '_blank');
 };
 
 const whatIsNewMisskey = () => {
@@ -544,9 +544,9 @@ function gravity() {
 	easterEggEngine.value = physics(containerEl.value);
 }
 
-function iLoveCherryPick() {
+function iLoveAcuaskey() {
 	os.post({
-		initialText: 'I $[jelly ❤] #CherryPick',
+		initialText: 'I $[jelly ❤] #Acuaskey',
 		instant: true,
 	});
 }
@@ -629,7 +629,7 @@ definePageMetadata(() => ({
 				z-index: 1;
 			}
 
-			> .cherrypick {
+			> .Acuaskey {
 				margin: 0.75em auto 0 auto;
 				width: max-content;
 				position: relative;

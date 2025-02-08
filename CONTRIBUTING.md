@@ -1,5 +1,5 @@
 # Contribution guide
-We're glad you're interested in contributing CherryPick! In this document you will find the information you need to contribute to the project.
+We're glad you're interested in contributing Acuaskey! In this document you will find the information you need to contribute to the project.
 
 > [!NOTE]
 > This project uses Japanese as its major language, **but you do not need to translate and write the Issues/PRs in Japanese.**
@@ -15,7 +15,7 @@ Before creating an issue, please check the following:
 - To avoid duplication, please search for similar issues before creating a new issue.
 - Do not use Issues to ask questions or troubleshooting.
 	- Issues should only be used to feature requests, suggestions, and bug tracking.
-	- Please ask questions or troubleshooting in [GitHub Discussions](https://github.com/kokonect-link/cherrypick/discussions) or [Discord](https://discord.gg/V8qghB28Aj).
+	- Please ask questions or troubleshooting in [GitHub Discussions](https://github.com/kokonect-link/Acuaskey/discussions) or [Discord](https://discord.gg/V8qghB28Aj).
 
 > [!WARNING]
 > Do not close issues that are about to be resolved. It should remain open until a commit that actually resolves it is merged.
@@ -55,7 +55,7 @@ Thank you for your PR! Before creating a PR, please check the following:
 	- `fix` / `refactor` / `feat` / `enhance` / `perf` / `chore` etc
 	- Also, make sure that the granularity of this PR is appropriate. Please do not include more than one type of change or interest in a single PR.
 - If there is an Issue which will be resolved by this PR, please include a reference to the Issue in the text.
-- Please add the summary of the changes to [`CHANGELOG_CHERRYPICK.md`](/CHANGELOG_CHERRYPICK.md). However, this is not necessary for changes that do not affect the users, such as refactoring.
+- Please add the summary of the changes to [`CHANGELOG_Acuaskey.md`](/CHANGELOG_Acuaskey.md). However, this is not necessary for changes that do not affect the users, such as refactoring.
 - Check if there are any documents that need to be created or updated due to this change.
 - If you have added a feature or fixed a bug, please add a test case if possible.
 - Please make sure that tests and Lint are passed in advance.
@@ -71,7 +71,7 @@ If PR includes changes to ActivityPub payload, please reflect it in [misskey-hub
 
 The name of purporsed extension property (referred as "extended property" in later) to ActivityPub shall be prefixed by `_misskey_`. (i.e. `_misskey_quote`)
 
-The extended property in `packages/backend/src/core/activitypub/type.ts` **must** be declared as optional because ActivityPub payloads that comes from older CherryPick or other implementation may not contain it.
+The extended property in `packages/backend/src/core/activitypub/type.ts` **must** be declared as optional because ActivityPub payloads that comes from older Acuaskey or other implementation may not contain it.
 
 The extended property must be included in the context definition. Context is defined in `packages/backend/src/core/activitypub/misc/contexts.ts`.
 The key shall be same as the name of extended property, and the value shall be same as "short IRI".
@@ -135,7 +135,7 @@ An actual domain will be assigned so you can test the federation.
 		- `x.y.z` is the new version you are trying to release.
 3. Deploy and perform a simple QA check. Also verify that the tests passed.
 4. Merge it. (Do not squash commit)
-5. Create a [release of GitHub](https://github.com/kokonect-link/cherrypick/releases)
+5. Create a [release of GitHub](https://github.com/kokonect-link/Acuaskey/releases)
 	- The target branch must be `master`
 	- The tag name must be the version
 
@@ -159,7 +159,7 @@ For newly added languages, once the translation progress per language exceeds 70
 
 ## Development
 ### Setup
-Before developing, you have to set up environment. CherryPick requires Redis, PostgreSQL, and FFmpeg.
+Before developing, you have to set up environment. Acuaskey requires Redis, PostgreSQL, and FFmpeg.
 
 You would want to install Meilisearch to experiment related features. Technically, meilisearch is not strict requirement, but some features and tests require it.
 
@@ -200,13 +200,13 @@ command.
 - Service Worker is watched by esbuild.
 - Vite HMR (just the `vite` command) is available. The behavior may be different from production.
 - Vite runs behind the backend (the backend will proxy Vite at /vite and /embed_vite except for websocket used for HMR).
-- You can see CherryPick by accessing `http://localhost:3000` (Replace `3000` with the port configured with `port` in .config/default.yml).
+- You can see Acuaskey by accessing `http://localhost:3000` (Replace `3000` with the port configured with `port` in .config/default.yml).
 
 ## Testing
 You can run non-backend tests by executing following commands:
 ```sh
 pnpm --filter frontend test
-pnpm --filter cherrypick-js test
+pnpm --filter Acuaskey-js test
 ```
 
 Backend tests require manual preparation of servers. See the next section for more on this.
@@ -220,7 +220,7 @@ There are three types of test codes for the backend:
 #### Running Unit Tests or Single-server E2E Tests
 1. Create a config file:
 ```sh
-cp .github/cherrypick/test.yml .config/
+cp .github/Acuaskey/test.yml .config/
 ```
 
 2. Start DB and Redis servers for testing:
@@ -245,21 +245,21 @@ See [`/packages/backend/test-federation/README.md`](/packages/backend/test-feder
 
 ## Environment Variable
 
-- `CHERRYPICK_CONFIG_YML`: Specify the file path of config.yml instead of default.yml (e.g. `2nd.yml`).
-- `CHERRYPICK_WEBFINGER_USE_HTTP`: If it's set true, WebFinger requests will be http instead of https, useful for testing federation between servers in localhost. NEVER USE IN PRODUCTION.
+- `Acuaskey_CONFIG_YML`: Specify the file path of config.yml instead of default.yml (e.g. `2nd.yml`).
+- `Acuaskey_WEBFINGER_USE_HTTP`: If it's set true, WebFinger requests will be http instead of https, useful for testing federation between servers in localhost. NEVER USE IN PRODUCTION.
 
 ## Continuous integration
-CherryPick uses GitHub Actions for executing automated tests.
+Acuaskey uses GitHub Actions for executing automated tests.
 Configuration files are located in [`/.github/workflows`](/.github/workflows).
 
 ## Vue
-CherryPick uses Vue(v3) as its front-end framework.
+Acuaskey uses Vue(v3) as its front-end framework.
 - Use TypeScript.
 - **When creating a new component, please use the Composition API (with [setup sugar](https://v3.vuejs.org/api/sfc-script-setup.html) and [ref sugar](https://github.com/vuejs/rfcs/discussions/369)) instead of the Options API.**
 	- Some of the existing components are implemented in the Options API, but it is an old implementation. Refactors that migrate those components to the Composition API are also welcome.
 
 ## nirax
-niraxは、CherryPickで使用しているオリジナルのフロントエンドルーティングシステムです。
+niraxは、Acuaskeyで使用しているオリジナルのフロントエンドルーティングシステムです。
 **vue-routerから影響を多大に受けているので、まずはvue-routerについて学ぶことをお勧めします。**
 
 ### ルート定義
@@ -288,14 +288,14 @@ vue-routerとの最大の違いは、niraxは複数のルーターが存在す�
 
 ## Storybook
 
-CherryPick uses [Storybook](https://storybook.js.org/) for UI development.
+Acuaskey uses [Storybook](https://storybook.js.org/) for UI development.
 
 ### Setup & Run
 
 #### Setup
 
 ```bash
-pnpm --filter cherrypick-js build
+pnpm --filter Acuaskey-js build
 ```
 
 #### Run
@@ -476,9 +476,9 @@ describe('test', () => {
 コード上でMisskeyのドメイン固有の概念には`Mi`をprefixすることで、他のドメインの同様の概念と区別できるほか、名前の衝突を防ぐ。
 ただし、文脈上Misskeyのものを指すことが明らかであり、名前の衝突の恐れがない場合は、一時的なローカル変数に限って`Mi`を省略してもよい。
 
-### CherryPick.jsの型生成
+### Acuaskey.jsの型生成
 ```bash
-pnpm build-cherrypick-js-with-types
+pnpm build-Acuaskey-js-with-types
 ```
 
 ### How to resolve conflictions occurred at pnpm-lock.yaml?
@@ -598,7 +598,7 @@ export const paramDef = {
 ```
 
 ### コネクションには`markRaw`せよ
-**Vueのコンポーネントのdataオプションとして**cherrypick.jsのコネクションを設定するとき、必ず`markRaw`でラップしてください。インスタンスが不必要にリアクティブ化されることで、cherrypick.js内の処理で不具合が発生するとともに、パフォーマンス上の問題にも繋がる。なお、Composition APIを使う場合はこの限りではない(リアクティブ化はマニュアルなため)。
+**Vueのコンポーネントのdataオプションとして**Acuaskey.jsのコネクションを設定するとき、必ず`markRaw`でラップしてください。インスタンスが不必要にリアクティブ化されることで、Acuaskey.js内の処理で不具合が発生するとともに、パフォーマンス上の問題にも繋がる。なお、Composition APIを使う場合はこの限りではない(リアクティブ化はマニュアルなため)。
 
 ### JSONのimportに気を付けよう
 TypeScriptでjsonをimportすると、tscでコンパイルするときにそのjsonファイルも一緒にdistディレクトリに吐き出されてしまう。この挙動により、意図せずファイルの書き換えが発生することがあるので、jsonをimportするときは書き換えられても良いものかどうか確認すること。書き換えされて欲しくない場合は、importで読み込むのではなく、`fs.readFileSync`などの関数を使って読み込むようにすればよい。

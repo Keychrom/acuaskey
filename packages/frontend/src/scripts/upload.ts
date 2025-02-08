@@ -4,7 +4,7 @@
  */
 
 import { reactive, ref } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import { v4 as uuid } from 'uuid';
 import { readAndCompressImage } from '@misskey-dev/browser-image-resizer';
 import { apiUrl } from '@@/js/config.js';

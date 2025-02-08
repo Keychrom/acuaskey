@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: syuilo and misskey-project & noridev and cherrypick-project
+SPDX-FileCopyrightText: syuilo and misskey-project & noridev and Acuaskey-project
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 
@@ -58,7 +58,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { computed, onMounted, nextTick, onBeforeUnmount, watch, shallowRef, ref } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import { isBottomVisible, onScrollBottom, scrollToBottom } from '@@/js/scroll.js';
 import XMessage from './messaging-room.message.vue';
 import XForm from './messaging-room.form.vue';

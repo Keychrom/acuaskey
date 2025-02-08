@@ -36,7 +36,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { markRaw, onMounted, onUnmounted, ref, shallowRef } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import XChart from './overview.queue.chart.vue';
 import type { ApQueueDomain } from '@/pages/admin/queue.vue';
 import number from '@/filters/number.js';

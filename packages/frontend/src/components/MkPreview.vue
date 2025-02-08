@@ -14,7 +14,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 		</MkSwitch>
 		<div :class="$style.preview__content1__input">
 			<MkRadio v-model="radio" value="misskey">Misskey</MkRadio>
-			<MkRadio v-model="radio" value="cherrypick">CherryPick</MkRadio>
+			<MkRadio v-model="radio" value="Acuaskey">Acuaskey</MkRadio>
 			<MkRadio v-model="radio" value="mastodon">Mastodon</MkRadio>
 			<MkRadio v-model="radio" value="pleroma">Pleroma</MkRadio>
 		</div>
@@ -48,8 +48,8 @@ import { $i } from '@/account.js';
 
 const text = ref('');
 const flag = ref(true);
-const radio = ref('cherrypick');
-const mfm = ref(`Hello world! This is an @example mention. BTW you are @${$i ? $i.username : 'guest'}.\nAlso, here is ${config.url} and [example link](${config.url}). for more details, see https://example.com.\nAs you know #cherrypick is open-source software.`);
+const radio = ref('Acuaskey');
+const mfm = ref(`Hello world! This is an @example mention. BTW you are @${$i ? $i.username : 'guest'}.\nAlso, here is ${config.url} and [example link](${config.url}). for more details, see https://example.com.\nAs you know #Acuaskey is open-source software.`);
 
 const openDialog = async () => {
 	await os.alert({
@@ -73,7 +73,7 @@ const openForm = async () => {
 		},
 		baz: {
 			type: 'string',
-			default: 'CherryPick makes you happy.',
+			default: 'Acuaskey makes you happy.',
 			label: 'This is a string property',
 		},
 	});

@@ -51,29 +51,29 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<MkSwitch v-model="enableHorizontalSwipe">{{ i18n.ts.enableHorizontalSwipe }}</MkSwitch>
 				<MkSwitch v-model="alwaysConfirmFollow">{{ i18n.ts.alwaysConfirmFollow }}</MkSwitch>
 				<MkSwitch v-model="confirmWhenRevealingSensitiveMedia">{{ i18n.ts.confirmWhenRevealingSensitiveMedia }}</MkSwitch>
-				<MkSwitch v-model="autoLoadMoreReplies">{{ i18n.ts.autoLoadMoreReplies }} <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="autoLoadMoreConversation">{{ i18n.ts.autoLoadMoreConversation }} <span class="_beta">CherryPick</span></MkSwitch>
+				<MkSwitch v-model="autoLoadMoreReplies">{{ i18n.ts.autoLoadMoreReplies }} <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="autoLoadMoreConversation">{{ i18n.ts.autoLoadMoreConversation }} <span class="_beta">Acuaskey</span></MkSwitch>
 				<MkSwitch v-model="useAutoTranslate" @update:modelValue="learnMoreAutoTranslate">
-					{{ i18n.ts.useAutoTranslate }} <span class="_beta">CherryPick</span>
+					{{ i18n.ts.useAutoTranslate }} <span class="_beta">Acuaskey</span>
 					<template v-if="!$i?.policies.canUseAutoTranslate" #caption>{{ i18n.ts.cannotBeUsedFunc }} <a class="_link" @click="learnMoreCantUseAutoTranslate">{{ i18n.ts.learnMore }}</a></template>
 				</MkSwitch>
-				<MkSwitch v-model="welcomeBackToast">{{ i18n.ts.welcomeBackToast }} <span class="_beta">CherryPick</span></MkSwitch>
-				<MkSwitch v-model="disableNyaize">{{ i18n.ts.noNyaization }} <span class="_beta">CherryPick</span></MkSwitch>
+				<MkSwitch v-model="welcomeBackToast">{{ i18n.ts.welcomeBackToast }} <span class="_beta">Acuaskey</span></MkSwitch>
+				<MkSwitch v-model="disableNyaize">{{ i18n.ts.noNyaization }} <span class="_beta">Acuaskey</span></MkSwitch>
 			</div>
 			<MkSelect v-model="serverDisconnectedBehavior">
-				<template #label>{{ i18n.ts.whenServerDisconnected }} <span class="_beta" style="vertical-align: middle;">CherryPick</span></template>
+				<template #label>{{ i18n.ts.whenServerDisconnected }} <span class="_beta" style="vertical-align: middle;">Acuaskey</span></template>
 				<option value="reload">{{ i18n.ts._serverDisconnectedBehavior.reload }}</option>
 				<option value="dialog">{{ i18n.ts._serverDisconnectedBehavior.dialog }}</option>
 				<option value="quiet">{{ i18n.ts._serverDisconnectedBehavior.quiet }}</option>
 				<option value="none">{{ i18n.ts._serverDisconnectedBehavior.none }}</option>
 			</MkSelect>
 			<MkSelect v-model="requireRefreshBehavior">
-				<template #label>{{ i18n.ts.requireRefresh }} <span class="_beta" style="vertical-align: middle;">CherryPick</span></template>
+				<template #label>{{ i18n.ts.requireRefresh }} <span class="_beta" style="vertical-align: middle;">Acuaskey</span></template>
 				<option value="dialog">{{ i18n.ts._requireRefreshBehavior.dialog }}</option>
 				<option value="quiet">{{ i18n.ts._requireRefreshBehavior.quiet }}</option>
 			</MkSelect>
 			<MkSelect v-model="newNoteReceivedNotificationBehavior">
-				<template #label>{{ i18n.ts.newNoteReceivedNotification }} <span class="_beta" style="vertical-align: middle;">CherryPick</span></template>
+				<template #label>{{ i18n.ts.newNoteReceivedNotification }} <span class="_beta" style="vertical-align: middle;">Acuaskey</span></template>
 				<option value="default">{{ i18n.ts._newNoteReceivedNotificationBehavior.default }}</option>
 				<option value="count">{{ i18n.ts._newNoteReceivedNotificationBehavior.count }}</option>
 				<option value="none">{{ i18n.ts._newNoteReceivedNotificationBehavior.none }}</option>

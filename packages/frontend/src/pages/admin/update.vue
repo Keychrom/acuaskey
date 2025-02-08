@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: syuilo and misskey-project & noridev and cherrypick-project
+SPDX-FileCopyrightText: syuilo and misskey-project & noridev and Acuaskey-project
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 
@@ -15,36 +15,36 @@ SPDX-License-Identifier: AGPL-3.0-only
 					</MkSwitch>
 				</div>
 
-				<template v-if="(version && version.length > 0) && (releasesCherryPick && releasesCherryPick.length > 0)">
-					<FormInfo v-if="compareVersions(version, releasesCherryPick[0].tag_name) > 0">{{ i18n.ts.youAreRunningBetaClient }}</FormInfo>
-					<FormInfo v-else-if="compareVersions(version, releasesCherryPick[0].tag_name) === 0" check>{{ i18n.ts.youAreRunningUpToDateClient }}</FormInfo>
+				<template v-if="(version && version.length > 0) && (releasesAcuaskey && releasesAcuaskey.length > 0)">
+					<FormInfo v-if="compareVersions(version, releasesAcuaskey[0].tag_name) > 0">{{ i18n.ts.youAreRunningBetaClient }}</FormInfo>
+					<FormInfo v-else-if="compareVersions(version, releasesAcuaskey[0].tag_name) === 0" check>{{ i18n.ts.youAreRunningUpToDateClient }}</FormInfo>
 					<FormInfo v-else warn>{{ i18n.ts.newVersionOfClientAvailable }}</FormInfo>
 				</template>
 				<FormInfo v-else>{{ i18n.ts.loading }}</FormInfo>
 
 				<FormSection first>
 					<template #label>{{ instanceName }}</template>
-					<MkKeyValue @click="whatIsNewCherryPick">
+					<MkKeyValue @click="whatIsNewAcuaskey">
 						<template #key>{{ i18n.ts.currentVersion }} <i class="ti ti-external-link"></i></template>
 						<template #value>{{ version }}</template>
 					</MkKeyValue>
-					<MkKeyValue v-if="version < releasesCherryPick[0].tag_name && !skipVersion" style="margin-top: 10px;" @click="whatIsNewLatestCherryPick">
+					<MkKeyValue v-if="version < releasesAcuaskey[0].tag_name && !skipVersion" style="margin-top: 10px;" @click="whatIsNewLatestAcuaskey">
 						<template #key>{{ i18n.ts.latestVersion }} <i class="ti ti-external-link"></i></template>
-						<template v-if="releasesCherryPick" #value>{{ releasesCherryPick[0].tag_name }}</template>
+						<template v-if="releasesAcuaskey" #value>{{ releasesAcuaskey[0].tag_name }}</template>
 						<template v-else #value><MkEllipsis/></template>
 					</MkKeyValue>
-					<MkButton v-if="!skipVersion && (compareVersions(version, releasesCherryPick[0].tag_name) < 0)" style="margin-top: 10px;" @click="skipThisVersion">{{ i18n.ts.skipThisVersion }}</MkButton>
+					<MkButton v-if="!skipVersion && (compareVersions(version, releasesAcuaskey[0].tag_name) < 0)" style="margin-top: 10px;" @click="skipThisVersion">{{ i18n.ts.skipThisVersion }}</MkButton>
 				</FormSection>
 
-				<FormSection @click="whatIsNewLatestCherryPick">
-					<template #label>CherryPick <i class="ti ti-external-link"></i></template>
+				<FormSection @click="whatIsNewLatestAcuaskey">
+					<template #label>Acuaskey <i class="ti ti-external-link"></i></template>
 					<MkKeyValue>
 						<template #key>{{ i18n.ts.latestVersion }}</template>
-						<template v-if="releasesCherryPick" #value>{{ releasesCherryPick[0].tag_name }}</template>
+						<template v-if="releasesAcuaskey" #value>{{ releasesAcuaskey[0].tag_name }}</template>
 						<template v-else #value><MkEllipsis/></template>
 					</MkKeyValue>
 					<MkKeyValue style="margin: 8px 0 0; color: var(--MI_THEME-fgTransparentWeak); font-size: 0.85em;">
-						<template v-if="releasesCherryPick" #value><MkTime :time="releasesCherryPick[0].published_at" mode="detail"/></template>
+						<template v-if="releasesAcuaskey" #value><MkTime :time="releasesAcuaskey[0].published_at" mode="detail"/></template>
 						<template v-else #value><MkEllipsis/></template>
 					</MkKeyValue>
 				</FormSection>
@@ -86,9 +86,9 @@ import MkButton from '@/components/MkButton.vue';
 
 const enableReceivePrerelease = ref<boolean>(false);
 const skipVersion = ref<boolean>(false);
-const skipCherryPickVersion = ref<string | null>(null);
+const skipAcuaskeyVersion = ref<string | null>(null);
 
-const releasesCherryPick = ref(null);
+const releasesAcuaskey = ref(null);
 const releasesMisskey = ref(null);
 
 const meta = await misskeyApi('admin/meta');
@@ -96,20 +96,20 @@ const meta = await misskeyApi('admin/meta');
 async function init() {
 	enableReceivePrerelease.value = meta.enableReceivePrerelease;
 	skipVersion.value = meta.skipVersion;
-	skipCherryPickVersion.value = meta.skipCherryPickVersion;
+	skipAcuaskeyVersion.value = meta.skipAcuaskeyVersion;
 
 	try {
-		// CherryPick Releases Fetch
-		const cherryPickResponse = await fetch('https://api.github.com/repos/kokonect-link/cherrypick/releases');
-		const cherryPickData = await cherryPickResponse.json();
-		releasesCherryPick.value = meta.enableReceivePrerelease ? cherryPickData : cherryPickData.filter(x => !x.prerelease);
+		// Acuaskey Releases Fetch
+		const AcuaskeyResponse = await fetch('https://api.github.com/repos/kokonect-link/Acuaskey/releases');
+		const AcuaskeyData = await AcuaskeyResponse.json();
+		releasesAcuaskey.value = meta.enableReceivePrerelease ? AcuaskeyData : AcuaskeyData.filter(x => !x.prerelease);
 
-		if (compareVersions(skipCherryPickVersion.value, releasesCherryPick.value[0].tag_name) < 0) {
+		if (compareVersions(skipAcuaskeyVersion.value, releasesAcuaskey.value[0].tag_name) < 0) {
 			skipVersion.value = false;
 			await misskeyApi('admin/update-meta', { skipVersion: skipVersion.value });
 		}
 	} catch (error) {
-		console.error('Failed to fetch CherryPick releases:', error);
+		console.error('Failed to fetch Acuaskey releases:', error);
 	}
 
 	try {
@@ -131,23 +131,23 @@ function save() {
 }
 
 function skipThisVersion() {
-	skipCherryPickVersion.value = releasesCherryPick.value[0].tag_name;
+	skipAcuaskeyVersion.value = releasesAcuaskey.value[0].tag_name;
 	skipVersion.value = true;
 
 	os.apiWithDialog('admin/update-meta', {
 		skipVersion: skipVersion.value,
-		skipCherryPickVersion: skipCherryPickVersion.value,
+		skipAcuaskeyVersion: skipAcuaskeyVersion.value,
 	}).then(() => {
 		fetchInstance(true);
 	});
 }
 
-const whatIsNewCherryPick = () => {
-	window.open(`https://github.com/kokonect-link/cherrypick/blob/develop/CHANGELOG_CHERRYPICK.md#${version.replace(/\./g, '')}`, '_blank');
+const whatIsNewAcuaskey = () => {
+	window.open(`https://github.com/kokonect-link/Acuaskey/blob/develop/CHANGELOG_Acuaskey.md#${version.replace(/\./g, '')}`, '_blank');
 };
 
-const whatIsNewLatestCherryPick = () => {
-	window.open(`https://github.com/kokonect-link/cherrypick/blob/develop/CHANGELOG_CHERRYPICK.md#${releasesCherryPick.value[0].tag_name.replace(/\./g, '')}`, '_blank');
+const whatIsNewLatestAcuaskey = () => {
+	window.open(`https://github.com/kokonect-link/Acuaskey/blob/develop/CHANGELOG_Acuaskey.md#${releasesAcuaskey.value[0].tag_name.replace(/\./g, '')}`, '_blank');
 };
 
 const whatIsNewMisskey = () => {
@@ -168,7 +168,7 @@ const headerActions = computed(() => [{
 const headerTabs = computed(() => []);
 
 definePageMetadata(() => ({
-	title: i18n.ts.cherrypickUpdate,
+	title: i18n.ts.AcuaskeyUpdate,
 	icon: 'ti ti-refresh',
 }));
 </script>

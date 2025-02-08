@@ -75,7 +75,7 @@ const otherMenuItemIndicated = computed(() => {
 	return false;
 });
 const controlPanelIndicated = ref(false);
-const releasesCherryPick = ref(null);
+const releasesAcuaskey = ref(null);
 const bannerDisplay = ref(defaultStore.state.bannerDisplay);
 
 if ($i && ($i.isAdmin ?? $i.isModerator)) {
@@ -88,17 +88,17 @@ if ($i && ($i.isAdmin ?? $i.isModerator)) {
 
 	misskeyApi('admin/meta')
 		.then(meta => {
-			return fetch('https://api.github.com/repos/kokonect-link/cherrypick/releases')
+			return fetch('https://api.github.com/repos/kokonect-link/Acuaskey/releases')
 				.then(res => res.json())
-				.then(cherryPickData => {
-					releasesCherryPick.value = meta.enableReceivePrerelease ? cherryPickData : cherryPickData.filter(x => !x.prerelease);
-					if ((compareVersions(version, releasesCherryPick.value[0].tag_name) < 0) && (compareVersions(meta.skipCherryPickVersion, releasesCherryPick.value[0].tag_name) < 0)) {
+				.then(AcuaskeyData => {
+					releasesAcuaskey.value = meta.enableReceivePrerelease ? AcuaskeyData : AcuaskeyData.filter(x => !x.prerelease);
+					if ((compareVersions(version, releasesAcuaskey.value[0].tag_name) < 0) && (compareVersions(meta.skipAcuaskeyVersion, releasesAcuaskey.value[0].tag_name) < 0)) {
 						controlPanelIndicated.value = true;
 					}
 				});
 		})
 		.catch(error => {
-			console.error('Failed to fetch CherryPick releases:', error);
+			console.error('Failed to fetch Acuaskey releases:', error);
 		});
 }
 

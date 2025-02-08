@@ -24,7 +24,7 @@ import { postMessageToParentWindow, setIframeId } from '@/post-message.js';
 import { serverContext } from '@/server-context.js';
 import { i18n, updateI18n } from '@/i18n.js';
 
-console.log('CherryPick Embed');
+console.log('Acuaskey Embed');
 
 //#region Embedパラメータの取得・パース
 const params = new URLSearchParams(location.search);
@@ -119,9 +119,9 @@ app.provide(DI.embedParams, embedParams);
 // https://github.com/misskey-dev/misskey/pull/8575#issuecomment-1114239210
 // なぜか2回実行されることがあるため、mountするdivを1つに制限する
 const rootEl = ((): HTMLElement => {
-	const CHERRYPICK_MOUNT_DIV_ID = 'cherrypick_app';
+	const Acuaskey_MOUNT_DIV_ID = 'Acuaskey_app';
 
-	const currentRoot = document.getElementById(CHERRYPICK_MOUNT_DIV_ID);
+	const currentRoot = document.getElementById(Acuaskey_MOUNT_DIV_ID);
 
 	if (currentRoot) {
 		console.warn('multiple import detected');
@@ -129,7 +129,7 @@ const rootEl = ((): HTMLElement => {
 	}
 
 	const root = document.createElement('div');
-	root.id = CHERRYPICK_MOUNT_DIV_ID;
+	root.id = Acuaskey_MOUNT_DIV_ID;
 	document.body.appendChild(root);
 	return root;
 })();
@@ -163,7 +163,7 @@ console.log(
 	'font-size: 20px; font-weight: 700; color: #f00;',
 );
 console.log(
-	`%c${i18n.tsx._selfXssPrevention.description3({ link: 'https://github.com/kokonect-link/cherrypick' })}`,
+	`%c${i18n.tsx._selfXssPrevention.description3({ link: 'https://github.com/kokonect-link/Acuaskey' })}`,
 	'font-size: 14px;',
 );
 console.log(i18n.tsx._selfXssPrevention.description4({ link: 'https://misskey-hub.net/docs/for-users/resources/self-xss/' }));

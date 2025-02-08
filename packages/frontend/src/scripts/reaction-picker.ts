@@ -3,9 +3,8 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import * as Misskey from 'cherrypick-js';
-import { defineAsyncComponent, ref } from 'vue';
-import type { Ref } from 'vue';
+import * as Misskey from 'Acuaskey-js';
+import { defineAsyncComponent, Ref, ref } from 'vue';
 import { popup } from '@/os.js';
 import { defaultStore } from '@/store.js';
 

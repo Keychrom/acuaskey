@@ -1,21 +1,21 @@
-name: Check CherryPick JS version
+name: Check Acuaskey JS version
 
 on:
   push:
     branches: [ develop ]
     paths:
-      - packages/cherrypick-js/package.json
+      - packages/acuaskey-js/package.json
       - package.json
-      - .github/workflows/check-cherrypick-js-version.yml
+      - .github/workflows/check-Acuaskey-js-version.yml
   pull_request:
     branches: [ develop ]
     paths:
-      - packages/cherrypick-js/package.json
+      - packages/acuaskey-js/package.json
       - package.json
-      - .github/workflows/check-cherrypick-js-version.yml
+      - .github/workflows/check-Acuaskey-js-version.yml
 jobs:
   check-version:
-    # ルートの package.json と packages/cherrypick-js/package.json のバージョンが一致しているかを確認する
+    # ルートの package.json と packages/acuaskey-js/package.json のバージョンが一致しているかを確認する
     name: Check version
     runs-on: ubuntu-latest
     steps:
@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4.1.1
       - name: Check version
         run: |
-          if [ "$(jq -r '.version' package.json)" != "$(jq -r '.version' packages/cherrypick-js/package.json)" ]; then
+          if [ "$(jq -r '.version' package.json)" != "$(jq -r '.version' packages/acuaskey-js/package.json)" ]; then
             echo "Version mismatch!"
             exit 1
           fi

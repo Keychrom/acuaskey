@@ -14,7 +14,7 @@ import * as os from '@/os.js';
 import { i18n } from '@/i18n.js';
 import { defaultStore } from '@/store.js';
 import { unisonReload } from '@/scripts/unison-reload.js';
-import { donateCherryPick } from '@/scripts/donate-cherrypick.js';
+import { donateAcuaskey } from '@/scripts/donate-Acuaskey.js';
 
 export const navbarItemDef = reactive({
 	notifications: {
@@ -132,7 +132,7 @@ export const navbarItemDef = reactive({
 		to: '/my/achievements',
 	},
 	games: {
-		title: 'CherryPick Games',
+		title: 'Acuaskey Games',
 		icon: 'ti ti-device-gamepad',
 		to: '/games',
 	},
@@ -223,9 +223,9 @@ export const navbarItemDef = reactive({
 	},
 	support: {
 		// title: i18n.tsx.supportThisInstance({ name: instance.name ?? host }),
-		title: i18n.tsx.supportThisInstance({ name: 'CherryPick' }),
+		title: i18n.tsx.supportThisInstance({ name: 'Acuaskey' }),
 		icon: 'ti ti-pig-money',
-		action: (ev) => donateCherryPick(ev),
+		action: (ev) => donateAcuaskey(ev),
 	},
 	cacheClear: {
 		title: i18n.ts.clearCache,

@@ -1,26 +1,26 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Test (cherrypick.js)
+name: Test (Acuaskey.js)
 
 on:
   push:
     branches: [ develop ]
     paths:
-      - packages/cherrypick-js/**
-      - .github/workflows/test-cherrypick-js.yml
+      - packages/acuaskey-js/**
+      - .github/workflows/test-Acuaskey-js.yml
   pull_request:
     branches: [ develop ]
     paths:
-      - packages/cherrypick-js/**
-      - .github/workflows/test-cherrypick-js.yml
+      - packages/acuaskey-js/**
+      - .github/workflows/test-Acuaskey-js.yml
 
 env:
   COREPACK_DEFAULT_TO_LATEST: 0
 
 jobs:
   test:
-    name: Unit tests (cherrypick.js)
+    name: Unit tests (Acuaskey.js)
 
     runs-on: ubuntu-latest
 
@@ -48,10 +48,10 @@ jobs:
         run: git diff --exit-code pnpm-lock.yaml
 
       - name: Build
-        run: pnpm --filter cherrypick-js build
+        run: pnpm --filter Acuaskey-js build
 
       - name: Test
-        run: pnpm --filter cherrypick-js test
+        run: pnpm --filter Acuaskey-js test
         env:
           CI: true
 
@@ -59,4 +59,4 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: ./packages/cherrypick-js/coverage/coverage-final.json
+          files: ./packages/acuaskey-js/coverage/coverage-final.json

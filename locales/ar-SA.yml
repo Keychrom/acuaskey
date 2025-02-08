@@ -215,7 +215,7 @@ noUsers: "ليس هناك مستخدمون"
 editProfile: "تعديل الملف التعريفي"
 noteDeleteConfirm: "هل تريد حذف هذه الملاحظة؟"
 pinLimitExceeded: "لا يمكنك تثبيت الملاحظات بعد الآن."
-intro: "لقد انتهت عملية تنصيب CherryPick. الرجاء إنشاء حساب إداري."
+intro: "لقد انتهت عملية تنصيب Acuaskey. الرجاء إنشاء حساب إداري."
 done: "تمّ"
 processing: "المعالجة جارية"
 preview: "معاينة"
@@ -398,7 +398,7 @@ exploreFediverse: "استكشف الفديفرس"
 popularTags: "الوسوم الرائجة"
 userList: "القوائم"
 about: "عن"
-aboutMisskey: "عن CherryPick"
+aboutMisskey: "عن Acuaskey"
 administrator: "المدير"
 token: "الرمز المميز"
 2fa: "الاستيثاق بعاملَيْن"
@@ -799,7 +799,7 @@ hashtags: "الوسوم"
 troubleshooting: "استكشاف الأخطاء وإصلاحها"
 useBlurEffect: "استخدم تأثير الطمس في الواجهة"
 learnMore: "راجع المزيد"
-misskeyUpdated: "حُدث CherryPick!"
+misskeyUpdated: "حُدث Acuaskey!"
 whatIsNew: "اعرض التغييرات"
 translate: "ترجم"
 translatedFrom: "تُرجم من {x}"
@@ -920,7 +920,7 @@ numberOfLikes: "الإعجابات"
 show: "المظهر"
 neverShow: "لا تظهره مجددًا"
 remindMeLater: "ربما لاحقا"
-didYouLikeMisskey: "هل أعجبك CherryPick؟"
+didYouLikeMisskey: "هل أعجبك Acuaskey؟"
 pleaseDonate: "يستخدم {host} البرمجية الحرة ميسكي. نتمنى أن تتبرعوا للمشروع مما سيسمح لنا متابعة تطويره!"
 roles: "الأدوار"
 role: "الدور"
@@ -1004,7 +1004,7 @@ rolesThatCanBeUsedThisEmojiAsReactionPublicRoleWarn: "يجب أن تكون ال�
 cancelReactionConfirm: "أتريد حذف تفاعلك؟"
 changeReactionConfirm: "أتريد تعديل تفاعلك؟"
 later: "لاحقاً"
-goToMisskey: "لCherryPick"
+goToMisskey: "لAcuaskey"
 additionalEmojiDictionary: "قواميس إيموجي إضافية"
 installed: "مُثبت"
 enableServerMachineStats: "نشر إحصائيات عتاد الخادم"

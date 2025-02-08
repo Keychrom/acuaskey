@@ -18,7 +18,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
 
 RUN corepack enable
 
-WORKDIR /cherrypick
+WORKDIR /Acuaskey
 
 COPY --link ["pnpm-lock.yaml", "pnpm-workspace.yaml", "package.json", "./"]
 COPY --link ["scripts", "./scripts"]
@@ -27,7 +27,7 @@ COPY --link ["packages/frontend-shared/package.json", "./packages/frontend-share
 COPY --link ["packages/frontend/package.json", "./packages/frontend/"]
 COPY --link ["packages/frontend-embed/package.json", "./packages/frontend-embed/"]
 COPY --link ["packages/sw/package.json", "./packages/sw/"]
-COPY --link ["packages/cherrypick-js/package.json", "./packages/cherrypick-js/"]
+COPY --link ["packages/acuaskey-js/package.json", "./packages/acuaskey-js/"]
 COPY --link ["packages/misskey-reversi/package.json", "./packages/misskey-reversi/"]
 COPY --link ["packages/misskey-bubble-game/package.json", "./packages/misskey-bubble-game/"]
 
@@ -54,12 +54,12 @@ RUN apt-get update \
 
 RUN corepack enable
 
-WORKDIR /cherrypick
+WORKDIR /Acuaskey
 
 COPY --link ["pnpm-lock.yaml", "pnpm-workspace.yaml", "package.json", "./"]
 COPY --link ["scripts", "./scripts"]
 COPY --link ["packages/backend/package.json", "./packages/backend/"]
-COPY --link ["packages/cherrypick-js/package.json", "./packages/cherrypick-js/"]
+COPY --link ["packages/acuaskey-js/package.json", "./packages/acuaskey-js/"]
 COPY --link ["packages/misskey-reversi/package.json", "./packages/misskey-reversi/"]
 COPY --link ["packages/misskey-bubble-game/package.json", "./packages/misskey-bubble-game/"]
 
@@ -79,36 +79,36 @@ RUN apt-get update \
 	ffmpeg tini curl libjemalloc-dev libjemalloc2 \
 	&& ln -s /usr/lib/$(uname -m)-linux-gnu/libjemalloc.so.2 /usr/local/lib/libjemalloc.so \
 	&& corepack enable \
-	&& groupadd -g "${GID}" cherrypick \
-	&& useradd -l -u "${UID}" -g "${GID}" -m -d /cherrypick cherrypick \
+	&& groupadd -g "${GID}" Acuaskey \
+	&& useradd -l -u "${UID}" -g "${GID}" -m -d /Acuaskey Acuaskey \
 	&& find / -type d -path /sys -prune -o -type d -path /proc -prune -o -type f -perm /u+s -ignore_readdir_race -exec chmod u-s {} \; \
 	&& find / -type d -path /sys -prune -o -type d -path /proc -prune -o -type f -perm /g+s -ignore_readdir_race -exec chmod g-s {} \; \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists
 
-USER cherrypick
-WORKDIR /cherrypick
+USER Acuaskey
+WORKDIR /Acuaskey
 
 # add package.json to add pnpm
-COPY --chown=cherrypick:cherrypick ./package.json ./package.json
+COPY --chown=Acuaskey:Acuaskey ./package.json ./package.json
 RUN corepack install
 
-COPY --chown=cherrypick:cherrypick --from=target-builder /cherrypick/node_modules ./node_modules
-COPY --chown=cherrypick:cherrypick --from=target-builder /cherrypick/packages/backend/node_modules ./packages/backend/node_modules
-COPY --chown=cherrypick:cherrypick --from=target-builder /cherrypick/packages/cherrypick-js/node_modules ./packages/cherrypick-js/node_modules
-COPY --chown=cherrypick:cherrypick --from=target-builder /cherrypick/packages/misskey-reversi/node_modules ./packages/misskey-reversi/node_modules
-COPY --chown=cherrypick:cherrypick --from=target-builder /cherrypick/packages/misskey-bubble-game/node_modules ./packages/misskey-bubble-game/node_modules
-COPY --chown=cherrypick:cherrypick --from=native-builder /cherrypick/built ./built
-COPY --chown=cherrypick:cherrypick --from=native-builder /cherrypick/packages/cherrypick-js/built ./packages/cherrypick-js/built
-COPY --chown=cherrypick:cherrypick --from=native-builder /cherrypick/packages/misskey-reversi/built ./packages/misskey-reversi/built
-COPY --chown=cherrypick:cherrypick --from=native-builder /cherrypick/packages/misskey-bubble-game/built ./packages/misskey-bubble-game/built
-COPY --chown=cherrypick:cherrypick --from=native-builder /cherrypick/packages/backend/built ./packages/backend/built
-COPY --chown=cherrypick:cherrypick --from=native-builder /cherrypick/fluent-emojis /cherrypick/fluent-emojis
-COPY --chown=cherrypick:cherrypick . ./
+COPY --chown=Acuaskey:Acuaskey --from=target-builder /Acuaskey/node_modules ./node_modules
+COPY --chown=Acuaskey:Acuaskey --from=target-builder /Acuaskey/packages/backend/node_modules ./packages/backend/node_modules
+COPY --chown=Acuaskey:Acuaskey --from=target-builder /Acuaskey/packages/acuaskey-js/node_modules ./packages/acuaskey-js/node_modules
+COPY --chown=Acuaskey:Acuaskey --from=target-builder /Acuaskey/packages/misskey-reversi/node_modules ./packages/misskey-reversi/node_modules
+COPY --chown=Acuaskey:Acuaskey --from=target-builder /Acuaskey/packages/misskey-bubble-game/node_modules ./packages/misskey-bubble-game/node_modules
+COPY --chown=Acuaskey:Acuaskey --from=native-builder /Acuaskey/built ./built
+COPY --chown=Acuaskey:Acuaskey --from=native-builder /Acuaskey/packages/acuaskey-js/built ./packages/acuaskey-js/built
+COPY --chown=Acuaskey:Acuaskey --from=native-builder /Acuaskey/packages/misskey-reversi/built ./packages/misskey-reversi/built
+COPY --chown=Acuaskey:Acuaskey --from=native-builder /Acuaskey/packages/misskey-bubble-game/built ./packages/misskey-bubble-game/built
+COPY --chown=Acuaskey:Acuaskey --from=native-builder /Acuaskey/packages/backend/built ./packages/backend/built
+COPY --chown=Acuaskey:Acuaskey --from=native-builder /Acuaskey/fluent-emojis /Acuaskey/fluent-emojis
+COPY --chown=Acuaskey:Acuaskey . ./
 
 ENV LD_PRELOAD=/usr/local/lib/libjemalloc.so
 ENV MALLOC_CONF=background_thread:true,metadata_thp:auto,dirty_decay_ms:30000,muzzy_decay_ms:30000
 ENV NODE_ENV=production
-HEALTHCHECK --interval=5s --retries=20 CMD ["/bin/bash", "/cherrypick/healthcheck.sh"]
+HEALTHCHECK --interval=5s --retries=20 CMD ["/bin/bash", "/Acuaskey/healthcheck.sh"]
 ENTRYPOINT ["/usr/bin/tini", "--"]
 CMD ["pnpm", "run", "migrateandstart:docker"]

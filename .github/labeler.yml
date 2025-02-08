@@ -23,12 +23,12 @@
   - changed-files:
     - any-glob-to-any-file: ['packages/sw/**/*']
 
-'packages/cherrypick-js':
+'packages/acuaskey-js':
 - any:
   - changed-files:
-    - any-glob-to-any-file: ['packages/cherrypick-js/**/*']
+    - any-glob-to-any-file: ['packages/acuaskey-js/**/*']
 
-'packages/cherrypick-js:test':
+'packages/acuaskey-js:test':
 - any:
   - changed-files:
-    - any-glob-to-any-file: ['packages/cherrypick-js/test/**/*', 'packages/cherrypick-js/test-d/**/*']
+    - any-glob-to-any-file: ['packages/acuaskey-js/test/**/*', 'packages/acuaskey-js/test-d/**/*']

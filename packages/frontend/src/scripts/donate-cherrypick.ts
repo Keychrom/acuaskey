@@ -1,11 +1,11 @@
 /*
- * SPDX-FileCopyrightText: noridev and cherrypick-project
+ * SPDX-FileCopyrightText: noridev and Acuaskey-project
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
 import * as os from '@/os.js';
 
-export function donateCherryPick(ev: MouseEvent) {
+export function donateAcuaskey(ev: MouseEvent) {
 	os.popupMenu([{
 		text: 'Patreon',
 		icon: 'ti ti-pig-money',

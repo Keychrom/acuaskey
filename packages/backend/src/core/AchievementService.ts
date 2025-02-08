@@ -66,7 +66,7 @@ export const ACHIEVEMENT_TYPES = [
 	'followers1000',
 	'collectAchievements30',
 	'viewAchievements3min',
-	'iLoveCherryPick',
+	'iLoveAcuaskey',
 	'foundTreasure',
 	'client30min',
 	'client60min',

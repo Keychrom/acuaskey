@@ -9,7 +9,7 @@ import search_ from './search.vue';
 import { userDetailed } from '@/../.storybook/fakes.js';
 import { commonHandlers } from '@/../.storybook/mocks.js';
 
-const localUser = userDetailed('someuserid', 'cherrypikist', null, 'Local CherryPick User');
+const localUser = userDetailed('someuserid', 'cherrypikist', null, 'Local Acuaskey User');
 
 export const Default = {
 	render(args) {

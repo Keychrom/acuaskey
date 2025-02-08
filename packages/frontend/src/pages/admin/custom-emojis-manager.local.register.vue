@@ -76,7 +76,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script setup lang="ts">
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import { onMounted, ref, useCssModule } from 'vue';
 import { misskeyApi } from '@/scripts/misskey-api.js';
 import {

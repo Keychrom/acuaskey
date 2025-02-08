@@ -20,7 +20,7 @@ const preParseLocale = localStorage.getItem('locale');
 export let locale: Locale = preParseLocale ? JSON.parse(preParseLocale) : null;
 export const version = _VERSION_;
 export const basedMisskeyVersion = _BASEDMISSKEYVERSION_;
-export const instanceName = (siteName === 'CherryPick' || siteName == null) ? host : siteName;
+export const instanceName = (siteName === 'Acuaskey' || siteName == null) ? host : siteName;
 export const ui = localStorage.getItem('ui');
 export const debug = localStorage.getItem('debug') === 'true';
 

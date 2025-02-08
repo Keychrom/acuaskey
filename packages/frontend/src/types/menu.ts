@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import * as Misskey from 'cherrypick-js';
-import type { ComputedRef, Ref } from 'vue';
+import * as Misskey from 'Acuaskey-js';
+import { ComputedRef, Ref } from 'vue';
 
 interface MenuRadioOptionsDef extends Record<string, any> { }
 

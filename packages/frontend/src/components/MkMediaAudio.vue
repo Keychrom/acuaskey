@@ -89,7 +89,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { shallowRef, watch, computed, ref, onDeactivated, onActivated, onMounted } from 'vue';
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import type { MenuItem } from '@/types/menu.js';
 import type { Keymap } from '@/scripts/hotkey.js';
 import { defaultStore } from '@/store.js';

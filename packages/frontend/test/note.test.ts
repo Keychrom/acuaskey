@@ -6,7 +6,7 @@
 import { describe, test, assert, afterEach } from 'vitest';
 import { render, cleanup, type RenderResult } from '@testing-library/vue';
 import './init';
-import * as Misskey from 'cherrypick-js';
+import type * as Misskey from 'Acuaskey-js';
 import { components } from '@/components/index.js';
 import { directives } from '@/directives/index.js';
 import MkMediaImage from '@/components/MkMediaImage.vue';
@@ -78,7 +78,7 @@ describe('MkMediaImage', () => {
 	test('Attaching image with an alt message should show an ALT indicator', async () => {
 		const mkMediaImage = renderMediaImage({
 			type: 'image/png',
-			comment: 'CherryPickのロゴです',
+			comment: 'Acuaskeyのロゴです',
 		});
 		const [gif, alt] = await Promise.all([
 			mkMediaImage.queryByText('GIF'),
@@ -91,7 +91,7 @@ describe('MkMediaImage', () => {
 	test('Attaching GIF image with an alt message should show a GIF and an ALT indicator', async () => {
 		const mkMediaImage = renderMediaImage({
 			type: 'image/gif',
-			comment: 'CherryPickのロゴです',
+			comment: 'Acuaskeyのロゴです',
 		});
 		const [gif, alt] = await Promise.all([
 			mkMediaImage.queryByText('GIF'),

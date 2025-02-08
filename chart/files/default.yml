@@ -1,5 +1,5 @@
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# CherryPick configuration
+# Acuaskey configuration
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 #   ┌─────┐
@@ -15,14 +15,14 @@
 #───┘ Port and TLS settings └───────────────────────────────────
 
 #
-# CherryPick supports two deployment options for public.
+# Acuaskey supports two deployment options for public.
 #
 
 # Option 1: With Reverse Proxy
 #
 #                 +-------- https://example.tld/ ------------+
 #   +------+      |+-------------+      +-------------------+|
-#   | User | ---> || Proxy (443) | ---> | CherryPick (3000) ||
+#   | User | ---> || Proxy (443) | ---> | Acuaskey (3000) ||
 #   +------+      |+-------------+      +-------------------+|
 #                 +------------------------------------------+
 #
@@ -33,15 +33,15 @@
 #
 #                 +-- https://example.tld/ --+
 #   +------+      |   +------------------+   |
-#   | User | ---> |   | CherryPick (443) |   |
+#   | User | ---> |   | Acuaskey (443) |   |
 #   +------+      |   +------------------+   |
 #                 +--------------------------+
 #
-#   You need to run CherryPick as root.
+#   You need to run Acuaskey as root.
 #   You need to set Certificate in 'https' section.
 
 # To use option 1, uncomment below line.
-port: 3000 # A port that your CherryPick server should listen.
+port: 3000 # A port that your Acuaskey server should listen.
 
 # To use option 2, uncomment below lines.
 #port: 443
@@ -59,11 +59,11 @@ db:
   port: 5432
 
   # Database name
-  db: cherrypick
+  db: Acuaskey
 
   # Auth
-  user: example-cherrypick-user
-  pass: example-cherrypick-pass
+  user: example-Acuaskey-user
+  pass: example-Acuaskey-pass
 
   # Whether disable Caching queries
   #disableCache: true
@@ -79,15 +79,15 @@ dbReplications: false
 #  -
 #    host: localhost
 #    port: 5433
-#    db: cherrypick
-#    user: example-cherrypick-user
-#    pass: example-cherrypick-pass
+#    db: Acuaskey
+#    user: example-Acuaskey-user
+#    pass: example-Acuaskey-pass
 #  -
 #    host: localhost
 #    port: 5434
-#    db: cherrypick
-#    user: example-cherrypick-user
-#    pass: example-cherrypick-pass
+#    db: Acuaskey
+#    user: example-Acuaskey-user
+#    pass: example-Acuaskey-pass
 
 #   ┌─────────────────────┐
 #───┘ Redis configuration └─────────────────────────────────────
@@ -204,7 +204,7 @@ id: "aidx"
 #cloudLogging:
 #  projectId: example-project-id
 #  saKeyPath: /path/to/service-account-key.json
-#  logName: cherrypick
+#  logName: Acuaskey
 
 # Override the file URL rendering in ActivityPub (Object Storage file only)
 #apFileBaseUrl: https://example.tld/

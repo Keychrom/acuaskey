@@ -2,9 +2,9 @@
  * SPDX-FileCopyrightText: syuilo and misskey-project
  * SPDX-License-Identifier: AGPL-3.0-only
  */
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 
-const providedContextEl = document.getElementById('cherrypick_embedCtx');
+const providedContextEl = document.getElementById('Acuaskey_embedCtx');
 
 export type ServerContext = {
 	clip?: Misskey.entities.Clip;

@@ -4,7 +4,7 @@
  */
 
 /**
- * Basic OAuth tests to make sure the library is correctly integrated to CherryPick
+ * Basic OAuth tests to make sure the library is correctly integrated to Acuaskey
  * and not regressed by version updates or potential migration to another library.
  */
 
@@ -22,7 +22,7 @@ import pkceChallenge from 'pkce-challenge';
 import { JSDOM } from 'jsdom';
 import Fastify, { type FastifyInstance, type FastifyReply } from 'fastify';
 import { api, port, sendEnvUpdateRequest, signup } from '../utils.js';
-import type * as misskey from 'cherrypick-js';
+import type * as misskey from 'Acuaskey-js';
 
 const host = `http://127.0.0.1:${port}`;
 
@@ -139,7 +139,7 @@ function assertIndirectError(response: Response, error: string): void {
 	assert.strictEqual(location.searchParams.get('error'), error);
 
 	// https://datatracker.ietf.org/doc/html/rfc9207#name-response-parameter-iss
-	assert.strictEqual(location.searchParams.get('iss'), 'http://cherrypick.local');
+	assert.strictEqual(location.searchParams.get('iss'), 'http://Acuaskey.local');
 	// https://datatracker.ietf.org/doc/html/rfc6749.html#section-4.1.2.1
 	assert.ok(location.searchParams.has('state'));
 }
@@ -171,7 +171,7 @@ describe('OAuth', () => {
 	}, 1000 * 60 * 2);
 
 	beforeEach(async () => {
-		await sendEnvUpdateRequest({ key: 'CHERRYPICK_TEST_CHECK_IP_RANGE', value: '' });
+		await sendEnvUpdateRequest({ key: 'Acuaskey_TEST_CHECK_IP_RANGE', value: '' });
 		sender = (reply): void => {
 			reply.send(`
 				<!DOCTYPE html>
@@ -216,7 +216,7 @@ describe('OAuth', () => {
 		assert.ok(location.searchParams.has('code'));
 		assert.strictEqual(location.searchParams.get('state'), 'state');
 		// https://datatracker.ietf.org/doc/html/rfc9207#name-response-parameter-iss
-		assert.strictEqual(location.searchParams.get('iss'), 'http://cherrypick.local');
+		assert.strictEqual(location.searchParams.get('iss'), 'http://Acuaskey.local');
 
 		const code = new URL(location).searchParams.get('code');
 		assert.ok(code);
@@ -605,7 +605,7 @@ describe('OAuth', () => {
 				bearer: true,
 			});
 			assert.strictEqual(createResult.status, 403);
-			assert.ok(createResult.headers.get('WWW-Authenticate')?.startsWith('Bearer realm="CherryPick", error="insufficient_scope", error_description'));
+			assert.ok(createResult.headers.get('WWW-Authenticate')?.startsWith('Bearer realm="Acuaskey", error="insufficient_scope", error_description'));
 		});
 	});
 
@@ -704,7 +704,7 @@ describe('OAuth', () => {
 		assert.strictEqual(response.status, 200);
 
 		const body = await response.json();
-		assert.strictEqual(body.issuer, 'http://cherrypick.local');
+		assert.strictEqual(body.issuer, 'http://Acuaskey.local');
 		assert.ok(body.scopes_supported.includes('write:notes'));
 	});
 
@@ -883,7 +883,7 @@ describe('OAuth', () => {
 		});
 
 		test('Disallow loopback', async () => {
-			await sendEnvUpdateRequest({ key: 'CHERRYPICK_TEST_CHECK_IP_RANGE', value: '1' });
+			await sendEnvUpdateRequest({ key: 'Acuaskey_TEST_CHECK_IP_RANGE', value: '1' });
 
 			const client = new AuthorizationCode(clientConfig);
 			const response = await fetch(client.authorizeURL({

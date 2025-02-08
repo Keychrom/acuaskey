@@ -44,7 +44,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 </template>
 
 <script lang="ts" setup>
-import * as Misskey from 'cherrypick-js';
+import * as Misskey from 'Acuaskey-js';
 import { shallowRef, computed, ref } from 'vue';
 import type { Paging } from '@/components/MkPagination.vue';
 import MkPagination from '@/components/MkPagination.vue';

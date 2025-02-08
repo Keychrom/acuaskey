@@ -19,7 +19,7 @@ const appInitialized = Symbol();
 let lastStory: string | null = null;
 let moduleInitialized = false;
 let unobserve = () => {};
-let cherrypickOS = null;
+let AcuaskeyOS = null;
 
 function loadTheme(applyTheme: typeof import('../src/scripts/theme')['applyTheme']) {
 	unobserve();
@@ -31,7 +31,7 @@ function loadTheme(applyTheme: typeof import('../src/scripts/theme')['applyTheme
 	}
 	const observer = new MutationObserver((entries) => {
 		for (const entry of entries) {
-			if (entry.attributeName === 'data-cherrypick-theme') {
+			if (entry.attributeName === 'data-Acuaskey-theme') {
 				const target = entry.target as HTMLElement;
 				const theme = themes[target.dataset.misskeyTheme];
 				if (theme) {
@@ -44,7 +44,7 @@ function loadTheme(applyTheme: typeof import('../src/scripts/theme')['applyTheme
 	});
 	observer.observe(document.documentElement, {
 		attributes: true,
-		attributeFilter: ['data-cherrypick-theme'],
+		attributeFilter: ['data-Acuaskey-theme'],
 	});
 	unobserve = () => observer.disconnect();
 }
@@ -81,7 +81,7 @@ queueMicrotask(() => {
 			components(app);
 			directives(app);
 			widgets(app);
-			cherrypickOS = os;
+			AcuaskeyOS = os;
 			if (isChromatic()) {
 				defaultStore.set('animation', false);
 			}
@@ -127,7 +127,7 @@ const preview = {
 				setup() {
 					return {
 						context,
-						popups: cherrypickOS.popups,
+						popups: AcuaskeyOS.popups,
 					};
 				},
 				template:
