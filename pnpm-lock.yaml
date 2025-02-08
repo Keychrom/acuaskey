@@ -8476,7 +8476,7 @@ packages:
     resolution: {integrity: sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w==}
     engines: {node: '>= 0.6'}
 
-  mfc-js@0.24.0-Acuaskey.9:
+  mfc-js@0.24.0-cherrypick.9:
     resolution: {integrity: sha512-U2WH3z25CGqJljgumkjhZxgocAIET/x/oVCmFtkatyU3iHdTVO35iXx7Dey/1alZ0b5EPNno5rGtRQhqz5vISA==}
 
   microformats-parser@2.0.2:
@@ -20498,7 +20498,7 @@ snapshots:
 
   methods@1.1.2: {}
 
-  mfc-js@0.24.0-Acuaskey.9:
+  mfc-js@0.24.0-cherrypick.9:
     dependencies:
       '@twemoji/parser': 15.0.0
 
