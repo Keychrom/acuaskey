@@ -79,7 +79,7 @@ export const ACHIEVEMENT_TYPES = [
 	'clickedClickHere',
 	'justPlainLucky',
 	'setNameToSyuilo',
-	'setNameToNoriDev',
+	'setNameToNekoboshi_Suiren&Popmix Group',
 	'cookieClicked',
 	'brainDiver',
 	'smashTestNotificationButton',
@@ -424,7 +424,7 @@ export const ACHIEVEMENT_BADGES = {
 		bg: 'linear-gradient(0deg, rgb(187 183 59), rgb(255 143 77))',
 		frame: 'bronze',
 	},
-	'setNameToNoriDev': {
+	'setNameToNekoboshi_Suiren&Popmix Group': {
 		img: '/fluent-emoji/1f36e.png',
 		bg: 'linear-gradient(0deg, rgb(187 183 59), rgb(255 143 77))',
 		frame: 'bronze',

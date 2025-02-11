@@ -1681,9 +1681,9 @@ _achievements:
     _setNameToSyuilo:
       title: "คอมเพล็กซ์ของพระเจ้า"
       description: "ตั้งชื่อเป็น “syuilo”"
-    _setNameToNoriDev:
+    _setNameToNekoboshi_Suiren&Popmix Group:
       title: "คอมเพล็กซ์ของพระเจ้า (Acuaskey)"
-      description: "ตั้งชื่อเป็น “noridev”"
+      description: "ตั้งชื่อเป็น “Nekoboshi_Suiren&Popmix Group”"
     _passedSinceAccountCreated1:
       title: "ครบรอบหนึ่งปี"
       description: "ผ่านไป 1 ปีนับตั้งแต่สร้างบัญชี"

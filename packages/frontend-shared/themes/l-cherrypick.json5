@@ -2,7 +2,7 @@
 	id: '7540fce3-218f-4e1b-8182-b9481d977078',
 	base: 'light',
 	name: 'Acuaskey Light',
-	author: 'noridev',
+	author: 'Nekoboshi_Suiren&Popmix Group',
 	desc: 'Acuaskey default light theme',
 
 	props: {

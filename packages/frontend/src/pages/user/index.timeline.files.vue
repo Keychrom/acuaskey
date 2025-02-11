@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: noridev and cherrypick-project
+SPDX-FileCopyrightText: nekoboshi_suiren&Popmix Group Acuaskey-project
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 

@@ -1588,8 +1588,8 @@ _achievements:
     _setNameToSyuilo:
       title: "Complexe de dieu"
       description: "Vous avez spécifié « syuilo » comme nom"
-    _setNameToNoriDev:
-      description: "Vous avez spécifié « noridev » comme nom"
+    _setNameToNekoboshi_Suiren&Popmix Group:
+      description: "Vous avez spécifié « Nekoboshi_Suiren&Popmix Group » comme nom"
     _passedSinceAccountCreated1:
       title: "Premier anniversaire"
       description: "Un an est passé depuis la création du compte"

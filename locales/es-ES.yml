@@ -1655,9 +1655,9 @@ _achievements:
     _setNameToSyuilo:
       title: "Complejo de superioridad"
       description: "Configurar el nombre como 'Syuilo'"
-    _setNameToNoriDev:
+    _setNameToNekoboshi_Suiren&Popmix Group:
       title: "Complejo de superioridad (Acuaskey)"
-      description: "Configurar el nombre como 'NoriDev'"
+      description: "Configurar el nombre como 'Nekoboshi_Suiren&Popmix Group'"
     _passedSinceAccountCreated1:
       title: "Primer aniversario"
       description: "Pasó un año desde la creación de la cuenta"

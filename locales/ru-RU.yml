@@ -1447,9 +1447,9 @@ _achievements:
     _setNameToSyuilo:
       title: "Комплекс бога"
       description: "Установлено «syuilo» в качестве имени"
-    _setNameToNoriDev:
+    _setNameToNekoboshi_Suiren&Popmix Group:
       title: "Комплекс бога (Acuaskey)"
-      description: "Установлено «noridev» в качестве имени"
+      description: "Установлено «Nekoboshi_Suiren&Popmix Group» в качестве имени"
     _passedSinceAccountCreated1:
       title: "Первая годовщина"
       description: "Прошёл 1 год с момента регистрации"

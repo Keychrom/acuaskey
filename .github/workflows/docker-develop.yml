@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  REGISTRY_IMAGE: noridev/Acuaskey
+  REGISTRY_IMAGE: Nekoboshi_Suiren&Popmix Group/Acuaskey
 
 jobs:
   # see https://docs.docker.com/build/ci/github-actions/multi-platform/#distribute-build-across-multiple-runners

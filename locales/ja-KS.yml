@@ -1704,9 +1704,9 @@ _achievements:
     _setNameToSyuilo:
       title: "神様コンプレックス"
       description: "名前を syuilo にした"
-    _setNameToNoriDev:
+    _setNameToNekoboshi_Suiren&Popmix Group:
       title: "神様コンプレックス（Acuaskey）"
-      description: "名前を noridev にした"
+      description: "名前を Nekoboshi_Suiren&Popmix Group にした"
     _passedSinceAccountCreated1:
       title: "一周年"
       description: "アカウント作成から1年経過した"

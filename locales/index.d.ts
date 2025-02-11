@@ -7722,13 +7722,13 @@ export interface Locale extends ILocale {
                  */
                 "description": string;
             };
-            "_setNameToNoriDev": {
+            "_setNameToNekoboshi_Suiren&Popmix Group": {
                 /**
                  * 神様コンプレックス（Acuaskey）
                  */
                 "title": string;
                 /**
-                 * 名前を noridev に設定した
+                 * 名前を Nekoboshi_Suiren&Popmix Group に設定した
                  */
                 "description": string;
             };

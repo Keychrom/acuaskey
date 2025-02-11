@@ -218,8 +218,8 @@ function save() {
 	if (profile.name === 'syuilo' || profile.name === 'しゅいろ') {
 		claimAchievement('setNameToSyuilo');
 	}
-	if (profile.name === 'noridev' || profile.name === 'NoriDev' || profile.name === '노리' || profile.name === '노리데브') {
-		claimAchievement('setNameToNoriDev');
+	if (profile.name === 'Nekoboshi_Suiren&Popmix Group' || profile.name === 'Nekoboshi_Suiren&Popmix Group' || profile.name === '노리' || profile.name === '노리데브') {
+		claimAchievement('setNameToNekoboshi_Suiren&Popmix Group');
 	}
 	if (profile.isCat && defaultStore.state.renameTheButtonInPostFormToNya) {
 		claimAchievement('markedAsCat');

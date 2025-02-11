@@ -1972,9 +1972,9 @@ _achievements:
     _setNameToSyuilo:
       title: "신 콤플렉스"
       description: "이름을 syuilo로 설정했어요. 어라..?"
-    _setNameToNoriDev:
+    _setNameToNekoboshi_Suiren&Popmix Group:
       title: "신 콤플렉스 (Acuaskey)"
-      description: "이름을 noridev로 설정했어요. 어라..?"
+      description: "이름을 Nekoboshi_Suiren&Popmix Group로 설정했어요. 어라..?"
     _passedSinceAccountCreated1:
       title: "1주년"
       description: "계정을 생성하고 1년이 지났어요"

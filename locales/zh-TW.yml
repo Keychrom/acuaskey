@@ -1712,9 +1712,9 @@ _achievements:
     _setNameToSyuilo:
       title: "神與您同在"
       description: "將名稱設定為 syuilo"
-    _setNameToNoriDev:
+    _setNameToNekoboshi_Suiren&Popmix Group:
       title: "神與您同在 (Acuaskey)"
-      description: "將名稱設定為 noridev"
+      description: "將名稱設定為 Nekoboshi_Suiren&Popmix Group"
     _passedSinceAccountCreated1:
       title: "一週年"
       description: "帳戶加入時間已超過一年"

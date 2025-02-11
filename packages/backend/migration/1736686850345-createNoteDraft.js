@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: noridev and Acuaskey-project
+ * SPDX-FileCopyrightText: Nekoboshi_Suiren&Popmix Group and Acuaskey-project
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 

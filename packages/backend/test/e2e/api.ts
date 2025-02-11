@@ -212,7 +212,7 @@ describe('API', () => {
 		describe('invalid_token', () => {
 			test('一般リクエスト', async () => {
 				const result = await api('admin/get-index-stats', {}, {
-					token: 'noridev',
+					token: 'Nekoboshi_Suiren&Popmix Group',
 					bearer: true,
 				});
 				assert.strictEqual(result.status, 401);
@@ -221,7 +221,7 @@ describe('API', () => {
 
 			test('multipartリクエスト', async () => {
 				const result = await uploadFile({
-					token: 'noridev',
+					token: 'Nekoboshi_Suiren&Popmix Group',
 					bearer: true,
 				});
 				assert.strictEqual(result.status, 401);
@@ -231,7 +231,7 @@ describe('API', () => {
 			test('streaming', async () => {
 				await assert.rejects(connectStream(
 					{
-						token: 'noridev',
+						token: 'Nekoboshi_Suiren&Popmix Group',
 						bearer: true,
 					},
 					'homeTimeline',
