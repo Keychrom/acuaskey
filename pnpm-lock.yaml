@@ -309,8 +309,8 @@ importers:
         specifier: 0.45.0
         version: 0.45.0
       mfc-js:
-        specifier: 0.24.0-Acuaskey.9
-        version: 0.24.0-Acuaskey.9
+        specifier: 0.24.0-cherrypick.9
+        version: 0.24.0-cherrypick.9
       microformats-parser:
         specifier: 2.0.2
         version: 2.0.2
@@ -915,8 +915,8 @@ importers:
         specifier: 0.19.0
         version: 0.19.0
       mfc-js:
-        specifier: 0.24.0-Acuaskey.9
-        version: 0.24.0-Acuaskey.9
+        specifier: 0.24.0-cherrypick.9
+        version: 0.24.0-cherrypick.9
       misskey-bubble-game:
         specifier: workspace:*
         version: link:../misskey-bubble-game
@@ -1243,8 +1243,8 @@ importers:
         specifier: 2.2.3
         version: 2.2.3
       mfc-js:
-        specifier: 0.24.0-Acuaskey.9
-        version: 0.24.0-Acuaskey.9
+        specifier: 0.24.0-cherrypick.9
+        version: 0.24.0-cherrypick.9
       punycode.js:
         specifier: 2.3.1
         version: 2.3.1
