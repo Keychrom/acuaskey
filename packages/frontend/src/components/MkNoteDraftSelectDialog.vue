@@ -94,7 +94,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { ref, shallowRef, useTemplateRef } from 'vue';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import MkButton from '@/components/MkButton.vue';
 import MkPagination, { type Paging } from '@/components/MkPagination.vue';
 import MkModalWindow from '@/components/MkModalWindow.vue';

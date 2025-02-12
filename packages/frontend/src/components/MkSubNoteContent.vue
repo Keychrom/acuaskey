@@ -134,7 +134,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 import { computed, inject, provide, ref, shallowRef, watch } from 'vue';
 import type { Ref } from 'vue';
 import * as mfm from 'mfc-js';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { shouldCollapsed, shouldMfmCollapsed } from '@@/js/collapsed.js';
 import { concat } from '@@/js/array.js';
 import { host } from '@@/js/config.js';

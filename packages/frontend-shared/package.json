@@ -38,7 +38,7 @@
 		"js-built"
 	],
 	"dependencies": {
-		"Acuaskey-js": "workspace:*",
+		"acuaskey-js": "workspace:*",
 		"vue": "3.5.12"
 	}
 }

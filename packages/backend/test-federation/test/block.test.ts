@@ -1,5 +1,5 @@
 import { deepStrictEqual, rejects, strictEqual } from 'node:assert';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { assertNotificationReceived, createAccount, type LoginUser, resolveRemoteNote, resolveRemoteUser, sleep } from './utils.js';
 
 describe('Block', () => {

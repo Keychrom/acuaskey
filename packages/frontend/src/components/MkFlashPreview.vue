@@ -22,7 +22,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { } from 'vue';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { userName } from '@/filters/user.js';
 
 const props = defineProps<{

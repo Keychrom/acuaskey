@@ -11,7 +11,7 @@ services:
       bash -c "
         corepack enable && corepack prepare
         pnpm -F backend i
-        pnpm -F Acuaskey-js i
+        pnpm -F acuaskey-js i
         pnpm -F misskey-reversi i
       "
 
@@ -48,11 +48,11 @@ services:
         target: /Acuaskey/packages/backend/jest.config.fed.cjs
         read_only: true
       - type: bind
-        source: ../../Acuaskey-js/built
+        source: ../../acuaskey-js/built
         target: /Acuaskey/packages/acuaskey-js/built
         read_only: true
       - type: bind
-        source: ../../Acuaskey-js/package.json
+        source: ../../acuaskey-js/package.json
         target: /Acuaskey/packages/acuaskey-js/package.json
         read_only: true
       - type: bind
@@ -75,7 +75,7 @@ services:
     entrypoint: >
       bash -c '
         corepack enable && corepack prepare
-        pnpm -F Acuaskey-js i --frozen-lockfile
+        pnpm -F acuaskey-js i --frozen-lockfile
         pnpm -F backend i --frozen-lockfile
         exec "$0" "$@"
       '

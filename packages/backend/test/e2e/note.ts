@@ -8,7 +8,7 @@ import type { Repository } from 'typeorm';
 process.env.NODE_ENV = 'test';
 
 import * as assert from 'assert';
-import type * as misskey from 'Acuaskey-js';
+import type * as misskey from 'acuaskey-js';
 import { MiNote } from '@/models/Note.js';
 import { MAX_NOTE_TEXT_LENGTH } from '@/const.js';
 import { api, castAsError, initTestDb, post, role, signup, uploadFile, uploadUrl } from '../utils.js';

@@ -32,7 +32,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { onMounted, shallowRef, ref } from 'vue';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import Cropper from 'cropperjs';
 import tinycolor from 'tinycolor2';
 import { apiUrl } from '@@/js/config.js';

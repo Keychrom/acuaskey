@@ -43,7 +43,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { onMounted, onUnmounted, ref, watch } from 'vue';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import * as os from '@/os.js';
 import bytes from '@/filters/bytes.js';
 import { getStaticImageUrl } from '@/scripts/media-proxy.js';

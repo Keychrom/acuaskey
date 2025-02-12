@@ -22,7 +22,7 @@ import pkceChallenge from 'pkce-challenge';
 import { JSDOM } from 'jsdom';
 import Fastify, { type FastifyInstance, type FastifyReply } from 'fastify';
 import { api, port, sendEnvUpdateRequest, signup } from '../utils.js';
-import type * as misskey from 'Acuaskey-js';
+import type * as misskey from 'acuaskey-js';
 
 const host = `http://127.0.0.1:${port}`;
 

@@ -24,7 +24,7 @@
 		"astring": "1.9.0",
 		"buraha": "0.0.1",
 		"mfc-js": "0.24.0-cherrypick.9",
-		"Acuaskey-js": "workspace:*",
+		"acuaskey-js": "workspace:*",
 		"estree-walker": "3.0.3",
 		"frontend-shared": "workspace:*",
 		"punycode.js": "2.3.1",

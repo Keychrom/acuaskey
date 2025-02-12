@@ -5,7 +5,7 @@
 
 import { throttle } from 'throttle-debounce';
 import { markRaw } from 'vue';
-import { notificationTypes } from 'Acuaskey-js';
+import { notificationTypes } from 'acuaskey-js';
 import type { BasicTimelineType } from '@/timelines.js';
 import type { SoundStore } from '@/store.js';
 import { Storage } from '@/pizzax.js';

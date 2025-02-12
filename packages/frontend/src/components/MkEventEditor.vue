@@ -120,7 +120,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { onMounted, Ref, ref, watch } from 'vue';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import MkInput from './MkInput.vue';
 import MkSwitch from './MkSwitch.vue';
 import { formatDateTimeString } from '@/scripts/format-time-string.js';

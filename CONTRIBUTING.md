@@ -206,7 +206,7 @@ command.
 You can run non-backend tests by executing following commands:
 ```sh
 pnpm --filter frontend test
-pnpm --filter Acuaskey-js test
+pnpm --filter acuaskey-js test
 ```
 
 Backend tests require manual preparation of servers. See the next section for more on this.
@@ -295,7 +295,7 @@ Acuaskey uses [Storybook](https://storybook.js.org/) for UI development.
 #### Setup
 
 ```bash
-pnpm --filter Acuaskey-js build
+pnpm --filter acuaskey-js build
 ```
 
 #### Run
@@ -478,7 +478,7 @@ describe('test', () => {
 
 ### Acuaskey.jsの型生成
 ```bash
-pnpm build-Acuaskey-js-with-types
+pnpm build-acuaskey-js-with-types
 ```
 
 ### How to resolve conflictions occurred at pnpm-lock.yaml?

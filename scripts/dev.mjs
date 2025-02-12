@@ -76,7 +76,7 @@ execa('pnpm', ['--filter', 'sw', 'watch'], {
 	stderr: process.stderr,
 });
 
-execa('pnpm', ['--filter', 'Acuaskey-js', 'watch', '--no-clean'], {
+execa('pnpm', ['--filter', 'acuaskey-js', 'watch', '--no-clean'], {
 	cwd: _dirname + '/../',
 	stdout: process.stdout,
 	stderr: process.stderr,

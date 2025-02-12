@@ -4,7 +4,7 @@
  */
 
 import { EventEmitter } from 'eventemitter3';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 
 export const globalEvents = new EventEmitter<{
 	themeChanged: () => void;

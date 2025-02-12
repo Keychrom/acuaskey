@@ -44,7 +44,7 @@
 		"chartjs-chart-matrix": "2.0.1",
 		"chartjs-plugin-gradient": "0.6.1",
 		"chartjs-plugin-zoom": "2.0.1",
-		"Acuaskey-js": "workspace:*",
+		"acuaskey-js": "workspace:*",
 		"chromatic": "11.18.1",
 		"compare-versions": "6.1.1",
 		"cropperjs": "2.0.0-rc.2",

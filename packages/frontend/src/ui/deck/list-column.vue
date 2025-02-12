@@ -17,7 +17,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 import { watch, shallowRef, ref } from 'vue';
 import XColumn from './column.vue';
 import { updateColumn, Column } from './deck-store.js';
-import type { entities as MisskeyEntities } from 'Acuaskey-js';
+import type { entities as MisskeyEntities } from 'acuaskey-js';
 import type { MenuItem } from '@/types/menu.js';
 import MkTimeline from '@/components/MkTimeline.vue';
 import * as os from '@/os.js';

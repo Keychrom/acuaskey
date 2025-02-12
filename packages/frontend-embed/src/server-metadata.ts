@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { misskeyApi } from '@/misskey-api.js';
 
 const providedMetaEl = document.getElementById('Acuaskey_meta');

@@ -4,7 +4,7 @@
  */
 
 import { defineAsyncComponent } from 'vue';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import * as os from '@/os.js';
 
 export type SystemWebhookEventType = Misskey.entities.SystemWebhook['on'][number];

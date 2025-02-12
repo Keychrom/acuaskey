@@ -8,7 +8,7 @@ services:
         source: node_modules_backend
         target: /Acuaskey/packages/backend/node_modules
       - type: volume
-        source: node_modules_Acuaskey-js
+        source: node_modules_acuaskey-js
         target: /Acuaskey/packages/acuaskey-js/node_modules
       - type: volume
         source: node_modules_misskey-reversi
@@ -27,7 +27,7 @@ services:
         source: node_modules_backend_dev
         target: /Acuaskey/packages/backend/node_modules
       - type: volume
-        source: node_modules_Acuaskey-js_dev
+        source: node_modules_acuaskey-js_dev
         target: /Acuaskey/packages/acuaskey-js/node_modules
 
   daemon:
@@ -64,7 +64,7 @@ services:
         source: node_modules_backend
         target: /Acuaskey/packages/backend/node_modules
       - type: volume
-        source: node_modules_Acuaskey-js
+        source: node_modules_acuaskey-js
         target: /Acuaskey/packages/acuaskey-js/node_modules
       - type: volume
         source: node_modules_misskey-reversi
@@ -86,7 +86,7 @@ services:
         source: node_modules_backend
         target: /Acuaskey/packages/backend/node_modules
       - type: volume
-        source: node_modules_Acuaskey-js
+        source: node_modules_acuaskey-js
         target: /Acuaskey/packages/acuaskey-js/node_modules
       - type: volume
         source: node_modules_misskey-reversi
@@ -112,6 +112,6 @@ volumes:
   node_modules_dev:
   node_modules_backend:
   node_modules_backend_dev:
-  node_modules_Acuaskey-js:
-  node_modules_Acuaskey-js_dev:
+  node_modules_acuaskey-js:
+  node_modules_acuaskey-js_dev:
   node_modules_misskey-reversi:

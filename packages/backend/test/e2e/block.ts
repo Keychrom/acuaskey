@@ -7,7 +7,7 @@ process.env.NODE_ENV = 'test';
 
 import * as assert from 'assert';
 import { api, castAsError, post, signup } from '../utils.js';
-import type * as misskey from 'Acuaskey-js';
+import type * as misskey from 'acuaskey-js';
 
 describe('Block', () => {
 	// alice blocks bob

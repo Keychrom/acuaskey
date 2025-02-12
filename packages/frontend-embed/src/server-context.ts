@@ -2,7 +2,7 @@
  * SPDX-FileCopyrightText: syuilo and misskey-project
  * SPDX-License-Identifier: AGPL-3.0-only
  */
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 
 const providedContextEl = document.getElementById('Acuaskey_embedCtx');
 

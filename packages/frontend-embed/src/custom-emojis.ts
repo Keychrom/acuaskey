@@ -4,7 +4,7 @@
  */
 
 import { shallowRef, watch } from 'vue';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { misskeyApi, misskeyApiGet } from '@/misskey-api.js';
 
 function get(key: string) {

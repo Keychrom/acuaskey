@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import { entities } from 'Acuaskey-js';
+import { entities } from 'acuaskey-js';
 import { beforeEach, describe, test } from '@jest/globals';
 import {
 	api,

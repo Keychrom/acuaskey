@@ -1,5 +1,5 @@
 import assert, { rejects, strictEqual } from 'node:assert';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { createAccount, deepStrictEqualWithExcludedFields, fetchAdmin, type LoginUser, resolveRemoteNote, resolveRemoteUser, sleep } from './utils.js';
 
 const [aAdmin, bAdmin] = await Promise.all([

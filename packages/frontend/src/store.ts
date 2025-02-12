@@ -4,7 +4,7 @@
  */
 
 import { markRaw, ref } from 'vue';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { hemisphere } from '@@/js/intl-const.js';
 import lightTheme from '@@/themes/l-Acuaskey.json5';
 import darkTheme from '@@/themes/d-Acuaskey.json5';

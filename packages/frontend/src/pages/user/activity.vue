@@ -27,7 +27,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 </template>
 
 <script lang="ts" setup>
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import XPv from './activity.pv.vue';
 import XNotes from './activity.notes.vue';
 import XFollowing from './activity.following.vue';

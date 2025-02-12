@@ -44,11 +44,11 @@ services:
         target: /Acuaskey/packages/backend/package.json
         read_only: true
       - type: bind
-        source: ../../Acuaskey-js/built
+        source: ../../acuaskey-js/built
         target: /Acuaskey/packages/acuaskey-js/built
         read_only: true
       - type: bind
-        source: ../../Acuaskey-js/package.json
+        source: ../../acuaskey-js/package.json
         target: /Acuaskey/packages/acuaskey-js/package.json
         read_only: true
       - type: bind

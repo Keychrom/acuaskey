@@ -28,7 +28,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { sum } from '@@/js/array.js';
 import { host } from '@@/js/config.js';
 import { useInterval } from '@@/js/use-interval.js';

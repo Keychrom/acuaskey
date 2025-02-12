@@ -60,7 +60,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { computed, ref } from 'vue';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { concat } from '@@/js/array.js';
 import { url } from '@@/js/config.js';
 import { shouldCollapsed, shouldMfmCollapsed } from '@@/js/collapsed.js';

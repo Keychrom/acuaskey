@@ -4,7 +4,7 @@
  */
 
 import { AISCRIPT_VERSION } from '@syuilo/aiscript';
-import type { entities } from 'Acuaskey-js'
+import type { entities } from 'acuaskey-js'
 import { date, imageDataUrl, text } from "./fake-utils.js";
 
 export function abuseUserReport() {

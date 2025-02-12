@@ -22,7 +22,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { defineAsyncComponent, inject, onMounted, watch, ref } from 'vue';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { v4 as uuid } from 'uuid';
 import XContainer from '../page-editor.container.vue';
 import * as os from '@/os.js';

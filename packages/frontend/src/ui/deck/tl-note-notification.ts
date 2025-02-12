@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { Ref } from 'vue';
 import { SoundStore } from '@/store.js';
 import { getSoundDuration, playMisskeySfxFile, soundsTypes, SoundType } from '@/scripts/sound.js';

@@ -7,7 +7,7 @@ process.env.NODE_ENV = 'test';
 
 import * as assert from 'assert';
 import { host, origin, relativeFetch, signup } from '../utils.js';
-import type * as misskey from 'Acuaskey-js';
+import type * as misskey from 'acuaskey-js';
 
 describe('.well-known', () => {
 	let alice: misskey.entities.User;

@@ -4,7 +4,7 @@
  */
 
 import { get } from 'idb-keyval';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 
 export async function getAccountFromId(id: string): Promise<Pick<Misskey.entities.SignupResponse, 'id' | 'token'> | undefined> {
 	const accounts = await get<Pick<Misskey.entities.SignupResponse, 'id' | 'token'>[]>('accounts');

@@ -221,9 +221,9 @@ importers:
       chalk-template:
         specifier: 1.1.0
         version: 1.1.0
-      Acuaskey-js:
+      acuaskey-js:
         specifier: workspace:*
-        version: link:../Acuaskey-js
+        version: link:../acuaskey-js
       chokidar:
         specifier: 3.5.3
         version: 3.5.3
@@ -875,9 +875,9 @@ importers:
       chartjs-plugin-zoom:
         specifier: 2.0.1
         version: 2.0.1(chart.js@4.4.6)
-      Acuaskey-js:
+      acuaskey-js:
         specifier: workspace:*
-        version: link:../Acuaskey-js
+        version: link:../acuaskey-js
       chromatic:
         specifier: 11.18.1
         version: 11.18.1
@@ -1230,9 +1230,9 @@ importers:
       buraha:
         specifier: 0.0.1
         version: 0.0.1
-      Acuaskey-js:
+      acuaskey-js:
         specifier: workspace:*
-        version: link:../Acuaskey-js
+        version: link:../acuaskey-js
       estree-walker:
         specifier: 3.0.3
         version: 3.0.3
@@ -1375,9 +1375,9 @@ importers:
 
   packages/frontend-shared:
     dependencies:
-      Acuaskey-js:
+      acuaskey-js:
         specifier: workspace:*
-        version: link:../Acuaskey-js
+        version: link:../acuaskey-js
       vue:
         specifier: 3.5.12
         version: 3.5.12(typescript@5.6.3)
@@ -1492,9 +1492,9 @@ importers:
 
   packages/sw:
     dependencies:
-      Acuaskey-js:
+      acuaskey-js:
         specifier: workspace:*
-        version: link:../Acuaskey-js
+        version: link:../acuaskey-js
       esbuild:
         specifier: 0.24.0
         version: 0.24.0

@@ -5,7 +5,7 @@
 
 import { delay, http, HttpResponse } from 'msw';
 import { StoryObj } from '@storybook/vue3';
-import { entities } from 'Acuaskey-js';
+import { entities } from 'acuaskey-js';
 import { commonHandlers } from '../../../.storybook/mocks.js';
 import { emoji } from '../../../.storybook/fakes.js';
 import { fakeId } from '../../../.storybook/fake-utils.js';

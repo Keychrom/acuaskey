@@ -4,7 +4,7 @@
  */
 
 import { setTimeout } from 'node:timers/promises';
-import { entities } from 'Acuaskey-js';
+import { entities } from 'acuaskey-js';
 import { beforeEach, describe, test } from '@jest/globals';
 import {
 	api,

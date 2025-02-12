@@ -7,7 +7,7 @@
  * Operations
  * 各種操作
  */
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import type { SwMessage, SwMessageOrderType } from '@/types.js';
 import { getAccountFromId } from '@/scripts/get-account-from-id.js';
 import { getUrlWithLoginId } from '@/scripts/login-id.js';

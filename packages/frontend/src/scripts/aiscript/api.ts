@@ -4,9 +4,9 @@
  */
 
 import { defineAsyncComponent } from 'vue';
-import { permissions as MkPermissions } from 'Acuaskey-js';
+import { permissions as MkPermissions } from 'acuaskey-js';
 import { errors, utils, values } from '@syuilo/aiscript';
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { url, lang } from '@@/js/config.js';
 import { assertStringAndIsIn } from './common.js';
 import * as os from '@/os.js';

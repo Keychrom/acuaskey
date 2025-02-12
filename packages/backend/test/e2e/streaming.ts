@@ -8,7 +8,7 @@ process.env.NODE_ENV = 'test';
 import * as assert from 'assert';
 import { WebSocket } from 'ws';
 import { api, createAppToken, initTestDb, port, post, signup, waitFire } from '../utils.js';
-import type * as misskey from 'Acuaskey-js';
+import type * as misskey from 'acuaskey-js';
 import { MiFollowing } from '@/models/Following.js';
 
 describe('Streaming', () => {

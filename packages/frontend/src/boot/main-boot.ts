@@ -6,7 +6,7 @@
 import { createApp, defineAsyncComponent, markRaw } from 'vue';
 import { ui } from '@@/js/config.js';
 import { common } from './common.js';
-import type * as Misskey from 'Acuaskey-js';
+import type * as Misskey from 'acuaskey-js';
 import type { Component } from 'vue';
 import * as os from '@/os.js';
 import { i18n } from '@/i18n.js';

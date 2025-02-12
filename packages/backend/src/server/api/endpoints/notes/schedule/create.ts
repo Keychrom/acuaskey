@@ -6,7 +6,7 @@
 import ms from 'ms';
 import { In } from 'typeorm';
 import { Inject, Injectable } from '@nestjs/common';
-import { isPureRenote } from 'Acuaskey-js/note.js';
+import { isPureRenote } from 'acuaskey-js/note.js';
 import type { MiUser } from '@/models/User.js';
 import type {
 	UsersRepository,

@@ -18,7 +18,7 @@ import {
 	uploadFile,
 	waitFire,
 } from '../utils.js';
-import type * as misskey from 'Acuaskey-js';
+import type * as misskey from 'acuaskey-js';
 
 describe('API', () => {
 	let alice: misskey.entities.SignupResponse;

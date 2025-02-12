@@ -168,7 +168,7 @@ export function getConfig(): UserConfig {
 
 			// https://vitejs.dev/guide/dep-pre-bundling.html#monorepos-and-linked-dependencies
 			commonjsOptions: {
-				include: [/Acuaskey-js/, /node_modules/],
+				include: [/acuaskey-js/, /node_modules/],
 			},
 		},
 

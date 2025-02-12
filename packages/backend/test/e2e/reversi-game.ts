@@ -6,9 +6,9 @@
 process.env.NODE_ENV = 'test';
 
 import * as assert from 'assert';
-import { ReversiMatchResponse } from 'Acuaskey-js/entities.js';
+import { ReversiMatchResponse } from 'acuaskey-js/entities.js';
 import { api, signup } from '../utils.js';
-import type * as misskey from 'Acuaskey-js';
+import type * as misskey from 'acuaskey-js';
 
 describe('ReversiGame', () => {
 	let alice: misskey.entities.SignupResponse;

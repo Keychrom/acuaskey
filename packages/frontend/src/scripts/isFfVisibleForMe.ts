@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import * as Misskey from 'Acuaskey-js';
+import * as Misskey from 'acuaskey-js';
 import { $i } from '@/account.js';
 
 export function isFollowingVisibleForMe(user: Misskey.entities.UserDetailed): boolean {

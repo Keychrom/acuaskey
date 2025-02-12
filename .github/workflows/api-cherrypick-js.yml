@@ -4,11 +4,11 @@ on:
   push:
     paths:
       - packages/acuaskey-js/**
-      - .github/workflows/api-Acuaskey-js.yml
+      - .github/workflows/api-acuaskey-js.yml
   pull_request:
     paths:
       - packages/acuaskey-js/**
-      - .github/workflows/api-Acuaskey-js.yml
+      - .github/workflows/api-acuaskey-js.yml
 
 env:
   COREPACK_DEFAULT_TO_LATEST: 0
@@ -34,14 +34,14 @@ jobs:
         run: pnpm i --frozen-lockfile
 
       - name: Build
-        run: pnpm --filter Acuaskey-js build
+        run: pnpm --filter acuaskey-js build
 
       - name: Check files
         run: ls packages/acuaskey-js/built
 
       - name: API report
-        run: pnpm --filter Acuaskey-js api-prod
+        run: pnpm --filter acuaskey-js api-prod
 
       - name: Show report
         if: always()
-        run: cat packages/acuaskey-js/temp/Acuaskey-js.api.md
+        run: cat packages/acuaskey-js/temp/acuaskey-js.api.md

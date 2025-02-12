@@ -21,7 +21,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 <script lang="ts" setup>
 import { defineProps, ref } from 'vue';
 import MkModalWindow from './MkModalWindow.vue';
-import type * as Misskey from 'Acuaskey-js';
+import type * as Misskey from 'acuaskey-js';
 
 defineProps<{
 	file: Misskey.entities.DriveFile;
