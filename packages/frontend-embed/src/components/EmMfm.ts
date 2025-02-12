@@ -5,7 +5,7 @@
 
 import { h, provide } from 'vue';
 import type { VNode, SetupContext } from 'vue';
-import * as mfm from '';
+import * as mfm from 'mfc-js';
 import * as Misskey from 'Acuaskey-js';
 import temml from 'temml/dist/temml.mjs';
 import { host } from '@@/js/config.js';
