@@ -6,8 +6,8 @@
 import { markRaw, ref } from 'vue';
 import * as Misskey from 'acuaskey-js';
 import { hemisphere } from '@@/js/intl-const.js';
-import lightTheme from '@@/themes/l-Acuaskey.json5';
-import darkTheme from '@@/themes/d-Acuaskey.json5';
+import lightTheme from '@@/themes/l-cherrypick.json5';
+import darkTheme from '@@/themes/d-cherrypick.json5';
 import type { SoundType } from '@/scripts/sound.js';
 import type { Ast } from '@syuilo/aiscript';
 import type { DeviceKind } from '@/scripts/device-kind.js';
