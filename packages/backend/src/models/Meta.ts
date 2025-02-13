@@ -421,14 +421,14 @@ export class MiMeta {
 
 	@Column('varchar', {
 		length: 1024,
-		default: 'https://github.com/kokonect-link/Acuaskey',
+		default: 'https://github.com/Keychrom/Acuaskey',
 		nullable: true,
 	})
 	public repositoryUrl: string | null;
 
 	@Column('varchar', {
 		length: 1024,
-		default: 'https://github.com/kokonect-link/Acuaskey/issues/new',
+		default: 'https://github.com/Keychrom/Acuaskey/issues/new',
 		nullable: true,
 	})
 	public feedbackUrl: string | null;

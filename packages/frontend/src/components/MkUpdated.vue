@@ -55,7 +55,7 @@ const whatIsNewMisskey = () => {
 
 const whatIsNewAcuaskey = () => {
 	// modal.value?.close();
-	window.open(`https://github.com/kokonect-link/Acuaskey/blob/develop/CHANGELOG_Acuaskey.md#${version.replace(/\./g, '')}`, '_blank');
+	window.open(`https://github.com/Keychrom/Acuaskey/blob/develop/CHANGELOG_Acuaskey.md#${version.replace(/\./g, '')}`, '_blank');
 };
 
 const close = async () => {

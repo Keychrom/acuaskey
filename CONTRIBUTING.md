@@ -15,7 +15,7 @@ Before creating an issue, please check the following:
 - To avoid duplication, please search for similar issues before creating a new issue.
 - Do not use Issues to ask questions or troubleshooting.
 	- Issues should only be used to feature requests, suggestions, and bug tracking.
-	- Please ask questions or troubleshooting in [GitHub Discussions](https://github.com/kokonect-link/Acuaskey/discussions) or [Discord](https://discord.gg/V8qghB28Aj).
+	- Please ask questions or troubleshooting in [GitHub Discussions](https://github.com/Keychrom/Acuaskey/discussions) or [Discord](https://discord.gg/V8qghB28Aj).
 
 > [!WARNING]
 > Do not close issues that are about to be resolved. It should remain open until a commit that actually resolves it is merged.
@@ -135,7 +135,7 @@ An actual domain will be assigned so you can test the federation.
 		- `x.y.z` is the new version you are trying to release.
 3. Deploy and perform a simple QA check. Also verify that the tests passed.
 4. Merge it. (Do not squash commit)
-5. Create a [release of GitHub](https://github.com/kokonect-link/Acuaskey/releases)
+5. Create a [release of GitHub](https://github.com/Keychrom/Acuaskey/releases)
 	- The target branch must be `master`
 	- The tag name must be the version
 

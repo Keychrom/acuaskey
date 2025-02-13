@@ -23,7 +23,7 @@ describe('Drive', () => {
 
 		const marker = Math.random().toString();
 
-		const url = 'https://raw.githubusercontent.com/kokonect-link/Acuaskey/develop/packages/backend/test/resources/192.jpg';
+		const url = 'https://raw.githubusercontent.com/Keychrom/Acuaskey/develop/packages/backend/test/resources/192.jpg';
 
 		const catcher = makeStreamCatcher(
 			alice,

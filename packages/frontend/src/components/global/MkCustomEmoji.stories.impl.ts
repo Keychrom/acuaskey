@@ -29,7 +29,7 @@ export const Default = {
 	},
 	args: {
 		name: 'mi',
-		url: 'https://github.com/kokonect-link/Acuaskey/blob/master/packages/frontend/assets/about-icon.png?raw=true',
+		url: 'https://github.com/Keychrom/Acuaskey/blob/master/packages/frontend/assets/about-icon.png?raw=true',
 	},
 	parameters: {
 		layout: 'centered',

@@ -17,8 +17,8 @@ describe('users/notes', () => {
 
 	beforeAll(async () => {
 		alice = await signup({ username: 'alice' });
-		const jpg = await uploadUrl(alice, 'https://raw.githubusercontent.com/kokonect-link/Acuaskey/develop/packages/backend/test/resources/192.jpg');
-		const png = await uploadUrl(alice, 'https://raw.githubusercontent.com/kokonect-link/Acuaskey/develop/packages/backend/test/resources/192.png');
+		const jpg = await uploadUrl(alice, 'https://raw.githubusercontent.com/Keychrom/Acuaskey/develop/packages/backend/test/resources/192.jpg');
+		const png = await uploadUrl(alice, 'https://raw.githubusercontent.com/Keychrom/Acuaskey/develop/packages/backend/test/resources/192.png');
 		jpgNote = await post(alice, {
 			fileIds: [jpg.id],
 		});

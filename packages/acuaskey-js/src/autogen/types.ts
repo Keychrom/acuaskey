@@ -5543,9 +5543,9 @@ export type components = {
       description: string | null;
       langs: string[];
       tosUrl: string | null;
-      /** @default https://github.com/kokonect-link/acuaskey */
+      /** @default https://github.com/Keychrom/Acuaskey */
       repositoryUrl: string | null;
-      /** @default https://github.com/kokonect-link/acuaskey/issues/new */
+      /** @default https://github.com/Keychrom/Acuaskey/issues/new */
       feedbackUrl: string | null;
       defaultDarkTheme: string | null;
       defaultLightTheme: string | null;

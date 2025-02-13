@@ -19,7 +19,7 @@ env:
 jobs:
   build:
     # chromatic is not likely to be available for fork repositories, so we disable for fork repositories.
-    if: github.repository == 'kokonect-link/Acuaskey'
+    if: github.repository == 'Keychrom/Acuaskey'
     runs-on: ubuntu-latest
 
     env:

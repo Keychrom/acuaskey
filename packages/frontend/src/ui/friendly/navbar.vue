@@ -126,7 +126,7 @@ if ($i && ($i.isAdmin ?? $i.isModerator)) {
 
 	misskeyApi('admin/meta')
 		.then(meta => {
-			return fetch('https://api.github.com/repos/kokonect-link/Acuaskey/releases')
+			return fetch('https://api.github.com/repos/Keychrom/Acuaskey/releases')
 				.then(res => res.json())
 				.then(AcuaskeyData => {
 					releasesAcuaskey.value = meta.enableReceivePrerelease ? AcuaskeyData : AcuaskeyData.filter(x => !x.prerelease);

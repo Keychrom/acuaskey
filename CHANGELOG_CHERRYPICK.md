@@ -40,7 +40,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202520](CHANGE
     - 역할이 꺼져있을 때 이 설정을 활성화한 사용자는 역할이 켜지면 자동으로 연합됩니다.
 - Feat: robots.txt 사용자화 (bettaku/engawa#226)
   - 기본 `robots.txt`에 정의된 내용을 사용자화 할 수 있습니다.
-- Feat: 노트의 초안을 저장할 수 있음 (kokonect-link/Acuaskey#513, misskey-dev/misskey#15298)
+- Feat: 노트의 초안을 저장할 수 있음 (kokonect-link/CherryPick#513, misskey-dev/misskey#15298)
   - 작성 중인 노트를 서버 또는 기기에 저장할 수 있습니다.
   - 서버에 저장된 초안은 모든 기기에서 동기화 됩니다.
 - Enhance: 프록시 계정을 확인할 수 있는 배지 추가 (misskey-dev/misskey#14855)
@@ -52,7 +52,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202520](CHANGE
 	- 이 설정은 `이미 본 리노트를 간략화하기`의 상위 개념으로, 이 설정이 켜져있으면 `이미 본 리노트를 간략화하기`의 설정을 변경할 수 없게 됩니다.
 - Enhance: 사용자 페이지에서 `이름`, `자기소개`, `팔로우 메시지`, `추가 정보`에 포함된 외부 이모지를 가져올 수 있음
 - Enhance: 노트에 여러 장의 이미지가 있을 때 미디어 탭에서 이미지 수를 숫자로 표시함
-- Enhance: 키보드 단축키 목록을 볼 수 있음 (kokonect-link/Acuaskey#562)
+- Enhance: 키보드 단축키 목록을 볼 수 있음 (kokonect-link/CherryPick#562)
 - Enhance: 아바타 장식 개선
   - 세부 설정값을 더욱 세밀하게 조절할 수 있습니다.
     - `각도`는 이제 `1°` 단위로 조절할 수 있습니다.
@@ -66,7 +66,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202520](CHANGE
 - Fix: Acuaskey 클라이언트 업데이트 알림이 잘못 반환될 수 있음
   - 출시 전 빌드 태그가 고려되지 않음(`alpha`, `beta`, `rc`)
     - 예: `4.14.2 < 4.14.3-alpha.0` 계산 시 `4.14.2`가 더 큰 것으로 계산됨
-- Fix: 파일을 포함한 노트에서 일부 기능이 제대로 작동하지 않을 수 있음 (kokonect-link/Acuaskey#552)
+- Fix: 파일을 포함한 노트에서 일부 기능이 제대로 작동하지 않을 수 있음 (kokonect-link/CherryPick#552)
   - 사용자 페이지에서 다음 기능이 제대로 작동하지 않을 수 있는 문제가 수정됨
     - `민감한 미디어 표시` 설정이 반영되지 않음
     - `민감한 콘텐츠로 표시된 미디어를 열 때` 설정이 반영되지 않음
@@ -80,11 +80,11 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202520](CHANGE
 ### Server
 - Fix: 신고 즉시 해결 기능에서 발생할 수 있는 일부 문제 해결 ([misskey-dev/misskey#11032 (review)](https://github.com/misskey-dev/misskey/pull/11032#pullrequestreview-2425669540))
 	- forward가 `true`가 되면 `false`로 변경할 수 없음
-- Fix: 채널에서 `노트 게시 예약`을 사용하면 채널 타임라인이 아닌 일반 타임라인에 게시됨 (kokonect-link/Acuaskey#559)
+- Fix: 채널에서 `노트 게시 예약`을 사용하면 채널 타임라인이 아닌 일반 타임라인에 게시됨 (kokonect-link/CherryPick#559)
 - Fix: 움직이는 이미지를 사용한 사용자의 아바타 장식이 원격 서버에서 정지된 이미지로 보일 수 있음
   - 시간이 지남에 따라 천천히 갱신되지만, 즉시 갱신하고 싶다면 해당 사용자의 드롭다운 메뉴에서 `원격 사용자 정보 갱신`을 클릭하면 아바타 장식이 즉시 갱신됩니다.
 - Fix: 팔로워/팔로잉의 공개 범위를 볼 수 없는 사용자가 `int`가 아닌 `string` 값을 반환할 수 있음 ([참고](https://kokonect.link/notes/a3z05a3vc39q3cph))
-  - 타사 클라이언트와의 원활한 호환성을 유지하기 위해 변경이 일부 복구되었습니다. (kokonect-link/Acuaskey#362)
+  - 타사 클라이언트와의 원활한 호환성을 유지하기 위해 변경이 일부 복구되었습니다. (kokonect-link/CherryPick#362)
   - 이 변경으로 팔로워/팔로잉의 공개 범위를 볼 수 없는 사용자는 이제 API에서 `?`이 아닌 `0`을 반환합니다.
 
 ---
@@ -108,21 +108,21 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024111](CHANG
 Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024111](CHANGELOG.md#2024111) 문서를 참고하십시오.
 
 ### General
-- Feat: 번역 서비스 추가 지원 (kokonect-link/Acuaskey#551)
+- Feat: 번역 서비스 추가 지원 (kokonect-link/CherryPick#551)
   - [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) 지원 추가
     - 외부 서비스를 이용하는 번역 서비스는 요금제에 따른 API 제한이 적용되므로, 자체 호스팅으로 구동할 수 있는 번역 API를 사용할 수 있음
-- Feat: 검색 엔진 사용자화 (kokonect-link/Acuaskey#554)
+- Feat: 검색 엔진 사용자화 (kokonect-link/CherryPick#554)
   - MFC 구문 중 `[검색]`, `[search]`, `[検索]`를 사용했을 때, 사용할 검색 엔진을 지정할 수 있음
 - Enhance: 예약된 노트 게시에 실패할 경우 사용자에게 알림 ([penginn-net/kokonect@a0e47980](https://github.com/penginn-net/kokonect/commit/a0e47980470b49e79e84ff3b7ccaf2b4502928c8))
 
 ### Client
 - Fix: 노트 상세 페이지에서 사용자 이름이 중복으로 표시될 수 있음
 - Fix: 커스텀 이모지 관리 역할이 있는 사용자가 원격 서버의 이모지를 가져올 수 없음
-- Fix: 신고 알림을 받을 이메일 주소 설정을 저장할 수 없음 (kokonect-link/Acuaskey#540)
-- Fix: 네비게이션 바에 배너 이미지가 표시되지 않을 수 있음 (kokonect-link/Acuaskey#545)
-- Fix: 고정된 리스트 타임라인을 사용할 수 없음 (kokonect-link/Acuaskey#546)
-- Fix: 버블 타임라인이 비활성화 상태면 버블 타임라인의 호스트 목록을 수정할 수 없음 (kokonect-link/Acuaskey#544)
-- Fix: 특정 환경에서 리액션을 변경할 수 없을 수 있음 (kokonect-link/Acuaskey#549)
+- Fix: 신고 알림을 받을 이메일 주소 설정을 저장할 수 없음 (kokonect-link/CherryPick#540)
+- Fix: 네비게이션 바에 배너 이미지가 표시되지 않을 수 있음 (kokonect-link/CherryPick#545)
+- Fix: 고정된 리스트 타임라인을 사용할 수 없음 (kokonect-link/CherryPick#546)
+- Fix: 버블 타임라인이 비활성화 상태면 버블 타임라인의 호스트 목록을 수정할 수 없음 (kokonect-link/CherryPick#544)
+- Fix: 특정 환경에서 리액션을 변경할 수 없을 수 있음 (kokonect-link/CherryPick#549)
 
 ---
 
@@ -132,7 +132,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024111](CHANG
 Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024110](CHANGELOG.md#2024110) 문서를 참고하십시오.
 
 ### General
-- Feat: 버블 타임라인 (kokonect-link/Acuaskey#512, [TransFem-org/Sharkey#154](https://activitypub.software/TransFem-org/Sharkey/-/issues/154), [TransFem-org/Sharkey@2f99c7e9](https://activitypub.software/TransFem-org/Sharkey/-/commit/2f99c7e9dc2e5e3ca06c9672a6ab4887eb094310))
+- Feat: 버블 타임라인 (kokonect-link/CherryPick#512, [TransFem-org/Sharkey#154](https://activitypub.software/TransFem-org/Sharkey/-/issues/154), [TransFem-org/Sharkey@2f99c7e9](https://activitypub.software/TransFem-org/Sharkey/-/commit/2f99c7e9dc2e5e3ca06c9672a6ab4887eb094310))
   - 관리자가 설정한 서버의 게시글만 볼 수 있는 타임라인으로, 글로벌 타임라인의 무분별한 내용을 포함하는 게시글을 제한하는 목적으로 사용할 수 있습니다.
 - Enhance: 모더레이터 부재 감지 기간을 사용자화할 수 있음
   - 기간은 최소 `1`일부터 최대 `30`일까지 설정할 수 있습니다.
@@ -143,13 +143,13 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024110](CHANG
 - Enhance: 미디어 그리드 레이아옷 조정
   - 여러 장의 이미지가 있을 때 표시되는 아이콘을 보다 명확하게 볼 수 있도록 개선됨
   - 배경과 같은 이미지를 구분하기 쉽도록 배경색 및 구분선 추가
-- Enhance: 외부 사이트 이동 경고 표시 개선 (kokonect-link/Acuaskey#533)
+- Enhance: 외부 사이트 이동 경고 표시 개선 (kokonect-link/CherryPick#533)
   - 신뢰할 수 있는 도메인 목록을 편집할 수 있음
   - 경고를 표시하지 않도록 설정할 수 있음
 - Enhance: Bluesky 게시물 임베디드 미리보기 지원 (misskey-dev/misskey#14933)
 - Fix: 아바타 장식에서 가이드라인이 표시되지 않음
 - Fix: 설정 페이지에서 글자수가 긴 일부 항목의 디자인이 잘못 표시될 수 있음
-- Fix: 서브 노트의 동작 버튼이 정상적으로 작동하지 않을 수 있음 (kokonect-link/Acuaskey#536)
+- Fix: 서브 노트의 동작 버튼이 정상적으로 작동하지 않을 수 있음 (kokonect-link/CherryPick#536)
 
 ### Server
 - Fix: 그룹 초대 알림을 수락하거나 거절하면 알림 목록을 볼 수 없음
@@ -185,7 +185,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#2024101](CHANG
 - Enhance: 로그인 알림 개선
   - 로그인 알림에서 로그인 한 장치의 `IP`를 표시하고 승인되지 않은 기기에 대한 대응 방법이 표시됩니다.
 - Enhance: 노트 상세 페이지의 노트 헤더에서도 `편집됨`과 `노트 삭제 예약` 아이콘을 표시함
-- Enhance: 타임라인의 옵션 메뉴에서 타임라인 탭을 편집할 수 있음 (kokonect-link/Acuaskey#528)
+- Enhance: 타임라인의 옵션 메뉴에서 타임라인 탭을 편집할 수 있음 (kokonect-link/CherryPick#528)
 - Enhance: 타임라인을 모두 비활성화하면 타임라인이 비활성화되었다는 안내 문구 표시
 - Enhance: 항상 `고양이체로 표시하지 않기`로 설정할 수 있음
 - Fix: (Friendly) 알림 영역에 `새 노트` 탭이 누락됨
@@ -230,10 +230,10 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
 - `오브젝트 스토리지 (리모트)`의 내부 변경으로 인해 DB 마이그레이션 과정에서 이전에 설정한 값이 제거됩니다. 마이그레이션 이후 값을 다시 설정해 주십시오.
 
 ### General
-- Feat: 사용자 메뉴에서 서버를 뮤트할 수 있음 (kokonect-link/Acuaskey#502)
+- Feat: 사용자 메뉴에서 서버를 뮤트할 수 있음 (kokonect-link/CherryPick#502)
   - 이전 빌드에 추가된 기능은 관리자 전용이며, 이 빌드에서 추가된 기능은 일반 사용자용 기능입니다.
 - Feat: 새 노트 알림을 묶어서 표시할 수 있음 (yojo-art/Acuaskey#328)
-- Feat: 노트 게시를 예약할 수 있음 (kokonect-link/Acuaskey#513, yojo-art/Acuaskey#483, [Type4ny-Project/Type4ny@271c872c](https://github.com/Type4ny-Project/Type4ny/commit/271c872c97f215ef5d8e0be62251dd422a52e5b1))
+- Feat: 노트 게시를 예약할 수 있음 (kokonect-link/CherryPick#513, yojo-art/Acuaskey#483, [Type4ny-Project/Type4ny@271c872c](https://github.com/Type4ny-Project/Type4ny/commit/271c872c97f215ef5d8e0be62251dd422a52e5b1))
 
 ### Client
 - Enhance: (Friendly) 모바일 환경에서 계정 목록을 표시할 때 내 프로필을 표시함
@@ -271,17 +271,17 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
 - Fix: 특정 조건에서 노트 동작 버튼을 비활성화 해도 버튼이 사라지지 않음
   - 노트에 답글을 작성할 수 없을 때
   - 노트를 리노트할 수 없을 때
-- Fix: 캡션이 512자를 초과하면 초과한 내용이 잘릴 수 있음 (kokonect-link/Acuaskey#518)
+- Fix: 캡션이 512자를 초과하면 초과한 내용이 잘릴 수 있음 (kokonect-link/CherryPick#518)
   - 캡션을 512자를 초과해서 작성하면 캡션 내용을 저장하기 전에 경고를 표시합니다.
 - Fix: 노트 상세 페이지의 InstanceTicker에 커서를 올릴 때 마우스 포인터가 올바르게 표시되지 않음
 - Fix: `UI에 흐림 효과 사용` 옵션이 토스트 알림에서 제대로 적용되지 않음
   - 모바일 환경에서만 적용되는 문제를 해결합니다.
 - Fix: 모바일 환경에서 제어판의 인디케이터가 잘못된 위치에 표시될 수 있음
-- Fix: `답글을 자동으로 더 보기`를 활성화하면 3개 미만의 답글이 있는 노트에서 답글이 보이지 않음 (kokonect-link/Acuaskey#521)
+- Fix: `답글을 자동으로 더 보기`를 활성화하면 3개 미만의 답글이 있는 노트에서 답글이 보이지 않음 (kokonect-link/CherryPick#521)
 - Fix: 제어판에서 문의처 URL이 설정되지 않았을 때 표시되는 경고의 바로가기가 잘못 설정되어 있음
-- Fix: 캡션이 설정된 이미지 위에 마우스 커서를 올려도 캡션이 표시되지 않음 (kokonect-link/Acuaskey#514)
-- Fix: 코드 편집기의 커서 위치가 올바르게 표시되지 않을 수 있음 (kokonect-link/Acuaskey#520)
-- Fix: 투표 기한을 `기간 지정`으로 설정한 경우 투표가 즉시 종료될 수 있음 (kokonect-link/Acuaskey#523)
+- Fix: 캡션이 설정된 이미지 위에 마우스 커서를 올려도 캡션이 표시되지 않음 (kokonect-link/CherryPick#514)
+- Fix: 코드 편집기의 커서 위치가 올바르게 표시되지 않을 수 있음 (kokonect-link/CherryPick#520)
+- Fix: 투표 기한을 `기간 지정`으로 설정한 경우 투표가 즉시 종료될 수 있음 (kokonect-link/CherryPick#523)
 - Fix: 로그인하지 않은 사용자가 리버시 전적을 볼 수 없음 (yojo-art/Acuaskey#404)
 
 ### Server
@@ -289,7 +289,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
   - 1시간에 10번 편집할 수 있던 것을 5분에 10번 편집할 수 있도록 완화함.
 - Enhance: 이모지를 등록할 때 시스템 사용자로 다시 업로드 하도록 변경함 (yojo-art/Acuaskey#510)
   - 이모지를 등록한 사용자가 계정을 삭제하면 이모지도 같이 삭제되기 때문에 변경되었습니다.
-- Fix: 로컬 전용 노트를 편집하면 편집한 노트가 연합될 수 있음 (kokonect-link/Acuaskey#519, [libnare/shiftkey@654821da](https://github.com/libnare/shiftkey/commit/654821da003be7471f3c6fc320bf50afcb599d4e))
+- Fix: 로컬 전용 노트를 편집하면 편집한 노트가 연합될 수 있음 (kokonect-link/CherryPick#519, [libnare/shiftkey@654821da](https://github.com/libnare/shiftkey/commit/654821da003be7471f3c6fc320bf50afcb599d4e))
 
 ---
 
@@ -309,15 +309,15 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
 ### General
 - Feat: 위젯 영역을 숨길 수 있음
 	- 기존 Friendly UI 한정 기능이 다른 UI에서도 사용할 수 있도록 확대됨
-- Feat: `내용 숨기기`로 설정한 내용을 항상 보이게 설정할 수 있음 (kokonect-link/Acuaskey#495)
-- Feat: 내용이 긴 노트의 간략화 여부를 선택할 수 있음 (kokonect-link/Acuaskey#495)
-- Feat: 답글로 작성된 노트를 간략화하여 표시할 수 있음 (kokonect-link/Acuaskey#495)
+- Feat: `내용 숨기기`로 설정한 내용을 항상 보이게 설정할 수 있음 (kokonect-link/CherryPick#495)
+- Feat: 내용이 긴 노트의 간략화 여부를 선택할 수 있음 (kokonect-link/CherryPick#495)
+- Feat: 답글로 작성된 노트를 간략화하여 표시할 수 있음 (kokonect-link/CherryPick#495)
 	- 리액션한 노트는 옵션 활성화 유무와 상관없이 항상 표시됩니다.
-- Feat: 사용자 메뉴에서 원격 서버를 관리할 수 있음 (kokonect-link/Acuaskey#502)
+- Feat: 사용자 메뉴에서 원격 서버를 관리할 수 있음 (kokonect-link/CherryPick#502)
 	- `서버 차단`, `서버 사일런스`, `서버 미디어 사일런스`
-- Feat: 노트 동작 버튼을 개인화할 수 있음 (kokonect-link/Acuaskey#501)
-- Feat: 답글 대상 노트의 반투명 옵션을 선택할 수 있음 (kokonect-link/Acuaskey#495)
-- Feat: 사용자 페이지의 미디어 탭을 그리드 레이아웃으로 설정할 수 있음 (kokonect-link/Acuaskey#494)
+- Feat: 노트 동작 버튼을 개인화할 수 있음 (kokonect-link/CherryPick#501)
+- Feat: 답글 대상 노트의 반투명 옵션을 선택할 수 있음 (kokonect-link/CherryPick#495)
+- Feat: 사용자 페이지의 미디어 탭을 그리드 레이아웃으로 설정할 수 있음 (kokonect-link/CherryPick#494)
 - Feat: 검색 위젯 (1673beta/Acuaskey#125)
 - Feat: 캡션 미설정 안내 표시 (1673beta/Acuaskey#142)
   - 노트를 게시하기 전에 첨부한 파일에 캡션이 없으면 경고를 표시합니다.
@@ -343,7 +343,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
     - 노트가 `내용 가리기`로 설정되어 있음
     - 내용이 긴 노트
     - 노트에 5개 이상의 파일이 포함되어 있음
-- Feat: 노트의 전체 대화와 전체 답글을 불러올 수 있음 (kokonect-link/Acuaskey#495)
+- Feat: 노트의 전체 대화와 전체 답글을 불러올 수 있음 (kokonect-link/CherryPick#495)
   - `답글을 자동으로 더 보기`를 활성화하면 `더 보기` 버튼을 누르지 않아도 노트 내 답글을 전부 표시합니다.
   - `대화를 자동으로 더 보기`를 활성화하면 `대화 보기` 버튼을 누르지 않아도 노트 내 대화를 전부 표시합니다.
 
@@ -375,12 +375,12 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202490](CHANGE
 - Fix: 역할 권한에 의해 번역 기능을 사용할 수 없을 때도 번역 버튼이 표시됨
 
 ### Server
-- Enhance: 보안 향상을 위해 비밀번호 해싱 알고리즘이 `bcrypt`에서 `argon2`로 변경됨 (kokonect-link/Acuaskey#511)
+- Enhance: 보안 향상을 위해 비밀번호 해싱 알고리즘이 `bcrypt`에서 `argon2`로 변경됨 (kokonect-link/CherryPick#511)
   - 이제 72 바이트를 초과하는 비밀번호를 사용할 수 있습니다.
   - 이로써 `Sharkey`, `FireFish`, `IceShrimp` 등의 클라이언트에서 `Acuaskey`으로 이전할 때 암호 호환성이 보장됩니다.
 - Enhance: `Sharkey`를 사용하는 서버의 사용자가 설정한 아바타 장식을 자동으로 불러옴
-- Fix: 이모지를 등록하거나 가져오려고 할 때 오류가 발생할 수 있음 (kokonect-link/Acuaskey#487), (kokonect-link/Acuaskey#508)
-- Fix: 사용자 이름에 `.`이 있는 경우 멘션을 할 수 없음 (kokonect-link/Acuaskey#509)
+- Fix: 이모지를 등록하거나 가져오려고 할 때 오류가 발생할 수 있음 (kokonect-link/CherryPick#487), (kokonect-link/CherryPick#508)
+- Fix: 사용자 이름에 `.`이 있는 경우 멘션을 할 수 없음 (kokonect-link/CherryPick#509)
 
 ---
 
@@ -417,9 +417,9 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202470](CHANGE
   - Acuaskey 클라이언트 업데이트 페이지에서 버전 알림이 작동하지 않을 수 있음
 
 ### Server
-- Fix: `Announce`를 사용하는 릴레이 서버의 노트를 가져올 수 없음 (kokonect-link/Acuaskey#483)
-- Fix: 번역 기능을 사용할 수 없을 수 있음 (kokonect-link/Acuaskey#486)
-- Fix: withCats 상태인 사용자가 작성하는 노트가 streaming에서 필터링되지 않을 수 있음 (kokonect-link/Acuaskey#485)
+- Fix: `Announce`를 사용하는 릴레이 서버의 노트를 가져올 수 없음 (kokonect-link/CherryPick#483)
+- Fix: 번역 기능을 사용할 수 없을 수 있음 (kokonect-link/CherryPick#486)
+- Fix: withCats 상태인 사용자가 작성하는 노트가 streaming에서 필터링되지 않을 수 있음 (kokonect-link/CherryPick#485)
 
 ---
 
@@ -433,7 +433,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202450](CHANGE
 - Fix: 타임라인 노트의 리액션 뷰어에 리모트 서버의 커스텀 이모지가 표시되지 않음
 - Fix: '리노트 공개 범위 지정' 옵션이 `없음`으로 설정된 경우 리노트를 할 수 없음
 - Fix: 아바타 장식을 설정할 때 설정 팝업이 두 번 표시될 수 있음
-- Fix: 코드 블록의 하이라이트가 실제 위치와 다르게 표시될 수 있음 (kokonect-link/Acuaskey#475)
+- Fix: 코드 블록의 하이라이트가 실제 위치와 다르게 표시될 수 있음 (kokonect-link/CherryPick#475)
 
 ### Server
 - Feat: 리모트 유저의 아바타 장식을 여러 개 불러올 수 있음([yunochi/misskey@696787b3](https://github.com/yunochi/misskey/commit/696787b38bac31e7586899a5a59611a6fe50b9a1), [yunochi/misskey@4a5fcfe4](https://github.com/yunochi/misskey/commit/4a5fcfe43880f08380541caa6b7593b90306d103))
@@ -452,18 +452,18 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202431](CHANGE
 
 ### Client
 - Enhance: 노트 메뉴에 '새 탭에서 열기' 추가
-- Fix: (Friendly) 타임라인 헤더와 알림 영역의 헤더 타이틀이 잘못 표시될 수 있음 (kokonect-link/Acuaskey#461)
-- Fix: (Friendly) 윈도우 크기를 조정하면 타임라인 탭의 하이라이트가 잘못된 위치에 표시될 수 있음 (kokonect-link/Acuaskey#415)
+- Fix: (Friendly) 타임라인 헤더와 알림 영역의 헤더 타이틀이 잘못 표시될 수 있음 (kokonect-link/CherryPick#461)
+- Fix: (Friendly) 윈도우 크기를 조정하면 타임라인 탭의 하이라이트가 잘못된 위치에 표시될 수 있음 (kokonect-link/CherryPick#415)
 - Fix: (Friendly) 일부 페이지에서 알림 영역의 디자인이 잘못 표시될 수 있음
   - 사용자 프로필 페이지
   - 노트 상세 페이지
 - Fix: 노트를 내보낼 때 노트의 편집 기록을 포함
-- Fix: MkA 컴포넌트를 사용하는 항목이 작동하지 않을 수 있음 (kokonect-link/Acuaskey#422)
+- Fix: MkA 컴포넌트를 사용하는 항목이 작동하지 않을 수 있음 (kokonect-link/CherryPick#422)
   - 알림의 읽음 표시, 테스트 알림, 기본 업로드 위치 등
-- Fix: 코드 복사 버튼을 누르면 노트 상세 페이지가 표시될 수 있음 (kokonect-link/Acuaskey#414)
-- Fix: 창으로 제어판을 열었을 때 뒤로 가기 버튼이 잘못된 작동을 야기할 수 있음 (kokonect-link/Acuaskey#407)
+- Fix: 코드 복사 버튼을 누르면 노트 상세 페이지가 표시될 수 있음 (kokonect-link/CherryPick#414)
+- Fix: 창으로 제어판을 열었을 때 뒤로 가기 버튼이 잘못된 작동을 야기할 수 있음 (kokonect-link/CherryPick#407)
 - Fix: 서버 이름이 매우 긴 경우, Acuaskey에 대하여(MkSourceCodeAvailablePopup) 대화 상자의 디자인이 잘못 표시될 수 있음
-- Fix: '노트를 클릭하여 자세히 표시' 기능을 활성화하면 일부 기능이 올바르게 작동하지 않을 수 있음 (kokonect-link/Acuaskey#451)
+- Fix: '노트를 클릭하여 자세히 표시' 기능을 활성화하면 일부 기능이 올바르게 작동하지 않을 수 있음 (kokonect-link/CherryPick#451)
   - 타임라인에서 노트의 프로필 아이콘을 클릭하면 프로필로 이동하지 않음
   - 노트 본문 내의 프로필 아이콘을 클릭하면 화면에 아무것도 표시되지 않음
 
@@ -480,14 +480,14 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202431](CHANGE
 Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#202420](CHANGELOG.md#202420) 문서를 참고하십시오.
 
 ### Client
-- Feat: 리노트 공개 범위를 지정할 수 있음 (kokonect-link/Acuaskey#406)
+- Feat: 리노트 공개 범위를 지정할 수 있음 (kokonect-link/CherryPick#406)
   - 이 기능은 '리노트 공개 범위 옵션 표시' 기능이 꺼져있어야 합니다.
 - Enhance: 빌트인 테마를 설치하려고 할 때 오류 메시지 개선
 - Enhance: '노트를 클릭하여 자세히 표시' 기능 개선
   - 노트를 두 번 클릭해서 열 수 있음
 - Fix: 장식 추가로 일부 태그를 추가할 수 없음
-- Fix: 알림 위젯 필터링이 작동하지 않을 수 있음 (kokonect-link/Acuaskey#404)
-- Fix: 노트 자세히 보기에서 노트 작성 폼을 클릭하면 내용이 초기화될 수 있음 (kokonect-link/Acuaskey#410)
+- Fix: 알림 위젯 필터링이 작동하지 않을 수 있음 (kokonect-link/CherryPick#404)
+- Fix: 노트 자세히 보기에서 노트 작성 폼을 클릭하면 내용이 초기화될 수 있음 (kokonect-link/CherryPick#410)
 - Fix: '설정 - 타임라인' 페이지가 표시되지 않음
 - Fix: '노트 - 리액션 목록' 기능이 작동하지 않음
 
@@ -1027,7 +1027,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#13132](CHANGEL
 - mfm-js를 Acuaskey-mfm-js로 변경
 - misskey-js를 acuaskey-js로 변경
 - Add: Cloud Logging 기능 ([libnare/mk-castella@0a883ef](https://github.com/libnare/mk-castella/commit/0a883efe08921d5e5b7914a1075c3931122a623b), [libnare/mk-castella@7987d57](https://github.com/libnare/mk-castella/commit/7987d57789316084b38665e539e41a463ddaa110))
-- Fix: 알림에서 UserGroupInvitation 관련 문제 해결 (kokonect-link/Acuaskey#75)
+- Fix: 알림에서 UserGroupInvitation 관련 문제 해결 (kokonect-link/CherryPick#75)
 - Fix: 정의되지 않은 OffscreenCanvas (misskey-dev/misskey#11017)
 
 ---
@@ -1073,7 +1073,7 @@ Misskey의 전체 변경 사항을 확인하려면, [CHANGELOG.md#13131](CHANGEL
 - 알림 기본 정렬을 수직으로 변경
 - 채팅방 목록 페이지 디자인 개선
 - 리노트 문구를 노트 최상단으로 배치
-- 특정 MFM 구문이 포함된 노트를 간략화 할지 선택할 수 있음(enhance: [@aba0755](https://github.com/kokonect-link/Acuaskey/commit/aba0755880d6797f49d34c8b7fe2c602d153e367))
+- 특정 MFM 구문이 포함된 노트를 간략화 할지 선택할 수 있음(enhance: [@aba0755](https://github.com/kokonect-link/CherryPick/commit/aba0755880d6797f49d34c8b7fe2c602d153e367))
 - 노트 사이를 띄우는 옵션 활성화 시 알림 페이지의 노트도 띄우도록
 - 안테나, 그룹, 리스트, 클립 페이지의 생성 버튼을 헤더로 이동
 - 채팅 디자인 일부 개선

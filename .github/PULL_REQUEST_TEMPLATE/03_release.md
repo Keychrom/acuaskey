@@ -2,7 +2,7 @@
 This is a release PR.
 
 For more information on the release instructions, please see:
-https://github.com/kokonect-link/Acuaskey/blob/develop/CONTRIBUTING.md#release
+https://github.com/kokonect-link/CherryPick/blob/develop/CONTRIBUTING.md#release
 
 ## For reviewers
 - CHANGELOG_Acuaskey에 누락된 부분은 없는가?

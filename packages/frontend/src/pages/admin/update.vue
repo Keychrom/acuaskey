@@ -100,7 +100,7 @@ async function init() {
 
 	try {
 		// Acuaskey Releases Fetch
-		const AcuaskeyResponse = await fetch('https://api.github.com/repos/kokonect-link/Acuaskey/releases');
+		const AcuaskeyResponse = await fetch('https://api.github.com/repos/Keychrom/Acuaskey/releases');
 		const AcuaskeyData = await AcuaskeyResponse.json();
 		releasesAcuaskey.value = meta.enableReceivePrerelease ? AcuaskeyData : AcuaskeyData.filter(x => !x.prerelease);
 
@@ -143,11 +143,11 @@ function skipThisVersion() {
 }
 
 const whatIsNewAcuaskey = () => {
-	window.open(`https://github.com/kokonect-link/Acuaskey/blob/develop/CHANGELOG_Acuaskey.md#${version.replace(/\./g, '')}`, '_blank');
+	window.open(`https://github.com/Keychrom/Acuaskey/blob/develop/CHANGELOG_Acuaskey.md#${version.replace(/\./g, '')}`, '_blank');
 };
 
 const whatIsNewLatestAcuaskey = () => {
-	window.open(`https://github.com/kokonect-link/Acuaskey/blob/develop/CHANGELOG_Acuaskey.md#${releasesAcuaskey.value[0].tag_name.replace(/\./g, '')}`, '_blank');
+	window.open(`https://github.com/Keychrom/Acuaskey/blob/develop/CHANGELOG_Acuaskey.md#${releasesAcuaskey.value[0].tag_name.replace(/\./g, '')}`, '_blank');
 };
 
 const whatIsNewMisskey = () => {
